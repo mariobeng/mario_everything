@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<title>首页</title>
+		<meta charset="utf-8" />
+		<!--兼容IE-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!--适当的绘制和触屏缩放-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/lib/bootstrap/css/bootstrap.min.css" />
+		<link href="fontello/css/fontello.css" type="text/css" rel="stylesheet">
+		<style>
+			*{
+				margin: 0;
+				border: 0;
+				padding: 0;
+			}
+			body {
+				max-width:480px;
+				margin:0 auto;
+			}
+			img {
+				width:100%;
+				height:auto;
+			}
+			.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+				position: relative;
+				min-height: 1px;
+				padding-right: 0;
+				padding-left: 0;
+			}
+			a:link {text-decoration: none;}
+			a:visited {text-decoration: none;}
+			a:hover {text-decoration: none;}
+			a:active {text-decoration: none;}
+			
+			/*顶部问卷*/
+			div.wifi {
+				background: url(images/wifi_bg.png) no-repeat left top;
+				background-size:100% 100%;
+			}
+			i.icon-laiwifi-heart {
+				color: #fb7b9c;
+			}
+			i.icon-laiwifi-comment {
+				color: #fbe600;
+			}
+
+			div.top {
+				position:relative;
+			}
+			div.menu {
+				width:20%;
+				height:auto;
+				position:absolute;
+				z-index:1;
+				top:10px;
+				left:5.208333333333334%;
+			}
+			a.logo {
+				display:block;
+				background-color:#fff;
+				height:auto;
+			}
+			span.text-center {
+				color:#000;
+				font-size:0.5em;
+				font-weight:bold;
+				font-family:Microsoft YaHei;
+			}
+			@media (min-width:480px) {
+				div.menu_btn a {
+					font-size:1em;
+				}
+				span.text-center{
+					font-size:1em;
+				}
+			}
+			@media (max-width:479px) {
+				div.menu_btn a {
+					font-size:0.6em;
+				}
+				span.text-center{
+					font-size:0.6em;
+				}
+			}
+			div.menu_btn {
+				width:100%;
+			}
+			div.menu_btn a {
+				display:block;
+				width:93.6842105263158%;
+				height:auto;
+				line-height:1.8em;
+				text-align:center;
+				color:#000;
+				font-family:Microsoft YaHei;
+				background-color:#fff;
+				border-bottom:1px solid #000;
+				border-style:solid none;
+				font-weight:bold;
+			}
+			div.menu_btn a.btn_l {
+				margin-left:7%;
+			}
+			div.row {
+				border-bottom:2px solid #fff;
+			}
+			div.kind {
+				background:url(images/kind_bg.png) no-repeat left top;
+				background-size:100% 100%;
+			}
+			.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6 {
+				margin-top:5px;
+			}
+			img.img-circle {
+				width:75%;
+				height:75%;
+				margin-left:12.5%;
+			}
+			.title.text-center > span {
+				font-size: 0.85em;
+			}
+			div.title {
+				margin-top:5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row wifi">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="col-xs-8 col-sm-6 col-md-6 col-lg-6 text-center">
+						<h4>WIFI-问卷登陆</h4>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="col-xs-8 col-sm-6 col-md-6 col-lg-6 text-center">
+						<p>您经常去哪个影院看电影？</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="col-xs-8 col-sm-6 col-md-6 col-lg-6 text-center">
+						<p>
+							<a href="#" style="color:#333;"><i class="icon-laiwifi-heart"></i>华大影城</a>&nbsp;&nbsp;
+							<a href="#" style="color:#333;"><i class="icon-laiwifi-comment"></i>保利博纳影城</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row top">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<img class="img-responsive" src="images/top_bg.png"/>
+				</div>
+				<div class="menu">
+					<a href="#" class="logo">
+						<img class="img-responsive" src="images/logo.png"/>
+					</a>
+					<a href="store.html">
+						<img class="img-responsive" src="images/store.png"/>
+					</a>
+					<a href="#">
+						<img class="img-responsive" src="images/yixin.png"/>
+					</a>
+					<a href="#">
+						<img class="img-responsive" src="images/weixin.png"/>
+					</a>
+					<a href="#">
+						<img class="img-responsive" src="images/hot.png"/>
+					</a>
+				</div>
+			</div>
+			<div class="row kind">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<a href="two_wed.html">
+							<img class="img-responsive img-circle" src="images/kind_a.png"/>
+						</a>
+						<div class="title text-center">
+							<span>婚纱摄影</span><br />
+							<span>Wedding photography</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<a href="two_wed.html">
+							<img class="img-responsive img-circle" src="images/kind_b.png"/>
+						</a>
+						<div class="title text-center">
+							<span>个人写真</span><br />
+							<span>Personal Portrait</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row add_1">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<img class="img-responsive" src="images/add_1.png"/>
+				</div>
+			</div>
+			<div class="row add_2">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<img class="img-responsive" src="images/add_2.png"/>
+				</div>
+			</div>
+			<div class="row footer">
+				<div class="btn-group btn-group-justified">
+					<a href="#" class="btn btn-default" style="background-color:#2E2E2E;color:#fff;background-image:none;border-color:#fff;text-shadow:none;">关于我们</a>
+					<a href="#" class="btn btn-default" style="background-color:#2E2E2E;color:#fff;background-image:none;border-color:#fff;text-shadow:none;">招兵买马</a>
+					<a href="#" class="btn btn-default" style="background-color:#2E2E2E;color:#fff;background-image:none;border-color:#fff;text-shadow:none;">网站地图</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
