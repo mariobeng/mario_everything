@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link href="css/index.css" type="text/css" rel="stylesheet" />
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/Cmn.js"></script>
+		<script src="js/AnimateMan.js"></script>
+		<script src="js/ScenesSwitch.js"></script>
+		<script src="js/Scenes.js"></script>
+		<script src="js/AnimateFrame.js"></script>
+		<script src="js/CmnFuncExd.js"></script>
+		<script src="js/WechatShare.js"></script>
+		<script src="js/MyJs.js"></script>
+	</head>
+	<body class="cmn-AnimteFrameContainer">
+		<div class="container-fluid Main cmn-ScenesContainer">
+			<div class="row cmn-Scenes Page3" id="Page3">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg" style="padding-right: 0">
+					<img class="img-responsive" alt="Responsive image" src="images/three_bg.png"/>
+					<div class="one_t">
+						<img class="img-responsive" alt="Responsive image" src="images/one_t.png"/>
+					</div>
+					<img class="img-responsive ji" alt="Responsive image" src="images/three_a.png"/>
+					<img class="img-responsive tuo" alt="Responsive image" src="images/three_b.png"/>
+					<div class="music"></div>
+					<audio id="audio" src="bgm.mp3" loop="loop" controls="controls" autoplay="true"></audio>
+				</div>
+			</div>
+			<div class="row cmn-Scenes Page1" id="Page1">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg" style="padding-right: 0">
+					<img class="img-responsive" alt="Responsive image" src="images/bg_a.png"/>
+					<div class="wenzi">
+						<img class="img-responsive" alt="Responsive image" src="images/two_t.png"/>
+					</div>
+					<img class="img-responsive yun" alt="Responsive image" src="images/dan_01.png"/>
+					<img class="img-responsive ren" alt="Responsive image" src="images/dan_02.png"/>
+				</div>
+			</div>
+			<div class="row cmn-Scenes Page2" id="Page2">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg" style="padding-right: 0">
+					<img class="img-responsive" alt="Responsive image" src="images/two_bg.png"/>
+					<div class="two_t">
+						<img class="img-responsive" alt="Responsive image" src="images/car_t.png"/>
+					</div>
+					<img class="img-responsive yun" alt="Responsive image" src="images/dan_01.png"/>
+					<img class="img-responsive car" alt="Responsive image" src="images/two_a.png"/>
+					<img class="img-responsive pig" alt="Responsive image" src="images/two_b.png"/>
+				</div>
+			</div>
+			<div class="row cmn-Scenes Page4" id="Page4">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg" style="padding-right: 0">
+					<img class="img-responsive" alt="Responsive image" src="images/bg_4.png"/>
+					<div class="bike_t">
+						<img class="img-responsive" alt="Responsive image" src="images/four_t.png"/>
+					</div>
+					<img class="img-responsive bike_a" alt="Responsive image" src="images/four_a.png"/>
+					<img class="img-responsive bike_b" alt="Responsive image" src="images/four_b.png"/>
+				</div>
+			</div>
+			<div class="row cmn-Scenes Page5" id="Page5">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg" style="padding-right: 0">
+					<img class="img-responsive" alt="Responsive image" src="images/bg_5.png"/>
+					<div class="old_t">
+						<img class="img-responsive" alt="Responsive image" src="images/old_t.png"/>
+					</div>
+					<img class="img-responsive old_a" alt="Responsive image" src="images/five_a.png"/>
+					<img class="img-responsive old_b" alt="Responsive image" src="images/five_b.png"/>
+					<img class="img-responsive old_c" alt="Responsive image" src="images/five_c.png"/>
+					<img class="img-responsive old_d" alt="Responsive image" src="images/five_d.png"/>
+				</div>
+			</div>
+			<div class="row cmn-Scenes Page6" id="Page6">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg" style="padding-right: 0">
+					<img class="img-responsive" alt="Responsive image" src="images/bg_6.png"/>
+					<div class="six_t">
+						<img class="img-responsive" alt="Responsive image" src="images/six_t.png"/>
+					</div>
+					<img class="img-responsive six_a" alt="Responsive image" src="images/six_a.png"/>
+					<img class="img-responsive six_b" alt="Responsive image" src="images/six_b.png"/>
+					<img class="img-responsive six_c" alt="Responsive image" src="images/six_c.png"/>
+				</div>
+			</div>
+			<div class="row cmn-Scenes Page7" id="Page7">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg" style="padding-right: 0">
+					<img class="img-responsive" alt="Responsive image" src="images/bg_7.png"/>
+					<div class="seven_t">
+						<p>在这里你可以亲近自然、享受阳光、</p>
+						<p>亲近健康、感受童年！</p>
+						<p>莓好生活，从这一刻开始。</p>
+					</div>
+					<img class="img-responsive seven_a" alt="Responsive image" src="images/seven_a.png"/>
+					<img class="img-responsive seven_b" alt="Responsive image" src="images/seven_b.png"/>
+				</div>
+			</div>
+			<div class="row cmn-Scenes Page8" id="Page8">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg" style="padding-right: 0">
+					<img class="img-responsive" alt="Responsive image" src="images/bg_8.png"/>
+					<div class="eight_t">
+						<img class="img-responsive" alt="Responsive image" src="images/eight_t.png"/>
+					</div>
+					<img class="img-responsive eight_a" alt="Responsive image" src="images/eight_a.png"/>
+					<img class="img-responsive eight_b" alt="Responsive image" src="images/eight_b.png"/>
+					<img class="img-responsive eight_c" alt="Responsive image" src="images/eight_c.png"/>
+				</div>
+			</div>
+			<div class="row cmn-Scenes Page9" id="Page9">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg" style="padding-right: 0">
+					<img class="img-responsive" alt="Responsive image" src="images/bg_9.png"/>
+					<div class="nine_t">
+						<p>在这里你可以亲近自然、享受阳光、</p>
+						<p>亲近健康、感受童年！</p>
+					</div>
+					<img class="img-responsive nine_a" alt="Responsive image" src="images/nine_a.png"/>
+				</div>
+			</div>
+			<div class="row cmn-Scenes Page10" id="Page10">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg" style="padding-right: 0">
+					<img class="img-responsive" alt="Responsive image" src="images/bg_10.png"/>
+					<div class="ten_t">
+						<img class="img-responsive" alt="Responsive image" src="images/ten_c.png"/>
+					</div>
+					<img class="img-responsive ten_a" alt="Responsive image" src="images/ten_a.png"/>
+					<img class="img-responsive ten_b" alt="Responsive image" src="images/ten_b.png"/>
+				</div>
+			</div>
+			<div class="row cmn-Scenes Page12" id="Page12">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg" style="padding-right: 0">
+					<img class="img-responsive" alt="Responsive image" src="images/bg_12.png"/>
+					<div class="twelve_t">
+						<img class="img-responsive" alt="Responsive image" src="images/twelve_t.png"/>
+					</div>
+					<img class="img-responsive bird_l" alt="Responsive image" src="images/bird_l.png"/>
+					<img class="img-responsive bird_r" alt="Responsive image" src="images/bird_r.png"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
