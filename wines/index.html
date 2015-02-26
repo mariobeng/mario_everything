@@ -1,0 +1,698 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="Content-Type" charset="utf-8">
+		<!--禁止缩放-->
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="">
+		<title>wines</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="navbar-top">
+			<div class="container">
+				<span class="navbar_l">欢迎光临我们的红酒乐园。</span>
+				<p class="navbar_r">
+					call:029-81568888
+					<a href="#">点击立即成为会员</a>
+					<a href="#">购物车</a>
+				</p>
+			</div>
+		</div>
+		<nav role="navigation" class="navbar navbar-inverse">
+      		<div class="container">
+		        <div class="navbar-header">
+		          	<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+		          	</button>
+		          	<a href="#" class="navbar-brand">wines</a>
+		        </div>
+		        <div class="collapse navbar-collapse" id="navbar">
+		          	<ul class="nav navbar-nav">
+			            <li class="active"><a href="#">网站首页</a></li>
+			            <li><a href="#">红酒小吧</a></li>
+			            <li><a href="#">酒品沉淀</a></li>
+			            <li><a href="#">酒仙会</a></li>
+			            <li><a href="#">会员中心</a></li>
+			            <li><a href="#">关于我们</a></li>
+		          	</ul>
+		        </div>
+      		</div>
+    	</nav>
+    	<div class="container-fluid">
+    		<div class="row">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  	<!-- Indicators -->
+				  	<ol class="carousel-indicators">
+				    	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    	<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    	<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  	</ol>
+				
+				  	<!-- Wrapper for slides -->
+				  	<div class="carousel-inner" role="listbox">
+				    	<div class="item active">
+				      		<img src="images/banner.png" alt="">
+				      		<div class="carousel-caption"></div>
+				    	</div>
+					    <div class="item">
+					      	<img src="images/banner.png" alt="">
+					      	<div class="carousel-caption"></div>
+					    </div>
+					    <div class="item">
+					      	<img src="images/banner.png" alt="">
+					      	<div class="carousel-caption"></div>
+					    </div>
+				  	</div>
+				
+				  <!-- Controls -->
+				  	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left"></span>
+					    <span class="sr-only">Previous</span>
+				  	</a>
+				  	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right"></span>
+					    <span class="sr-only">Next</span>
+				  	</a>
+				</div>
+			</div>
+    	</div>
+		<div class="container c_all">
+			<h1 class="about text-center">关于我们</h1>
+			<span class="b_center text-center">COMPANY INTRODUCTION</span>
+			<img src="images/h_bg.png" class="b_center img-responsive" rel="Responsive image" />
+			<p class="indent">
+				2012年至今，红酒坊陆续在上海、苏州、杭州、南京、深圳、宁波、无锡、济南、武汉、
+				厦门等超过30座重点城市建立了城市配送站，为用户提供物流配送、件等服务。2013年，
+				红酒坊在上海等城市率先推出"48限时达"配送服务，在全国实现"售后100分"服务承诺，
+				7×24小时客服电话等专业服务。2013年初，京东商城开创了电子商务行业全新的整体服务标准。
+				红酒坊在为消费者提供正品行货、机打发票、售后服务的同时，还推出了"价格保护"、"延保服务"
+				等举措，京东商城通过不断优化的服务引领网络零售市场，率先为中国电子商务行业树立了诚信经营的标杆。
+			</p>
+		</div>
+		<div class="container-fluid">
+    		<div class="row">
+				<div class="win_ul" style="border-bottom: 1px solid #9E2104;">
+					<ul class="nav nav-tabs" role="tablist" id="myTab">
+  						<li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">新品推荐</a></li>
+  						<li role="presentation"><a href="#profile" role="tab" data-toggle="tab">最新上架</a></li>
+  						<li role="presentation"><a href="#messages" role="tab" data-toggle="tab">热门排行</a></li>
+					</ul>
+				</div>
+				
+    		</div>
+    	</div>
+    	<div class="container">
+			<div class="tab-content">
+			  	<div role="tabpanel" class="tab-pane active" id="home">
+			  		<div class="row">
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_01.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_02.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_03.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_04.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  		</div>
+			  		<div class="row">
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_05.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_06.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_07.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_08.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<div role="tabpanel" class="tab-pane" id="profile">
+			  		<div class="row">
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_01.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_02.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_03.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_04.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<div role="tabpanel" class="tab-pane" id="messages">
+			  		<div class="row">
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_05.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_06.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_07.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+			  				<a href="javascript:viod(0)">
+				  				<div class="thumbnail">
+				  					<img src="images/jiu_08.png"/>
+				  					<div class="caption th_li">
+				  						<h3>美国绿雾黑莓梅洛半甜果味红</h3>
+				  						<p>
+				  							<b>¥&nbsp;298</b>
+				  							<span class="priceno">市场价：¥498</span>
+				  							<span class="heart-e"></span>
+				  						</p>
+				  					</div>
+				  				</div>
+			  				</a>
+			  			</div>
+			  		</div>
+			  	</div>
+			</div>
+		</div>
+		<div class="container c_all">
+			<h1 class="text-center">酒品沉淀</h1>
+			<span class="b_center text-center">THE CULTURE OF WINE</span>
+			<p class="text-center">优美的开瓶动作是一种艺术，在国外，酒侍开葡萄酒是一种专业的表演，他的专业演出服及服务可以决定他的收入。</p>
+		</div>
+		<div class="lunbo">
+			<div class="container">
+				<div class="row">
+					<div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+					  	
+					  	<div class="carousel-inner" role="listbox">
+					    	<div class="item hol active">
+					      		<ul>
+						      		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						      			<div class="team">
+						      				<div class="team_l">
+						      					<p class="d_m"><span class="day">20</span>/sep</p>
+						      					<p class="text-right year">2014</p>
+						      					<span class="talk">+9</span>
+						      					<span class="icon-eye"></span>
+						      					<p class="e_num">1900</p>
+						      				</div>
+						      				<div class="team_r">
+						      					<a href="#">
+						      						<img src="images/li_a.png"/>
+						      					</a>
+						      				</div>
+						      			</div>
+						      			<a class="te_biao" href="#"><h5>拉菲罗斯柴尔葡萄酒</h5></a>
+						      			<p class="team_txt">新年将至，红酒成为最应景的礼物。近日，拉菲罗斯柴尔德集团DBR携同......</p>
+						      		</li>
+						      		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						      			<div class="team">
+						      				<div class="team_l">
+						      					<p class="d_m"><span class="day">20</span>/sep</p>
+						      					<p class="text-right year">2014</p>
+						      					<span class="talk">+9</span>
+						      					<span class="icon-eye"></span>
+						      					<p class="e_num">1900</p>
+						      				</div>
+						      				<div class="team_r">
+						      					<a href="#">
+						      						<img src="images/li_b.png"/>
+						      					</a>
+						      				</div>
+						      			</div>
+						      			<a class="te_biao" href="#"><h5>拉菲罗斯柴尔葡萄酒</h5></a>
+						      			<p class="team_txt">新年将至，红酒成为最应景的礼物。近日，拉菲罗斯柴尔德集团DBR携同......</p>
+						      		</li>
+						      		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						      			<div class="team">
+						      				<div class="team_l">
+						      					<p class="d_m"><span class="day">20</span>/sep</p>
+						      					<p class="text-right year">2014</p>
+						      					<span class="talk">+9</span>
+						      					<span class="icon-eye"></span>
+						      					<p class="e_num">1900</p>
+						      				</div>
+						      				<div class="team_r">
+						      					<a href="#">
+						      						<img src="images/li_c.png"/>
+						      					</a>
+						      				</div>
+						      			</div>
+						      			<a class="te_biao" href="#"><h5>拉菲罗斯柴尔葡萄酒</h5></a>
+						      			<p class="team_txt">新年将至，红酒成为最应景的礼物。近日，拉菲罗斯柴尔德集团DBR携同......</p>
+						      		</li>
+						      	</ul>
+					    	</div>
+						    <div class="item hol">
+						      	<ul>
+						      		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						      			<div class="team">
+						      				<div class="team_l">
+						      					<p class="d_m"><span class="day">20</span>/sep</p>
+						      					<p class="text-right year">2014</p>
+						      					<span class="talk">+9</span>
+						      					<span class="icon-eye"></span>
+						      					<p class="e_num">1900</p>
+						      				</div>
+						      				<div class="team_r">
+						      					<a href="#">
+						      						<img src="images/li_a.png"/>
+						      					</a>
+						      				</div>
+						      			</div>
+						      			<a class="te_biao" href="#"><h5>拉菲罗斯柴尔葡萄酒</h5></a>
+						      			<p class="team_txt">新年将至，红酒成为最应景的礼物。近日，拉菲罗斯柴尔德集团DBR携同......</p>
+						      		</li>
+						      		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						      			<div class="team">
+						      				<div class="team_l">
+						      					<p class="d_m"><span class="day">20</span>/sep</p>
+						      					<p class="text-right year">2014</p>
+						      					<span class="talk">+9</span>
+						      					<span class="icon-eye"></span>
+						      					<p class="e_num">1900</p>
+						      				</div>
+						      				<div class="team_r">
+						      					<a href="#">
+						      						<img src="images/li_b.png"/>
+						      					</a>
+						      				</div>
+						      			</div>
+						      			<a class="te_biao" href="#"><h5>拉菲罗斯柴尔葡萄酒</h5></a>
+						      			<p class="team_txt">新年将至，红酒成为最应景的礼物。近日，拉菲罗斯柴尔德集团DBR携同......</p>
+						      		</li>
+						      		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						      			<div class="team">
+						      				<div class="team_l">
+						      					<p class="d_m"><span class="day">20</span>/sep</p>
+						      					<p class="text-right year">2014</p>
+						      					<span class="talk">+9</span>
+						      					<span class="icon-eye"></span>
+						      					<p class="e_num">1900</p>
+						      				</div>
+						      				<div class="team_r">
+						      					<a href="#">
+						      						<img src="images/li_c.png"/>
+						      					</a>
+						      				</div>
+						      			</div>
+						      			<a class="te_biao" href="#"><h5>拉菲罗斯柴尔葡萄酒</h5></a>
+						      			<p class="team_txt">新年将至，红酒成为最应景的礼物。近日，拉菲罗斯柴尔德集团DBR携同......</p>
+						      		</li>
+						      	</ul>
+						    </div>
+						    <div class="item hol">
+						      	<ul>
+						      		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						      			<div class="team">
+						      				<div class="team_l">
+						      					<p class="d_m"><span class="day">20</span>/sep</p>
+						      					<p class="text-right year">2014</p>
+						      					<span class="talk">+9</span>
+						      					<span class="icon-eye"></span>
+						      					<p class="e_num">1900</p>
+						      				</div>
+						      				<div class="team_r">
+						      					<a href="#">
+						      						<img src="images/li_a.png"/>
+						      					</a>
+						      				</div>
+						      			</div>
+						      			<a class="te_biao" href="#"><h5>拉菲罗斯柴尔葡萄酒</h5></a>
+						      			<p class="team_txt">新年将至，红酒成为最应景的礼物。近日，拉菲罗斯柴尔德集团DBR携同......</p>
+						      		</li>
+						      		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						      			<div class="team">
+						      				<div class="team_l">
+						      					<p class="d_m"><span class="day">20</span>/sep</p>
+						      					<p class="text-right year">2014</p>
+						      					<span class="talk">+9</span>
+						      					<span class="icon-eye"></span>
+						      					<p class="e_num">1900</p>
+						      				</div>
+						      				<div class="team_r">
+						      					<a href="#">
+						      						<img src="images/li_b.png"/>
+						      					</a>
+						      				</div>
+						      			</div>
+						      			<a class="te_biao" href="#"><h5>拉菲罗斯柴尔葡萄酒</h5></a>
+						      			<p class="team_txt">新年将至，红酒成为最应景的礼物。近日，拉菲罗斯柴尔德集团DBR携同......</p>
+						      		</li>
+						      		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						      			<div class="team">
+						      				<div class="team_l">
+						      					<p class="d_m"><span class="day">20</span>/sep</p>
+						      					<p class="text-right year">2014</p>
+						      					<span class="talk">+9</span>
+						      					<span class="icon-eye"></span>
+						      					<p class="e_num">1900</p>
+						      				</div>
+						      				<div class="team_r">
+						      					<a href="#">
+						      						<img src="images/li_c.png"/>
+						      					</a>
+						      				</div>
+						      			</div>
+						      			<a class="te_biao" href="#"><h5>拉菲罗斯柴尔葡萄酒</h5></a>
+						      			<p class="team_txt">新年将至，红酒成为最应景的礼物。近日，拉菲罗斯柴尔德集团DBR携同......</p>
+						      		</li>
+						      	</ul>
+						    </div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+			<a id="turn_left" class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
+			    
+		  	</a>
+		  	<a id="turn_right" class="right carousel-control " href="#carousel-example-captions" role="button" data-slide="next">
+			    
+		  	</a>
+		</div>
+		<div class="container c_all">
+			<h1 class="text-center">酒仙会</h1>
+			<span class="b_center text-center">WINE TASTING</span>
+			<p class="text-center">红酒知识是关于通常在餐厅或酒吧服务的饮料学科。作为一门学科，学习和了解饮料变得越来越重要。</p>
+		</div>
+		<div class="container jxh">
+			<div class="row">
+	  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+	  				<div class="thumbnail yuantu">
+	  					<img class="img-circle" src="images/yuanjiao.png"/>
+	  					<h5 class="text-center">欧美红酒品鉴活动</h5>
+	  					<div class="caption bor_li">
+	  						<div class="info">
+	  							<h6>活动时间：</h6>
+		  						<h6>2011.9.10 周六 10:00</h6>
+		  						<h6>报名截止：</h6>
+		  						<h6>2011.9.10 周六 8:00</h6>
+		  						<h6>活动地点：</h6>
+		  						<h6>国贸建外SOHO3号楼2504</h6>
+	  						</div>
+	  						<p>
+	  							新一轮拼课再接再砺，我们还在其它网站有招募广告，所以这里的名额也是有限的，感兴趣的朋友收藏或参加，赶早别赶晚~名额满了就不再招募咯~
+	  						</p>
+	  						<p class="text-right">
+	  							<a href="#" class="btn btn-primary" role="button">MORE+</a>
+	  						</p>
+	  					</div>
+	  				</div>
+	  			</div>
+	  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+	  				<div class="thumbnail yuantu">
+	  					<img class="img-circle" src="images/yuanjiao.png"/>
+	  					<h5 class="text-center">欧美红酒品鉴活动</h5>
+	  					<div class="caption bor_li">
+	  						<div class="info">
+	  							<h6>活动时间：</h6>
+		  						<h6>2011.9.10 周六 10:00</h6>
+		  						<h6>报名截止：</h6>
+		  						<h6>2011.9.10 周六 8:00</h6>
+		  						<h6>活动地点：</h6>
+		  						<h6>国贸建外SOHO3号楼2504</h6>
+	  						</div>
+	  						<p>
+	  							新一轮拼课再接再砺，我们还在其它网站有招募广告，所以这里的名额也是有限的，感兴趣的朋友收藏或参加，赶早别赶晚~名额满了就不再招募咯~
+	  						</p>
+	  						<p class="text-right">
+	  							<a href="#" class="btn btn-primary" role="button">MORE+</a>
+	  						</p>
+	  					</div>
+	  				</div>
+	  			</div>
+	  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+	  				<div class="thumbnail yuantu">
+	  					<img class="img-circle" src="images/yuanjiao.png"/>
+	  					<h5 class="text-center">欧美红酒品鉴活动</h5>
+	  					<div class="caption bor_li">
+	  						<div class="info">
+	  							<h6>活动时间：</h6>
+		  						<h6>2011.9.10 周六 10:00</h6>
+		  						<h6>报名截止：</h6>
+		  						<h6>2011.9.10 周六 8:00</h6>
+		  						<h6>活动地点：</h6>
+		  						<h6>国贸建外SOHO3号楼2504</h6>
+	  						</div>
+	  						<p>
+	  							新一轮拼课再接再砺，我们还在其它网站有招募广告，所以这里的名额也是有限的，感兴趣的朋友收藏或参加，赶早别赶晚~名额满了就不再招募咯~
+	  						</p>
+	  						<p class="text-right">
+	  							<a href="#" class="btn btn-primary" role="button">MORE+</a>
+	  						</p>
+	  					</div>
+	  				</div>
+	  			</div>
+	  			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+	  				<div class="thumbnail yuantu">
+	  					<img class="img-circle" src="images/yuanjiao.png"/>
+	  					<h5 class="text-center">欧美红酒品鉴活动</h5>
+	  					<div class="caption bor_li">
+	  						<div class="info">
+	  							<h6>活动时间：</h6>
+		  						<h6>2011.9.10 周六 10:00</h6>
+		  						<h6>报名截止：</h6>
+		  						<h6>2011.9.10 周六 8:00</h6>
+		  						<h6>活动地点：</h6>
+		  						<h6>国贸建外SOHO3号楼2504</h6>
+	  						</div>
+	  						<p>
+	  							新一轮拼课再接再砺，我们还在其它网站有招募广告，所以这里的名额也是有限的，感兴趣的朋友收藏或参加，赶早别赶晚~名额满了就不再招募咯~
+	  						</p>
+	  						<p class="text-right">
+	  							<a href="#" class="btn btn-primary" role="button">MORE+</a>
+	  						</p>
+	  					</div>
+	  				</div>
+	  			</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<p class="text-center">Copyright ©2010-2011 www.xxxxxx.com All Rights Reserved 版权所有</p>
+				<p class="text-center foot">
+					<a href="#">关于我们</a>&nbsp;&nbsp;|&nbsp;
+					<a href="#">诚聘英才</a>&nbsp;&nbsp;|&nbsp;
+					<a href="#">版权声明</a>&nbsp;&nbsp;|&nbsp;
+					<a href="#">免责条款</a>&nbsp;&nbsp;|&nbsp;
+					<a href="#">西安红酒俱乐部</a>&nbsp;&nbsp;|&nbsp;
+					<a href="#">进口葡萄酒</a>
+				</p>
+				<p class="text-center">陕ICP备10202882号-4</p>
+				<img class="img-responsive img_center" alt="Responsive image" src="images/logo_b.png"/>
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

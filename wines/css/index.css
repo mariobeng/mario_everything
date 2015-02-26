@@ -1,0 +1,325 @@
+body {
+	background-color: #F8F4E5;
+}
+.navbar-top {
+	min-height: 35px;
+	background-color: #26120A;
+}
+span.navbar_l {
+	float: left;
+	line-height: 35px;
+	color: #917062;
+	display: block;
+}
+p.navbar_r {
+	float: right;
+	line-height: 35px;
+	color: #917062;
+	margin-bottom: 0;
+}
+p.navbar_r a {
+	color: #917062;
+	padding-left: 10px;
+}
+p.navbar_r a:hover {
+	text-decoration: none;
+}
+/*nav*/
+.navbar-inverse {
+	background-color: #580B05;
+	border-radius: 0;
+}
+.nav > li {
+	padding: 0 15px;
+}
+.active > a {
+	background-color: #580B05;
+}
+span.b_center {
+	display: block;
+}
+.b_center {
+	margin: 0 auto;
+}
+p.indent {
+	text-indent: 2em;
+	line-height: 25px;
+}
+.win_ul {
+	border-bottom: 1px solid #9E2104;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-tabs > li > a {
+    border-radius: 0;
+    background-color: #CDC8B6;
+    color: #764721;
+}
+.nav-tabs > li > a:hover,.nav-tabs > li > a:focus {
+    background-color: #CDC8B6;
+    color: #764721;
+}
+.nav-tabs > li.active > a {
+    border-radius: 0;
+    background-color: #9E2104;
+    color: #fff;
+}
+.nav-tabs > li.active > a:hover,.nav-tabs > li.active > a:focus {
+    background-color: #9E2104;
+    color: #fff;
+}
+.win_ul ul {
+	width: 320px;
+	margin: 0 auto;
+}
+.win_ul ul li {
+	padding: 0 2px;
+}
+.win_ul ul li a {
+	padding: 6px 20px;
+}
+.thumbnail {
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	background-color: #FDFBF3;
+}
+.th_li {
+	background-color: #EBE6DC;
+}
+.th_li > h3 {
+	font-size: 0.9em;
+	color: #070A08;
+	margin-top: 10px;
+}
+.th_li > p b {
+	color: #5A4F21;
+	font-size: 1.2em;
+}
+span.priceno {
+	font-size: 0.85em;
+	color: #AAA48A;
+	text-decoration: line-through;
+}
+.tab-content {
+	margin-top: 20px;
+}
+span.heart-e {
+	display: block;
+	width: 21px;
+	height: 19px;
+	background: url(../images/heart.png) no-repeat 0 bottom;
+	float: right;
+	margin-top: 5px;
+}
+span.heart-red {
+	display: block;
+	width: 21px;
+	height: 19px;
+	background: url(../images/heart.png) no-repeat 0 center;
+	float: right;
+	margin-top: 5px;
+}
+footer {
+	width: 100%;
+	padding: 50px 0 70px 0;
+	color: #9E8567;
+	background-color: #4A433F;
+}
+.c_all {
+	color: #52514D;
+}
+p.foot a {
+	color: #9E8567;
+}
+p.foot a:hover {
+	color: #9E8567;
+	text-decoration: underline;
+}
+.img_center {
+	display: block;
+	margin: 0 auto;
+}
+.yuantu {
+	background-color: #F8F4E5;
+}
+.yuantu > h5 {
+	font-size: 1.1em;
+	color: #5C4119;
+	font-weight: bold;
+}
+.bor_li {
+	border: 2px solid #C7AF88;
+	border-top: 7px solid #C7AF88;
+}
+.info {
+	border-bottom: 1px solid #E1DDCE;
+}
+.info h6 {
+	font-size: 0.9em;
+	color: #5C4119;
+}
+.bor_li {
+	background-color: #FDFBF3;
+}
+.bor_li p {
+	color: #A39682;
+	margin-top: 8px;
+	font-size: 0.9em;
+	line-height: 22px;
+}
+.bor_li > p > a {
+	background-color: #C7AF88;
+	border-color: #C7AF88;
+}
+.bor_li > p > a:hover,.bor_li > p > a:focus {
+	background-color: #C7AF88;
+	border-color: #C7AF88;
+}
+.jxh {
+	margin-top: 40px;
+}
+.lunbo {
+	height: 314px;
+	width: 100%;
+	background: url(../images/lun_bg.png) no-repeat center top;
+	padding-top: 35px;
+	position: relative;
+}
+
+/*酒品沉淀轮播*/
+.hol {
+	height: 224px;
+	overflow: hidden;
+}
+.hol ul li {
+	float: left;
+}
+.team_l {
+	float: left;
+}
+.team_r {
+	float: left;
+}
+p.d_m {
+	font-size: 0.8em;
+	margin: 0;
+}
+span.day {
+	font-size: 1.3em;
+}
+p.year {
+	font-size: 0.85em;
+	margin: 0 2px 5px 0;
+}
+span.talk {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	background: url(../images/lun_li.png) no-repeat center center #52514D;
+	text-align: center;
+	font-size: 0.7em;
+}
+span.icon-eye {
+	display: block;
+	text-align: right;
+	font-size: 2.2em;
+	color: #BBB7A9;
+	line-height: 0.9em;
+}
+p.e_num {
+	text-align: center;
+	color: #706B5A;
+	font-size: 1em;
+}
+a.te_biao {
+	font-size: 1em;
+	color: #C12C0E;
+}
+a.te_biao h5 {
+	margin-left: 16%;
+}
+p.team_txt {
+	color: #52514D;
+	font-size: 0.85em;
+	margin-left: 16%;
+}
+a#turn_left {
+	position: absolute;
+	left: 5%;
+	top: 0;
+	display: block;
+	background: url(../images/lun_l.png) no-repeat center center;
+}
+a#turn_right {
+	position: absolute;
+	right: 5%;
+	top: 0;
+	display: block;
+	background: url(../images/lun_r.png) no-repeat center center;
+}
+/*酒品沉淀轮播end*/
+
+/*顶部媒体查询*/
+@media (max-width: 980px) {
+	span.navbar_l {
+		line-height: 35px;
+		color: #917062;
+		display: block;
+		float: none;
+	}
+	p.navbar_r {
+		line-height: 25px;
+		color: #917062;
+		margin-bottom: 0;
+		float: none;
+	}
+}
+
+@media (max-width: 334px) {
+	span.navbar_l {
+		line-height: 35px;
+		color: #917062;
+		display: block;
+		float: none;
+	}
+	p.navbar_r {
+		line-height: 25px;
+		color: #917062;
+		margin-bottom: 0;
+		float: none;
+	}
+	p.navbar_r a {
+	    color: #917062;
+	    padding-left: 0;
+	    display: block;
+	}
+}
+
+
+/*顶部媒体查询end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
