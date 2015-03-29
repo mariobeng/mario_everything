@@ -1,0 +1,38 @@
+html{color:#333;background:#FFF;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td
+{
+margin:0;padding:0;
+}
+table
+{
+border-collapse:collapse;
+border-spacing:0;
+}
+fieldset, img
+{
+border:0;
+}
+em, strong
+{
+font-style:normal;
+font-weight:normal;
+}
+li
+{
+list-style:none;
+}
+h1, h2, h3, h4, h5, h6
+{
+font-size:100%;
+font-weight:normal;
+}
+body, input, button, textarea
+{
+font-size:12px;
+font-family:"microsoft yahei", Arial, Helvetica, sans-serif;
+}
+a{ text-decoration:none;outline:none; color: #333;}
+a:hover{ cursor:pointer;}
+th, td{vertical-align: middle;}
+.clear{clear: both;}
+div {overflow: hidden;}
