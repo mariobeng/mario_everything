@@ -1,11 +1,9 @@
-@font-face {
-	font-family:'FZLTXHK';
-	src: url('../fonts/FZLTXHK.TTF');
-}
+
 body{
 	background-color: #fff;
-    font-family: "FZLTXHK";
+    font-family: "microsoft yahei";
     font-weight: normal;
+    position: relative;
 }
 div.header{
 	width: 89.6876%;
@@ -81,53 +79,31 @@ div.content_all{
 }
 
 /*banner-----begin*/
-div.banner{
-	position: relative;
-}
-div.banner ul li{
-	float: left;
-	position: relative;
-}
-div.banner ul li h4{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 50px;
-	line-height: 50px;
+.carousel-caption{
+	left: 0;
+	right: 0;
+	text-align: left;
 	background-color: #000;
-	opacity: 0.5;
+	padding: 7px 0;
+	opacity: 0.6;
+	bottom: 0px;
 }
-div.banner ul li h4 p{
+.carousel-caption h4{
+	padding: 2px 0;
 	color: #fff;
-	left: 3%;
-	position: absolute;
+	font-size: 1.2em;
+	padding-left: 10px;
 }
-#b06 { width: 640px;}
-#b06 .dots {
-	bottom: 15px;
-    position: absolute;
-    right: 0;
-    width: 80px;
+.carousel-indicators{
+	width: 18%;
+	bottom: 7px;
+	margin: 0;
+	left: 82%;
 }
-#b06 .dots li 
-{ 
-	display: inline-block; 
-	width: 10px; 
-	height: 10px; 
-	margin: 0 7px; 
-	text-indent: -999em; 
-	border-radius: 50%; 
-	cursor: pointer;
-	background-color: #958581;
-	-webkit-transition: background .5s, opacity .5s; 
-	-moz-transition: background .5s, opacity .5s; 
-	transition: background .5s, opacity .5s;
+.carousel-indicators li{
+	margin: 1px 3px;
 }
-#b06 .dots li.active 
-{
-	background-color: #fff;
-	opacity: 1;
-}
+
 /*banner-----end*/
 .menu{
 	background-color: #E4E2E2;
@@ -151,6 +127,8 @@ div.banner ul li h4 p{
 }
 .menu ul li a:hover{
 	background-color: #FCFCFC;
+	text-decoration: none;
+	color: #666;
 }
 .menu ul li a img{
 	margin-top: 60px;
@@ -179,12 +157,10 @@ div.banner ul li h4 p{
 	}
 	.menu ul li a h3 {
     	margin-top: 25px;
-    	font-family: "microsoft yahei";
     	font-size: 20px;
 	}
 	div.banner ul li h4 p {
 	    font-size: 14px;
-	    font-family: "microsoft yahei";
 	}
 }
 @media (max-width:320px) {
@@ -216,18 +192,22 @@ div.banner ul li h4 p{
 	.menu ul li a h3 {
     	margin-top: 15px;
     	font-size: 14px;
-    	font-family: "microsoft yahei";
 	}
 	div.banner ul li h4 p {
 	    font-size: 14px;
-	    font-family: "microsoft yahei";
 	}
 }
-
-
+a.return{
+	position: fixed;
+	left: 15px;
+	top: 10px;
+	display: block;
+	width: 15px;
+	height: 22px;
+}
 a.return img{
-	width: 3.9062%;
-	height: 3.6971%;
+	width: 15px;
+	height: 22px;
 }
 
 

@@ -4,34 +4,60 @@
 		<meta charset="utf-8" />
 		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
 		<title>唯简微站-首页</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/unslider.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript"></script>
 	</head>
 	<body>
-		<div class="banner" id="b06">
-			<ul>
-				<li>
-					<img class="sliderimg" src="img/banner01.png" width="100%" />
-					<h4>
-						<p>海量数据，多维分析</p>
-					</h4>
-				</li>
-				<li>
-					<img class="sliderimg" src="img/banner01.png" width="100%" />
-					<h4>
-						<p>海量数据，多维分析</p>
-					</h4>
-				</li>
-				<li>
-					<img class="sliderimg" src="img/banner01.png" width="100%" />
-					<h4>
-						<p>海量数据，多维分析</p>
-					</h4>
-				</li>
-			</ul>
+		<!--<div id="slideshow" class="touchcarousel three-d">
+			<div class="touchcarousel-container">
+    			<a href="javascript:;" class="touchcarousel-item">
+    				<h4>手机扫描物联码，快速查溯源</h4>
+    				<img src="img/banner01.jpg" />
+    			</a>
+        		<a href="javascript:;" class="touchcarousel-item">
+        			<h4>高科技术精准写入物联码</h4>
+        			<img src="img/lunbo02.JPG" />
+        		</a>
+        		<a href="javascript:;" class="touchcarousel-item">
+        			<h4>海量数据，多维分析</h4>
+        			<img src="img/lunbo03.JPG" />
+        		</a>
+  			</div>
+		</div>-->
+		
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+		  	<ol class="carousel-indicators">
+		    	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    	<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    	<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  	</ol>
+		  	<!-- Wrapper for slides -->
+		  	<div class="carousel-inner" role="listbox">
+		    	<div class="item active">
+		      		<img class="img-responsive" src="img/banner01.jpg" alt="">
+		      		<div class="carousel-caption">
+		      			<h4>手机扫描物联码，快速查溯源</h4>
+		      		</div>
+		    	</div>
+			    <div class="item">
+			      	<img class="img-responsive" src="img/lunbo02.JPG" alt="">
+			      	<div class="carousel-caption">
+			      		<h4>高科技术精准写入物联码</h4>
+			      	</div>
+			    </div>
+			    <div class="item">
+			      	<img class="img-responsive" src="img/lunbo03.JPG" alt="">
+			      	<div class="carousel-caption">
+			      		<h4>海量数据，多维分析</h4>
+			      	</div>
+			    </div>
+		  	</div>
 		</div>
 		<div class="menu">
 			<ul>
