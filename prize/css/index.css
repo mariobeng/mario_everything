@@ -69,7 +69,24 @@ div.info h1{
 	text-align: center;
 	font-size: 2em;
 }
-
+div.goweb_btn{
+	width: 100%;
+	height: 32px;
+	position: absolute;
+	left: 0;
+	top: 350px;
+}
+a.goweb{
+	display: block;
+	width: 111px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	color: #fff;
+	background-color: #B50614;
+	margin: 0 auto;
+	border-radius: 8px;
+}
 @media (max-width:640px) {
 	a.pri_btn{
 		bottom: 120px;
@@ -89,6 +106,12 @@ div.info h1{
 	div.num{
 	    top: 150px;
 	}
+	div.info{
+		top: 150px;
+	}
+	div.goweb_btn{
+		top: 530px;
+	}
 }
 @media (max-width:414px) {
 	a.pri_btn{
@@ -102,6 +125,9 @@ div.info h1{
 	div.info{
 		top: 130px;
 	}
+	div.goweb_btn{
+		top: 460px;
+	}
 }
 @media (max-width:375px) {
 	a.pri_btn{
@@ -112,6 +138,14 @@ div.info h1{
 	div.info{
 		top: 110px;
 	}
+	div.goweb_btn{
+		top: 415px;
+	}
+}
+@media (max-width:360px) {
+	div.goweb_btn{
+		top: 395px;
+	}
 }
 @media (max-width:320px) {
 	a.pri_btn{
@@ -121,6 +155,12 @@ div.info h1{
 	}
 	div.num{
 	    top: 90px;
+	}
+	div.info{
+		top: 90px;
+	}
+	div.goweb_btn{
+		top: 350px;
 	}
 }
 
