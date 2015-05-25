@@ -18,8 +18,8 @@
 			$(function(){
 	  			$("#nav_btn").click(function(){
 	  				$("#nav_btn").hide();
-	  				$(".xinxi").removeClass('xin_no').addClass("xinmate");
-	  				$(".savetel").removeClass('save_no').addClass("savemate");
+	  				$(".xinxi").show().removeClass('xin_no').addClass("xinmate");
+	  				$(".savetel").show().removeClass('save_no').addClass("savemate");
 	  			})
 
 	  			$("a.add").click(function(){
@@ -36,8 +36,8 @@
 
 	  			$("a.hideinfo").click(function(){
 	  				$("#nav_btn").show();
-	  				$(".xinxi").removeClass("xinmate").addClass("xin_no");
-	  				$(".savetel").removeClass("savemate").addClass("save_no");
+	  				$(".xinxi").fadeOut(1000).removeClass("xinmate").addClass("xin_no");
+	  				$(".savetel").fadeOut(1000).removeClass("savemate").addClass("save_no");
 	  			})
 
 			})
