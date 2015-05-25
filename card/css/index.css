@@ -14,7 +14,7 @@ img#nav_btn {
   display: block;
   width: 45px;
   height: 45px;
-  left: 12px;
+  right: 12px;
   bottom: 12px;
 }
 img.img-responsive {
@@ -22,10 +22,10 @@ img.img-responsive {
     height: auto;
     max-width: 100%;
 }
-img.photo{
+div.photo{
 	display: block;
-	width: 76%;
-	height: 90.1799%;
+	width: 66.7187%;
+	height: 78%;
 	position: absolute;
 	left: -40%;
 	bottom:0;
@@ -53,16 +53,16 @@ img.photo{
   		opacity: 1;
 	}
 }
-img.info{
+div.info{
 	display: block;
 	position: absolute;
 	right: -20%;
-	width: 46.2666%;
+	width: 45.625%;
 	opacity: 0;
 }
-img.name{
-	height: 3.5232%;
-	top: 22.7886%;
+div.name{
+	height: 4.0674%;
+	top: 34.94%;
 	right: -10%;
 	-webkit-animation: name 1s 1s forwards;
     animation: name 1s 1s forwards;
@@ -87,9 +87,9 @@ img.name{
   		opacity: 1;
 	}
 }
-img.job{
-	height: 4.4227%;
-	top: 26.3868%;
+div.job{
+	height: 5.3571%;
+	top: 39%;
 	-webkit-animation: job .8s 1.5s forwards;
     animation: job .8s 1.5s forwards;
 }
@@ -115,10 +115,10 @@ img.job{
 }
 div.xinxi{
 	width: 100%;
-	height: 58.6206%;
+	height: 50%;
 	position: absolute;
 	left: 0;
-	bottom: -58.6206%;
+	bottom: -50%;
 }
 img.xinxi{
 	display: block;
@@ -131,7 +131,7 @@ div.xinmate{
 }
 @-webkit-keyframes xinmate {
 	0% {
-  		bottom: -58.6206%;
+  		bottom: -50%;
 	}
 	100% {
   		bottom: 0;
@@ -139,7 +139,7 @@ div.xinmate{
 }
 @keyframes xinmate {
 	0% {
-  		bottom: -58.6206%;
+  		bottom: -50%;
 	}
 	100% {
   		bottom: 0;
@@ -154,7 +154,7 @@ div.xin_no{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -58.6206%;
+  		bottom: -50%;
 	}
 }
 @keyframes xin_no {
@@ -162,22 +162,17 @@ div.xin_no{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -58.6206%;
+  		bottom: -50%;
 	}
 }
 
 a.savetel{
 	display: block;
 	width: 100%;
-	height: 8.6206%;
+	height: 8.7%;
 	position: absolute;
-	bottom: -8.6206%;
+	bottom: -8.7%;
 	left: 0;
-}
-a.savetel img{
-	display: block;
-	width: 100%;
-	height: 100%;
 }
 a.savemate{
 	-webkit-animation: savemate .5s 1s forwards;
@@ -185,7 +180,7 @@ a.savemate{
 }
 @-webkit-keyframes savemate {
 	0% {
-  		bottom: -8.6206%;
+  		bottom: -8.7%;
 	}
 	100% {
   		bottom: 0;
@@ -193,7 +188,7 @@ a.savemate{
 }
 @keyframes savemate {
 	0% {
-  		bottom: -8.6206%;
+  		bottom: -8.7%;
 	}
 	100% {
   		bottom: 0;
@@ -208,7 +203,7 @@ a.save_no{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -8.6206%;
+  		bottom: -8.7%;
 	}
 }
 @keyframes save_no {
@@ -216,15 +211,15 @@ a.save_no{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -8.6206%;
+  		bottom: -8.7%;
 	}
 }
 a.weizhan, a.video{
 	display: block;
 	position: absolute;
 	width: 18.6666%;
-	height: 26.2148%;
-	top: 54.5%;
+	height: 21%;
+	top: 58.5%;
 }
 a.weizhan{
 	left:24%;
@@ -237,38 +232,27 @@ a.add{
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	right: 4%;
-	top: 32%;
+	right: 3%;
+	top: 35%;
 }
 a.hideinfo{
 	display: block;
 	width: 100%;
-	height: 41.3794%;
+	height: 50%;
 	position: absolute;
 	left: 0;
 	top: 0;
 }
 img.erweima{
-	width: 100%;
-	height: 100%;
+	/* width: 100%;
+	height: 100%; */
+	max-width: 100%;
+	height: auto;
 	position: absolute;
 	left: 0;
 	top: 0;
 	z-index: 10;
 	display: none;
 }
-/* div.erweima img{
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-a.return{
-	display: block;
-	width: 84.2666%;
-	height: 7.1964%;
-	position: absolute;
-	left: 7.7%;
-	bottom: 6.3%;
-} */
 
 
