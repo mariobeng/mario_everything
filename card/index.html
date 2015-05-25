@@ -27,11 +27,11 @@
 	  					alert("请使用微信扫码进入!");
 	  					return false;
 	  				}else{
-	  					$("div.erweima").fadeIn(1000);
+	  					$("img.erweima").fadeIn(1000);
 	  				};
 	  			})
-	  			$("a.return").click(function(){
-	  				$("div.erweima").fadeOut(1000);
+	  			$("img.erweima").click(function(){
+	  				$("img.erweima").fadeOut(1000);
 	  			})
 
 	  			$("a.hideinfo").click(function(){
@@ -59,9 +59,9 @@
 		<a class="savetel" href="#">
 			<img src="img/savetel.png" alt="">
 		</a>
-		<div class="erweima">
-			<img src="img/erweima.png">
+		<img class="erweima" src="img/erweima.png">
+		<!-- <div class="erweima">
 			<a href="#" class="return"></a>
-		</div>
+		</div> -->
 	</body>
 </html>

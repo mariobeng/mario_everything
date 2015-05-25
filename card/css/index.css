@@ -248,7 +248,7 @@ a.hideinfo{
 	left: 0;
 	top: 0;
 }
-div.erweima{
+img.erweima{
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -257,7 +257,7 @@ div.erweima{
 	z-index: 10;
 	display: none;
 }
-div.erweima img{
+/* div.erweima img{
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -269,6 +269,6 @@ a.return{
 	position: absolute;
 	left: 7.7%;
 	bottom: 6.3%;
-}
+} */
 
 
