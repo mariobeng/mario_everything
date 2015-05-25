@@ -168,12 +168,12 @@ div.xin_no{
 }
 
 a.savetel{
-	display: none;
 	width: 100%;
-	height: 9.7222%;
+	height: 17.2231%;
 	position: absolute;
-	bottom: -9.7222%;
+	bottom: 0;
 	left: 0;
+	opacity: 0;
 }
 a.savemate{
 	-webkit-animation: savemate .5s 1s forwards;
@@ -181,40 +181,21 @@ a.savemate{
 }
 @-webkit-keyframes savemate {
 	0% {
-  		bottom: -9.7222%;
+  		opacity: 0;
 	}
 	100% {
-  		bottom: 0;
+  		opacity: 1;
 	}
 }
 @keyframes savemate {
 	0% {
-  		bottom: -9.7222%;
+  		opacity: 0;
 	}
 	100% {
-  		bottom: 0;
+  		opacity: 1;
 	}
 }
-a.save_no{
-	-webkit-animation: save_no 1s 0s forwards;
-	animation: save_no 1s 0s forwards;
-}
-@-webkit-keyframes save_no {
-	0% {
-  		bottom: 0;
-	}
-	100% {
-  		bottom: -8.7%;
-	}
-}
-@keyframes save_no {
-	0% {
-  		bottom: 0;
-	}
-	100% {
-  		bottom: -8.7%;
-	}
-}
+
 a.weizhan, a.video{
 	display: block;
 	position: absolute;
