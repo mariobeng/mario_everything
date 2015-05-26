@@ -15,17 +15,14 @@
 	      			return true;
     			}
   			}
-  			//隐藏微信浏览器底部导航条
-  			document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-				WeixinJSBridge.call('hideToolbar');
-			});
 
 			$(function(){
+				//弹框
 	  			$("#nav_btn").click(function(){
 	  				$("#nav_btn").hide();
 	  				$(".xinxi").show().removeClass('xin_no').addClass("xinmate");
-	  				$(".savetel").addClass("savemate");
 	  			})
+	  			//添加微信
 	  			$("a.add").click(function(){
 	  				if (!isWeiXin()) {
 	  					alert("请使用微信扫码进入!");
@@ -37,6 +34,19 @@
 	  			$("img.erweima").click(function(){
 	  				$("img.erweima").fadeOut(1000);
 	  			})
+	  			//添加到通讯录
+	  			$("a.savetel").click(function(){
+	  				if (!isWeiXin()) {
+	  					alert("请使用微信扫码进入!");
+	  					return false;
+	  				}else{
+	  					$("img.mecard").fadeIn(1000);
+	  				};
+	  			})
+	  			$("img.mecard").click(function(){
+	  				$("img.mecard").fadeOut(1000);
+	  			})
+	  			//弹框消失
 	  			$("a.hideinfo").click(function(){
 	  				$("#nav_btn").show();
 	  				$(".xinxi").fadeOut(1000).removeClass("xinmate").addClass("xin_no");
@@ -59,9 +69,10 @@
 				<a href="http://c10000.2wm.cn/site/" class="weizhan"></a>
 				<a href="https://vimeo.com/128457173" class="video"></a>
 				<a href="#" class="add"></a>
-				<a class="savetel" href="yanhe.vcf"></a>
+				<a class="savetel" href="#"></a>
 			</div>
 			<img class="erweima" src="img/erweima.png">
+			<img class="mecard" src="img/mecard.png">
 		</div>
 	</body>
 </html>

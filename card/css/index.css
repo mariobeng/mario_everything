@@ -109,7 +109,7 @@ div.xinmate{
   		bottom: -49.5%;
 	}
 	100% {
-  		bottom: 7%;
+  		bottom: 4%;
 	}
 }
 @keyframes xinmate {
@@ -117,7 +117,7 @@ div.xinmate{
   		bottom: -49.5%;
 	}
 	100% {
-  		bottom: 7%;
+  		bottom: 4%;
 	}
 }
 div.xin_no{
@@ -126,7 +126,7 @@ div.xin_no{
 }
 @-webkit-keyframes xin_no {
 	0% {
-  		bottom: 7%;
+  		bottom: 4%;
 	}
 	100% {
   		bottom: -49.5%;
@@ -134,7 +134,7 @@ div.xin_no{
 }
 @keyframes xin_no {
 	0% {
-  		bottom: 7%;
+  		bottom: 4%;
 	}
 	100% {
   		bottom: -49.5%;
@@ -144,32 +144,11 @@ div.xin_no{
 a.savetel{
 	width: 100%;
 	height: 8%;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	left: 0;
 	opacity: 0;
 }
-a.savemate{
-	-webkit-animation: savemate .5s 1s forwards;
-	animation: savemate .5s 1s forwards;
-}
-@-webkit-keyframes savemate {
-	0% {
-  		opacity: 0;
-	}
-	100% {
-  		opacity: 1;
-	}
-}
-@keyframes savemate {
-	0% {
-  		opacity: 0;
-	}
-	100% {
-  		opacity: 1;
-	}
-}
-
 a.weizhan, a.video{
 	display: block;
 	position: absolute;
@@ -200,8 +179,15 @@ a.hideinfo{
 	top: 0;
 }
 img.erweima{
-	/* width: 100%;
-	height: 100%; */
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+}
+img.mecard{
 	max-width: 100%;
 	height: auto;
 	position: absolute;
