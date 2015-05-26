@@ -6,7 +6,8 @@ body{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background-color: #E5E6EB;
+	background: url(../img/bg.jpg) no-repeat center #E5E6EB;
+	background-size: cover;
 	position: relative;
 }
 img#nav_btn {
@@ -33,6 +34,17 @@ div.photo{
 	-webkit-animation: photo 1s 0s forwards;
     animation: photo 1s 0s forwards;
 }
+/* img.photo{
+	display: block;
+	width: 66.7187%;
+	height: 88.3928%;
+	position: absolute;
+	left: -40%;
+	bottom:0;
+	opacity: 0;
+	-webkit-animation: photo 1s 0s forwards;
+    animation: photo 1s 0s forwards;
+} */
 @-webkit-keyframes photo {
 	0% {
   		left: -40%;
