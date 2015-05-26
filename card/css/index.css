@@ -109,7 +109,7 @@ div.xinmate{
   		bottom: -49.5%;
 	}
 	100% {
-  		bottom: 10%;
+  		bottom: 7%;
 	}
 }
 @keyframes xinmate {
@@ -117,7 +117,7 @@ div.xinmate{
   		bottom: -49.5%;
 	}
 	100% {
-  		bottom: 10%;
+  		bottom: 7%;
 	}
 }
 div.xin_no{
@@ -126,7 +126,7 @@ div.xin_no{
 }
 @-webkit-keyframes xin_no {
 	0% {
-  		bottom: 10%;
+  		bottom: 7%;
 	}
 	100% {
   		bottom: -49.5%;
@@ -134,7 +134,7 @@ div.xin_no{
 }
 @keyframes xin_no {
 	0% {
-  		bottom: 10%;
+  		bottom: 7%;
 	}
 	100% {
   		bottom: -49.5%;
