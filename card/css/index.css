@@ -1,3 +1,4 @@
+
 html{
 	width: 100%;
 	height: 100%;
@@ -6,9 +7,12 @@ body{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background: url(../img/bg.jpg) no-repeat center #E5E6EB;
-	background-size: 100% 100%;
-	position: relative;
+}
+div.main{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.jpg) no-repeat center;
+	background-size: cover;
 }
 img#nav_btn {
   position: absolute;
@@ -23,39 +27,6 @@ img.img-responsive {
     height: auto;
     max-width: 100%;
 }
-div.photo{
-	display: block;
-	width: 66.7187%;
-	height: 88.3928%;
-	position: absolute;
-	left: -40%;
-	bottom:0;
-	opacity: 0;
-	background: url(../img/photo.png) no-repeat center;
-	background-size: auto 100%;
-	-webkit-animation: photo 1s 0s forwards;
-    animation: photo 1s 0s forwards;
-}
-@-webkit-keyframes photo {
-	0% {
-  		left: -40%;
-  		opacity: 0;
-	}
-	100% {
-  		left: 0;
-  		opacity: 1;
-	}
-}
-@keyframes photo {
-	0% {
-  		left: -40%;
-  		opacity: 0;
-	}
-	100% {
-  		left: 0;
-  		opacity: 1;
-	}
-}
 div.info{
 	display: block;
 	position: absolute;
@@ -67,8 +38,8 @@ div.name{
 	height: 4.0674%;
 	top: 25%;
 	right: -10%;
-	-webkit-animation: name 1s 1s forwards;
-    animation: name 1s 1s forwards;
+	-webkit-animation: name 1s 0s forwards;
+    animation: name 1s 0s forwards;
 }
 @-webkit-keyframes name {
 	0% {
@@ -93,8 +64,8 @@ div.name{
 div.job{
 	height: 5.3571%;
 	top: 29.1%;
-	-webkit-animation: job .8s 1.5s forwards;
-    animation: job .8s 1.5s forwards;
+	-webkit-animation: job .8s .5s forwards;
+    animation: job .8s .5s forwards;
 }
 @-webkit-keyframes job {
 	0% {
@@ -118,13 +89,16 @@ div.job{
 }
 div.xinxi{
 	width: 100%;
-	height: 56.4484%;
+	height: 49.5%;
 	position: absolute;
 	left: 0;
-	bottom: -56.4484%;
+	bottom: -49.5%;
 	display: none;
-	background: url(../img/xinxi.png) no-repeat center bottom;
-	background-size: 100% auto;
+}
+img.xinxi{
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 div.xinmate{
 	-webkit-animation: xinmate 1s 0s forwards;
@@ -132,7 +106,7 @@ div.xinmate{
 }
 @-webkit-keyframes xinmate {
 	0% {
-  		bottom: -56.4484%;
+  		bottom: -49.5%;
 	}
 	100% {
   		bottom: 0;
@@ -140,7 +114,7 @@ div.xinmate{
 }
 @keyframes xinmate {
 	0% {
-  		bottom: -56.4484%;
+  		bottom: -49.5%;
 	}
 	100% {
   		bottom: 0;
@@ -155,7 +129,7 @@ div.xin_no{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -56.4484%;
+  		bottom: -49.5%;
 	}
 }
 @keyframes xin_no {
@@ -163,20 +137,17 @@ div.xin_no{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -56.4484%;
+  		bottom: -49.5%;
 	}
 }
 
 a.savetel{
 	width: 100%;
-	height: 17.2231%;
-	position: absolute;
+	height: 8%;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	opacity: 0;
-	display: block;
-	background: url(../img/savetel.png) no-repeat center bottom;
-	background-size: 100% auto;
 }
 a.savemate{
 	-webkit-animation: savemate .5s 1s forwards;
@@ -203,8 +174,8 @@ a.weizhan, a.video{
 	display: block;
 	position: absolute;
 	width: 18.6666%;
-	height: 18%;
-	bottom: 19%;
+	height: 21%;
+	top: 58%;
 }
 a.weizhan{
 	left:24%;
@@ -218,25 +189,24 @@ a.add{
 	width: 20px;
 	height: 20px;
 	right: 4%;
-	top: 42%;
+	top: 35%;
 }
 a.hideinfo{
 	display: block;
 	width: 100%;
-	height: 50%;
+	height: 50.5%;
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: 10;
 }
 img.erweima{
+	/* width: 100%;
+	height: 100%; */
 	max-width: 100%;
 	height: auto;
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: 20;
+	z-index: 10;
 	display: none;
 }
-
-
