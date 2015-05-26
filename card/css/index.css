@@ -143,9 +143,9 @@ div.xin_no{
 
 a.savetel{
 	width: 100%;
-	height: 16%;
+	height: 20%;
 	position: absolute;
-	bottom: -25%;
+	bottom: -20%;
 	left: 0;
 	opacity: 0;
 }
