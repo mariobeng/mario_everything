@@ -7,7 +7,7 @@ body{
 	height: 100%;
 	overflow: hidden;
 	background: url(../img/bg.jpg) no-repeat center #E5E6EB;
-	background-size: cover;
+	background-size: 100% 100%;
 	position: relative;
 }
 img#nav_btn {
@@ -31,20 +31,11 @@ div.photo{
 	left: -40%;
 	bottom:0;
 	opacity: 0;
+	background: url(../img/photo.png) no-repeat center;
+	background-size: auto 100%;
 	-webkit-animation: photo 1s 0s forwards;
     animation: photo 1s 0s forwards;
 }
-/* img.photo{
-	display: block;
-	width: 66.7187%;
-	height: 88.3928%;
-	position: absolute;
-	left: -40%;
-	bottom:0;
-	opacity: 0;
-	-webkit-animation: photo 1s 0s forwards;
-    animation: photo 1s 0s forwards;
-} */
 @-webkit-keyframes photo {
 	0% {
   		left: -40%;
@@ -132,11 +123,8 @@ div.xinxi{
 	left: 0;
 	bottom: -56.4484%;
 	display: none;
-}
-img.xinxi{
-	display: block;
-	width: 100%;
-	height: 100%;
+	background: url(../img/xinxi.png) no-repeat center bottom;
+	background-size: 100% auto;
 }
 div.xinmate{
 	-webkit-animation: xinmate 1s 0s forwards;
@@ -186,6 +174,9 @@ a.savetel{
 	bottom: 0;
 	left: 0;
 	opacity: 0;
+	display: block;
+	background: url(../img/savetel.png) no-repeat center bottom;
+	background-size: 100% auto;
 }
 a.savemate{
 	-webkit-animation: savemate .5s 1s forwards;
@@ -212,8 +203,8 @@ a.weizhan, a.video{
 	display: block;
 	position: absolute;
 	width: 18.6666%;
-	height: 21%;
-	top: 58.5%;
+	height: 18%;
+	bottom: 19%;
 }
 a.weizhan{
 	left:24%;
@@ -226,26 +217,25 @@ a.add{
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	right: 3%;
-	top: 35%;
+	right: 4%;
+	top: 42%;
 }
 a.hideinfo{
 	display: block;
 	width: 100%;
-	height: 43.5516%;
+	height: 50%;
 	position: absolute;
 	left: 0;
 	top: 0;
+	z-index: 10;
 }
 img.erweima{
-	/* width: 100%;
-	height: 100%; */
 	max-width: 100%;
 	height: auto;
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: 10;
+	z-index: 20;
 	display: none;
 }
 
