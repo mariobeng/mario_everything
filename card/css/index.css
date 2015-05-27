@@ -89,35 +89,88 @@ div.job{
 }
 div.xinxi{
 	width: 100%;
-	height: 49.5%;
 	position: absolute;
 	left: 0;
-	bottom: -49.5%;
+	bottom: 0;
 	display: none;
+	background: url(../img/xinxi_bg.png) repeat left top;
+	z-index: 10;
 }
-img.xinxi{
+div.xin_up{
+	padding: 2% 2% 28% 2%;
+}
+img.up_img{
+	width: 7.3437%;
+	height: 3.1634%;
 	display: block;
-	width: 100%;
-	height: 100%;
+	margin: 0 auto;
 }
+
+div.xinxi p{
+	font-size: 1.3em;
+	line-height: 2em;
+	text-align: left;
+	width: 92%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding-left: 3%;
+}
+p.weixin a{
+	float: right;
+	font-size: 2em;
+	font-weight: bold;
+}
+div.datu{
+	width: 90%;
+	margin: 2% auto 0;
+}
+div.datu a {
+  display: block;
+  width: 21%;
+  float: left;
+}
+div.datu a img{
+	display: block;
+	width:100%;
+}
+div.datu a p{
+	text-align: center;
+	font-size: 1.1em;
+}
+a.weizhan{
+	margin-left: 21%;
+}
+a.video{
+	margin-left: 10%;
+}
+a.savetel{
+	display: block;
+	background-color: #E9EAED;
+	padding: 3% 0;
+	text-align: center;
+	border-top: 2px solid #C8C8C8;
+	font-size: 1.2em;
+}
+
 div.xinmate{
 	-webkit-animation: xinmate 1s 0s forwards;
     animation: xinmate 1s 0s forwards;
 }
 @-webkit-keyframes xinmate {
 	0% {
-  		bottom: -49.5%;
+  		bottom: -285px;
 	}
 	100% {
-  		bottom: 4%;
+  		bottom: 0;
 	}
 }
 @keyframes xinmate {
 	0% {
-  		bottom: -49.5%;
+  		bottom: -285px;
 	}
 	100% {
-  		bottom: 4%;
+  		bottom: 0;
 	}
 }
 div.xin_no{
@@ -126,54 +179,25 @@ div.xin_no{
 }
 @-webkit-keyframes xin_no {
 	0% {
-  		bottom: 4%;
+  		bottom: 0;
 	}
 	100% {
-  		bottom: -49.5%;
+  		bottom: -285px;
 	}
 }
 @keyframes xin_no {
 	0% {
-  		bottom: 4%;
+  		bottom: 0;
 	}
 	100% {
-  		bottom: -49.5%;
+  		bottom: -285px;
 	}
 }
 
-a.savetel{
-	width: 100%;
-	height: 20%;
-	position: absolute;
-	bottom: -20%;
-	left: 0;
-	opacity: 0;
-}
-a.weizhan, a.video{
-	display: block;
-	position: absolute;
-	width: 18.6666%;
-	height: 21%;
-	top: 63%;
-}
-a.weizhan{
-	left:24%;
-}
-a.video{
-	left: 57.5%;
-}
-a.add{
-	display: block;
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	right: 4%;
-	top: 40%;
-}
 a.hideinfo{
 	display: block;
 	width: 100%;
-	height: 50.5%;
+	height: 55%;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -195,4 +219,13 @@ img.mecard{
 	top: 0;
 	z-index: 10;
 	display: none;
+}
+
+@media screen and (max-width: 320px){
+	div.datu a p{
+		font-size: 0.9em;
+	}
+	div.xinxi p{
+		font-size: 1.1em;
+	}
 }
