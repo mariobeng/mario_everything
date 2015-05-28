@@ -1,0 +1,72 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: auto;
+}
+img.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+div.main{
+	width: 100%;
+	height: 100%;
+	background: url(../img/welcome.jpg) no-repeat center;
+	background-size: cover;
+}
+div.main_bg{
+	width: 100%;
+	height: 100%;
+	background: url(../img/index.jpg) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+div.menu{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+div.menu ul li{
+	float: left;
+	width: 29.2187%;
+	margin: 0 0 3.0859% 3.0859%;
+}
+div.menu ul li a{
+	width: 100%;
+}
+div.menu ul li a img{
+	width: 100%;
+}
+a.back {
+  display: block;
+  height: 30px;
+  left: 15px;
+  position: fixed;
+  top: 15px;
+  width: 30px;
+}
+a.back img {
+  height: 30px;
+  width: 30px;
+}
+img.erweima{
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+}
+
+
+
+
+
+
+
+
