@@ -28,11 +28,11 @@
 	  					alert("请使用微信扫码进入!");
 	  					return false;
 	  				}else{
-	  					$("img.erweima").fadeIn(1000);
+	  					$("img.erweima").show();
 	  				};
 	  			})
 	  			$("img.erweima").click(function(){
-	  				$("img.erweima").fadeOut(1000);
+	  				$("img.erweima").hide();
 	  			})
 	  			//添加到通讯录
 	  			$("a.savetel").click(function(){
@@ -40,11 +40,11 @@
 	  					alert("请使用微信扫码进入!");
 	  					return false;
 	  				}else{
-	  					$("img.mecard").fadeIn(1000);
+	  					$("img.mecard").show();
 	  				};
 	  			})
 	  			$("img.mecard").click(function(){
-	  				$("img.mecard").fadeOut(1000);
+	  				$("img.mecard").hide();
 	  			})
 	  			//弹框消失
 	  			$("a.hideinfo").click(function(){
