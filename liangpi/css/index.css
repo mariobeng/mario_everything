@@ -5,6 +5,7 @@ html{
 body{
 	width: 100%;
 	height: auto;
+	font-family: Arial, "microsoft yahei", Helvetica, sans-serif;
 }
 img.img-responsive {
     display: block;
@@ -62,9 +63,27 @@ img.erweima{
 	z-index: 10;
 	display: none;
 }
-
-
-
+div.article{
+	width: 92%;
+	padding: 4%;
+}
+div.article h3{
+	font-size: 17px;
+	line-height: 40px;
+	font-weight: bold;
+	border-bottom: 1px solid #E2E2E2;
+	text-align: center;
+	margin-top: 20px;
+}
+div.article h4{
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: bold;
+}
+div.article p{
+	font-size: 14px;
+	line-height: 25px;
+}
 
 
 
