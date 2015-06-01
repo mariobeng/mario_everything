@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>瑞而士健康屋</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//判断是否为微信浏览器
+			function isWeiXin(){
+    			var ua = window.navigator.userAgent.toLowerCase();
+	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+	      			return true;
+    			}
+  			}
+
+			$(function(){
+				$("#nav_btn").click(function(){
+					$(this).hide();
+					$("div.menu").show();
+					$("div.menu").removeClass("navhide");
+					$("div.menu").addClass("navshow");
+				});
+				$("a.getout, a.kongbai").click(function(){
+					$("div.menu").removeClass("navshow");
+					$("div.menu").addClass("navhide");
+					$("#nav_btn").show();
+					$("div.menu").delay(1000).hide(0);
+				});
+
+				$("a.weixin").click(function(){
+  					if(!isWeiXin()){
+  						location.href = "weixin.html";
+  					}else{
+  						$("img.erweima").show();
+  					}
+  				})
+  				$("img.erweima").click(function(){
+  					$(this).hide();
+  				})
+			})
+		</script>
+		<style type="text/css">
+			body{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main_bg">
+			<a class="kongbai" href="#"></a>
+			<img id="nav_btn" src="img/btn.png"/>
+			<div class="menu">
+				<a class="getout" href="#"></a>
+				<img class="img-responsive" src="img/menu.png"/>
+				<a class="nav true" href="http://wd.koudai.com/?userid=2291955&from=singlemessage&isappinstalled=0"></a>
+				<a class="nav suyuan" href="http://mp.weixin.qq.com/s?__biz=MjM5NDE0NjgxNQ==&mid=202069045&idx=2&sn=ec3640d1d14c8e6132cbbd486ac26d38&scene=1&from=singlemessage&isappinstalled=0#rd"></a>
+				<a class="nav wenhua" href="hezuo.html"></a>
+				<a class="nav cuxiao" href="http://mp.weixin.qq.com/s?__biz=MjM5NDE0NjgxNQ==&mid=201583177&idx=1&sn=221bda207b359e031426e6e4ae981d30&scene=1&from=singlemessage&isappinstalled=0#rd"></a>
+				<a class="nav weixin" href="#"></a>
+				<a class="nav weidian" href="contact.html"></a>
+			</div>
+		</div>
+		<img src="img/erweima.png" alt="" class="erweima">
+	</body>
+</html>
