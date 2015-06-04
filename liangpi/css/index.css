@@ -1,7 +1,7 @@
 html{
 	width: 100%;
 	height: 100%;
-	background-color: #F4F4F4;
+	background-color: #F7F6F1;
 }
 body{
 	width: 100%;
@@ -76,13 +76,43 @@ div.article h3{
 	text-align: center;
 	margin-top: 20px;
 }
+div.lp_one{
+	width: 100%;
+}
 div.article h4{
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
 }
 div.article h4.bg{
-	margin: 10px 0;
+	margin-top: 10px;
+}
+div.l_img{
+	width: 60%;
+	float: left;
+}
+div.r_img{
+	width: 60%;
+	float: right;
+}
+h4.r_txt{
+	width: 40%;
+	float: right;
+	padding-top: 8%;
+}
+h4.l_txt{
+	width: 40%;
+	float: left;
+	padding-top: 8%;
+}
+div.lp_four > h4.l_txt{
+	width: 60%;
+	float: left;
+	padding-top: 12%;
+}
+div.lp_four > div.r_img{
+	width: 40%;
+	float: right;
 }
 div.article h4 img{
 	width: 34px;
@@ -96,6 +126,9 @@ div.article h4 span{
 div.article p{
 	font-size: 16px;
 	line-height: 30px;
+}
+p.duan{
+	font-weight: normal;
 }
 p.duanluo{
 	text-indent: 2em;
