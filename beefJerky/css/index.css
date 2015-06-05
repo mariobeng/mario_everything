@@ -46,14 +46,14 @@ a.kongbai{
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 50%;
+	height: 48%;
 }
 div.menu {
   width: 100%;
-  height: 50%;
+  height: 55%;
   position: absolute;
   left: 0;
-  bottom: -50%;
+  bottom: -55%;
 }
 div.menu_bg{
 	width: 100%;
@@ -67,7 +67,7 @@ div.navshow{
 }
 @-webkit-keyframes navshow {
 	0% {
-  		bottom: -50%;
+  		bottom: -55%;
 	}
 	100% {
   		bottom: 0;
@@ -75,7 +75,7 @@ div.navshow{
 }
 @keyframes navshow {
 	0% {
-  		bottom: -50%;
+  		bottom: -55%;
 	}
 	100% {
   		bottom: 0;
@@ -90,7 +90,7 @@ div.navhide{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -50%;
+  		bottom: -55%;
 	}
 }
 @keyframes navhide {
@@ -98,7 +98,7 @@ div.navhide{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -50%;
+  		bottom: -55%;
 	}
 }
 div.menu ul{
@@ -126,30 +126,6 @@ div.menu ul li p{
 	text-align: center;
 	font-size: 1.2em;
 }
-/* a.true{
-	background: url(../img/beef_01.png) no-repeat center;
-	background-size: cover;
-}
-a.suyuan{
-	background: url(../img/beef_02.png) no-repeat center;
-	background-size: cover;
-}
-a.wenhua{
-	background: url(../img/beef_03.png) no-repeat center;
-	background-size: cover;
-}
-a.cuxiao{
-	background: url(../img/beef_04.png) no-repeat center;
-	background-size: cover;
-}
-a.weixin{
-	background: url(../img/beef_05.png) no-repeat center;
-	background-size: cover;
-}
-a.weidian{
-	background: url(../img/beef_06.png) no-repeat center;
-	background-size: cover;
-} */
 a.getout{
 	display: block;
 	width: 5.9375%;
