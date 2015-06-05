@@ -224,7 +224,7 @@ p.sao_txt strong{
 	font-weight: bold;
 }
 p.zhichi{
-	font-size: 22px;
+	font-size: 18px;
 	text-align: center;
 	font-weight: bold;
 	margin-top: 30px;
@@ -239,5 +239,5 @@ a.ewm_return{
 	line-height: 35px;
 	font-size: 22px;
 	color: #BCBCBC;
-	margin: 30px auto;
+	margin: 30px auto 40px;
 }
