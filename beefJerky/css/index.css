@@ -46,15 +46,20 @@ a.kongbai{
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 50.5%;
+	height: 50%;
 }
-div.menu{
+div.menu {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  bottom: -50%;
+}
+div.menu_bg{
 	width: 100%;
-	height: 49.5%;
-	position: absolute;
-	left: 0;
-	bottom: -49.6%;
-	display: none;
+	height: 100%;
+	background-color: #000;
+	opacity: .7;
 }
 div.navshow{
 	-webkit-animation: navshow 1s 0s forwards;
@@ -62,7 +67,7 @@ div.navshow{
 }
 @-webkit-keyframes navshow {
 	0% {
-  		bottom: -49.6%;
+  		bottom: -50%;
 	}
 	100% {
   		bottom: 0;
@@ -70,7 +75,7 @@ div.navshow{
 }
 @keyframes navshow {
 	0% {
-  		bottom: -49.6%;
+  		bottom: -50%;
 	}
 	100% {
   		bottom: 0;
@@ -85,7 +90,7 @@ div.navhide{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -49.6%;
+  		bottom: -50%;
 	}
 }
 @keyframes navhide {
@@ -93,22 +98,58 @@ div.navhide{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -49.6%;
+  		bottom: -50%;
 	}
 }
-a.nav{
+div.menu ul{
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	display: block;
+	left: 0;
+	top: 0;
+}
+div.menu ul li{
+	float: left;
 	width: 21.875%;
-	height: 24.5%;
+	height: 35.5871%;
+	margin: 9% 5.5% 0;
+}
+div.menu ul li a{
+	display: block;
+	width: 100%;
+	height: 70%;
 	z-index: 2;
 }
-a.true{left: 5.8%;top: 10.65%;}
-a.suyuan{left: 39%;top: 10.65%;}
-a.wenhua{left: 72.3%;top: 10.65%;}
-a.cuxiao{left: 5.8%;top: 52.8%;}
-a.weixin{left: 39%;top: 52.8%;}
-a.weidian{left: 72.3%;top: 52.8%;}
+div.menu ul li p{
+	color: #fff;
+	margin-top: 10%;
+	text-align: center;
+	font-size: 1.2em;
+}
+/* a.true{
+	background: url(../img/beef_01.png) no-repeat center;
+	background-size: cover;
+}
+a.suyuan{
+	background: url(../img/beef_02.png) no-repeat center;
+	background-size: cover;
+}
+a.wenhua{
+	background: url(../img/beef_03.png) no-repeat center;
+	background-size: cover;
+}
+a.cuxiao{
+	background: url(../img/beef_04.png) no-repeat center;
+	background-size: cover;
+}
+a.weixin{
+	background: url(../img/beef_05.png) no-repeat center;
+	background-size: cover;
+}
+a.weidian{
+	background: url(../img/beef_06.png) no-repeat center;
+	background-size: cover;
+} */
 a.getout{
 	display: block;
 	width: 5.9375%;
@@ -116,6 +157,9 @@ a.getout{
 	position: absolute;
 	left: 47.2%;
 	top: 3%;
+	z-index: 2;
+	background: url(../img/down.png) no-repeat center;
+	background-size: cover;
 }
 div.main_bg{
 	width: 100%;
