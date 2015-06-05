@@ -215,7 +215,7 @@ img.erweima {
 }
 
 p.sao_txt{
-	font-size: 18px;
+	font-size: 22px;
 	text-align: center;
 	margin: 10px 0 40px;
 }
@@ -223,7 +223,7 @@ p.sao_txt strong{
 	font-weight: bold;
 }
 p.zhichi{
-	font-size: 18px;
+	font-size: 22px;
 	text-align: center;
 	font-weight: bold;
 	margin-top: 30px;
@@ -231,12 +231,12 @@ p.zhichi{
 a.ewm_return{
 	display: block;
 	border-radius: 15px;
-	width: 90%;
+	width: 85%;
 	border: 1px solid #BCBCBC;
 	text-align: center;
 	height: 35px;
 	line-height: 35px;
-	font-size: 18px;
+	font-size: 22px;
 	color: #BCBCBC;
 	margin: 30px auto 0;
 }
