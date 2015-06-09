@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+
 		<!-- Demo styles -->
 		<style>
 		html, body {
@@ -99,18 +100,31 @@
 			</ul>
 		</div>
 		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 		    var swiperH = new Swiper('.swiper-container-h', {
 		        pagination: '.swiper-pagination-h',
 		        paginationClickable: true,
 		        spaceBetween: 50
 		    });
-		    var swiperV = new Swiper('.swiper-container-v', {
-		        pagination: '.swiper-pagination-v',
-		        paginationClickable: true,
-		        direction: 'vertical',
-		        spaceBetween: 50
-		    });
+
+		    //判断是否为微信浏览器
+			function isWeiXin(){
+    			var ua = window.navigator.userAgent.toLowerCase();
+	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+	      			return true;
+    			}
+  			}
+
+			$(function(){
+				$("a.weixin").click(function(){
+  					if(!isWeiXin()){
+  						location.href = "weixin.html";
+  					}else{
+  						location.href = "saoma.html";
+  					}
+  				})
+  			})
     	</script>
 	</body>
 </html>
