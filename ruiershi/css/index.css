@@ -133,13 +133,13 @@ div.menu ul li a {
 }
 div.menu ul li p {
 	color: #fff;
-	margin-top: 30%;
 	text-align: center;
 	font-size: 1.2em;
 	display: block;
 	position: absolute;
 	width: 145%;
 	left: -20%;
+	bottom: -5%;
 }
 a.getout {
   display: block;
