@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>“辛”在路上</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<!-- Demo styles -->
+		<style>
+		html, body {
+		    position: relative;
+		    background: url(img/menu_bg.png) repeat-y left top;
+		}
+		.swiper-container {
+		    width: 100%;
+		}
+		.swiper-slide {
+		    text-align: center;
+		    font-size: 18px;
+		    background: #fff;
+
+		    /* Center slide text vertically */
+		    display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+		    -webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		    -webkit-justify-content: center;
+		    justify-content: center;
+		    -webkit-box-align: center;
+		    -ms-flex-align: center;
+		    -webkit-align-items: center;
+		    align-items: center;
+		}
+		.swiper-container-v {
+		    background: #eee;
+		}
+		</style>
+
+	</head>
+	<body>
+		<!-- Swiper -->
+		<div class="swiper-container swiper-container-h">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/lunbo01.jpg" alt="" class="img-responsive">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/lunbo02.jpg" alt="" class="img-responsive">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/lunbo03.jpg" alt="" class="img-responsive">
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination swiper-pagination-h"></div>
+		</div>
+		<div class="menu">
+			<ul>
+				<li>
+					<a class="true" href="zhenwei.html">
+						<img class="img-responsive" src="img/zuodian_01.png"/>
+					</a>
+					<p>真伪鉴别</p>
+				</li>
+				<li>
+					<a class="suyuan" href="youshi.html">
+						<img class="img-responsive" src="img/zuodian_02.png"/>
+					</a>
+					<p>产品优势</p>
+				</li>
+				<li>
+					<a class="wenhua" href="daili.html">
+						<img class="img-responsive" src="img/zuodian_03.png"/>
+					</a>
+					<p>诚招代理</p>
+				</li>
+				<li>
+					<a class="weixin" href="#">
+						<img class="img-responsive" src="img/zuodian_04.png"/>
+					</a>
+					<p>关注微信</p>
+				</li>
+				<li>
+					<a class="" href="onlu.html">
+						<img class="img-responsive" src="img/zuodian_05.png"/>
+					</a>
+					<p>在路上</p>
+				</li>
+				<li>
+					<a class="weidian" href="contact.html">
+						<img class="img-responsive" src="img/zuodian_06.png"/>
+					</a>
+					<p>联系我们</p>
+				</li>
+			</ul>
+		</div>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		    var swiperH = new Swiper('.swiper-container-h', {
+		        pagination: '.swiper-pagination-h',
+		        paginationClickable: true,
+		        spaceBetween: 50
+		    });
+		    var swiperV = new Swiper('.swiper-container-v', {
+		        pagination: '.swiper-pagination-v',
+		        paginationClickable: true,
+		        direction: 'vertical',
+		        spaceBetween: 50
+		    });
+    	</script>
+	</body>
+</html>
