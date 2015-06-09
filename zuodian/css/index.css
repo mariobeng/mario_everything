@@ -168,16 +168,8 @@ a.comin{
 	width: 50%;
 	position: absolute;
 	left: 25%;
-	bottom: 7%;
-	color: #fff;
+	bottom: 6%;
 	text-align: center;
-}
-a.comin span{
-	font-size: 2.5em;
-}
-span#txt_midd{
-	font-size: 1.8em;
-	margin: 0 5%;
 }
 
 div.article h4.bg {
