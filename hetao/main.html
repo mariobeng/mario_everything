@@ -6,9 +6,33 @@
 		<title>河套老窖</title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			body{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+		</style>
 		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			//判断是否为微信浏览器
+			function isWeiXin(){
+    			var ua = window.navigator.userAgent.toLowerCase();
+	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+	      			return true;
+    			}
+  			}
+
 			$(function(){
+				$("a.weixin").click(function(){
+  					if(!isWeiXin()){
+  						location.href = "weixin.html";
+  					}else{
+  						location.href = "saoma.html";
+  					}
+  				})
+
 				$("#nav_btn").click(function(){
 					$(this).hide();
 					$("div.menu").show();
@@ -33,43 +57,44 @@
 				<a class="getout" href="#"></a>
 				<ul>
 					<li>
-						<a class="true" href="#">
-							<!--<img class="img-responsive" src="img/libthn01.png"/>-->
+						<a class="true" href="zhenwei.html">
+							<img class="img-responsive" src="img/libthn01.png"/>
 						</a>
 						<p>真伪鉴别</p>
 					</li>
 					<li>
-						<a class="suyuan" href="#">
-							<!--<img class="img-responsive" src="img/libthn02.png"/>-->
+						<a class="suyuan" href="suyuan.html">
+							<img class="img-responsive" src="img/libthn02.png"/>
 						</a>
 						<p>产品溯源</p>
 					</li>
 					<li>
-						<a class="wenhua" href="#">
-							<!--<img class="img-responsive" src="img/libthn03.png"/>-->
+						<a class="wenhua" href="jiazhi.html">
+							<img class="img-responsive" src="img/libthn03.png"/>
 						</a>
 						<p>品牌文化</p>
 					</li>
 					<li>
-						<a class="cuxiao" href="#">
-							<!--<img class="img-responsive" src="img/libthn04.png"/>-->
+						<a class="cuxiao" href="http://shaziwang.taobao.com">
+							<img class="img-responsive" src="img/libthn04.png"/>
 						</a>
 						<p>产品促销</p>
 					</li>
 					<li>
 						<a class="weixin" href="#">
-							<!--<img class="img-responsive" src="img/libthn05.png"/>-->
+							<img class="img-responsive" src="img/libthn05.png"/>
 						</a>
 						<p>微信关注</p>
 					</li>
 					<li>
-						<a class="weidian" href="#">
-							<!--<img class="img-responsive" src="img/libthn06.png"/>-->
+						<a class="weidian" href="wenhua.html">
+							<img class="img-responsive" src="img/libthn06.png"/>
 						</a>
 						<p>微店</p>
 					</li>
 				</ul>
 			</div>
 		</div>
+		<img src="img/erweima.png" alt="" class="erweima">
 	</body>
 </html>
