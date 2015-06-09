@@ -34,23 +34,17 @@
   					if(!isWeiXin()){
   						location.href = "weixin.html";
   					}else{
-  						$("img.erweima").show();
+  						location.href = "saoma.html";
   					}
-  				})
-  				$("img.erweima").click(function(){
-  					$(this).hide();
   				})
 			})
 		</script>
 		<style type="text/css">
-			html{
-				width: 100%;
-				height: 100%;
-			}
 			body{
 				width: 100%;
 				height: 100%;
 				overflow: hidden;
+				position: relative;
 			}
 		</style>
 	</head>
@@ -59,16 +53,47 @@
 			<a class="kongbai" href="#"></a>
 			<img id="nav_btn" src="img/btn.png"/>
 			<div class="menu">
+				<div class="menu_bg"></div>
 				<a class="getout" href="#"></a>
-				<img class="img-responsive" src="img/menu.png"/>
-				<a class="nav true" href="http://wd.koudai.com/?userid=2291955&from=singlemessage&isappinstalled=0"></a>
-				<a class="nav suyuan" href="http://mp.weixin.qq.com/s?__biz=MjM5NDE0NjgxNQ==&mid=202069045&idx=2&sn=ec3640d1d14c8e6132cbbd486ac26d38&scene=1&from=singlemessage&isappinstalled=0#rd"></a>
-				<a class="nav wenhua" href="hezuo.html"></a>
-				<a class="nav cuxiao" href="http://mp.weixin.qq.com/s?__biz=MjM5NDE0NjgxNQ==&mid=201583177&idx=1&sn=221bda207b359e031426e6e4ae981d30&scene=1&from=singlemessage&isappinstalled=0#rd"></a>
-				<a class="nav weixin" href="#"></a>
-				<a class="nav weidian" href="contact.html"></a>
+				<ul>
+					<li>
+						<a class="true" href="http://wd.koudai.com/?userid=2291955&from=singlemessage&isappinstalled=0">
+							<img class="img-responsive" src="img/wu_01.png"/>
+						</a>
+						<p>瑞而士健康屋</p>
+					</li>
+					<li>
+						<a class="suyuan" href="http://mp.weixin.qq.com/s?__biz=MjM5NDE0NjgxNQ==&mid=202069045&idx=2&sn=ec3640d1d14c8e6132cbbd486ac26d38&scene=1&from=singlemessage&isappinstalled=0#rd">
+							<img class="img-responsive" src="img/wu_02.png"/>
+						</a>
+						<p>产品视频</p>
+					</li>
+					<li>
+						<a class="wenhua" href="hezuo.html">
+							<img class="img-responsive" src="img/wu_03.png"/>
+						</a>
+						<p>品牌合作</p>
+					</li>
+					<li>
+						<a class="cuxiao" href="http://mp.weixin.qq.com/s?__biz=MjM5NDE0NjgxNQ==&mid=201583177&idx=1&sn=221bda207b359e031426e6e4ae981d30&scene=1&from=singlemessage&isappinstalled=0#rd">
+							<img class="img-responsive" src="img/wu_04.png"/>
+						</a>
+						<p>瑞而士医疗</p>
+					</li>
+					<li>
+						<a class="weixin" href="#">
+							<img class="img-responsive" src="img/wu_05.png"/>
+						</a>
+						<p>瑞而士微导诊</p>
+					</li>
+					<li>
+						<a class="weidian" href="contact.html">
+							<img class="img-responsive" src="img/wu_06.png"/>
+						</a>
+						<p>联系我们</p>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<img src="img/erweima.png" alt="" class="erweima">
 	</body>
 </html>

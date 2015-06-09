@@ -1,7 +1,6 @@
 html{
 	width: 100%;
-	/* height: 100%; */
-	height: auto;
+	height: 100%;
 	background-color: #F4F4F4;
 }
 body{
@@ -18,6 +17,12 @@ div.main{
 	height: 100%;
 	background: url(../img/welcome.jpg) no-repeat center center;
 	background-size: cover;
+}
+div.main_bg {
+  width: 100%;
+  height: 100%;
+  background: url(../img/index.jpg) no-repeat center;
+  background-size: cover;
 }
 a.back {
   display: block;
@@ -59,13 +64,12 @@ a.kongbai{
 	width: 100%;
 	height: 50.5%;
 }
-div.menu{
-	width: 100%;
-	height: 49.5%;
-	position: absolute;
-	left: 0;
-	bottom: -49.6%;
-	display: none;
+div.menu {
+  width: 100%;
+  height: 55%;
+  position: absolute;
+  left: 0;
+  bottom: -55%;
 }
 div.navshow{
 	-webkit-animation: navshow 1s 0s forwards;
@@ -73,7 +77,7 @@ div.navshow{
 }
 @-webkit-keyframes navshow {
 	0% {
-  		bottom: -49.6%;
+  		bottom: -55%;
 	}
 	100% {
   		bottom: 0;
@@ -81,7 +85,7 @@ div.navshow{
 }
 @keyframes navshow {
 	0% {
-  		bottom: -49.6%;
+  		bottom: -55%;
 	}
 	100% {
   		bottom: 0;
@@ -96,7 +100,7 @@ div.navhide{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -49.6%;
+  		bottom: -55%;
 	}
 }
 @keyframes navhide {
@@ -104,45 +108,61 @@ div.navhide{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -49.6%;
+  		bottom: -55%;
 	}
 }
-a.nav{
-	position: absolute;
-	display: block;
-	width: 21.875%;
-	height: 24.5%;
-	z-index: 2;
-}
-a.true{left: 5.8%;top: 10.65%;}
-a.suyuan{left: 39%;top: 10.65%;}
-a.wenhua{left: 72.3%;top: 10.65%;}
-a.cuxiao{left: 5.8%;top: 52.8%;}
-a.weixin{left: 39%;top: 52.8%;}
-a.weidian{left: 72.3%;top: 52.8%;}
-a.getout{
-	display: block;
-	width: 5.9375%;
-	height: 2.4911%;
-	position: absolute;
-	left: 47.2%;
-	top: 3%;
-}
-div.main_bg{
-	width: 100%;
-	height: 100%;
-	background: url(../img/index.jpg) no-repeat center;
-	background-size: cover;
-}
-img.erweima {
-  max-width: 100%;
-  height: auto;
+div.menu ul {
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 10;
-  display: none;
 }
+div.menu ul li {
+  float: left;
+  width: 21.875%;
+  height: 35.5871%;
+  margin: 9% 5.73% 0;
+  position: relative;
+}
+div.menu ul li a {
+  display: block;
+  width: 100%;
+  height: 65%;
+  z-index: 2;
+}
+div.menu ul li p {
+	color: #fff;
+	margin-top: 30%;
+	text-align: center;
+	font-size: 1.2em;
+	display: block;
+	position: absolute;
+	width: 145%;
+	left: -20%;
+	bottom: 0;
+}
+a.getout {
+  display: block;
+  width: 5.9375%;
+  height: 2.4911%;
+  position: absolute;
+  left: 47.2%;
+  top: 3%;
+  z-index: 2;
+  background: url(../img/down.png) no-repeat center;
+  background-size: cover;
+}
+div.menu_bg {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .7;
+}
+
+
+
+
 
 div.article {
   width: 92%;
