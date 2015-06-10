@@ -54,6 +54,7 @@ div.menu {
   position: absolute;
   left: 0;
   bottom: -55%;
+  display: none;
 }
 div.menu_bg{
 	width: 100%;
@@ -213,13 +214,12 @@ img.erweima {
   z-index: 10;
   display: none;
 }
-
+/*关注微信--begin*/
 p.sao_txt{
 	font-size: 22px;
 	text-align: center;
 	padding: 30px 0;
 }
-
 p.sao_txt strong{
 	font-weight: bold;
 }
@@ -239,5 +239,6 @@ a.ewm_return{
 	line-height: 35px;
 	font-size: 22px;
 	color: #BCBCBC;
-	margin: 30px auto 60px;
+	margin: 30px auto 0;
 }
+/*关注微信--end*/

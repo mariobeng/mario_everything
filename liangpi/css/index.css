@@ -142,4 +142,31 @@ h4.tip{
 	color: #E54A51;
 	line-height: 25px;
 }
-
+/*关注微信--begin*/
+p.sao_txt{
+	font-size: 22px;
+	text-align: center;
+	padding: 30px 0;
+}
+p.sao_txt strong{
+	font-weight: bold;
+}
+p.zhichi{
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+}
+a.ewm_return{
+	display: block;
+	border-radius: 20px;
+	width: 90%;
+	border: 1px solid #BCBCBC;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	font-size: 22px;
+	color: #BCBCBC;
+	margin: 30px auto 0;
+}
+/*关注微信--end*/

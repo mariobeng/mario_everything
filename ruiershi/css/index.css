@@ -70,6 +70,7 @@ div.menu {
   position: absolute;
   left: 0;
   bottom: -55%;
+  display: none;
 }
 div.navshow{
 	-webkit-animation: navshow 1s 0s forwards;
