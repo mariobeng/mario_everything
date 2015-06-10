@@ -110,6 +110,14 @@ img.erweima {
   z-index: 10;
   display: none;
 }
+a.comin {
+  display: block;
+  width: 35%;
+  position: absolute;
+  left: 32.5%;
+  bottom: 5%;
+  text-align: center;
+}
 /*关注微信--begin*/
 p.sao_txt{
 	font-size: 22px;
