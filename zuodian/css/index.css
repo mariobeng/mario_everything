@@ -201,3 +201,15 @@ div.txt_lr > p{
 	float: right;
 }
 
+/*轮播style  begin*/
+#slideshow {
+  background-color: #999;
+}
+#slideshow .tc-paging-container {
+  margin-top: -20px;
+  position: inherit;
+}
+#slideshow .touchcarousel-item {
+  float: left;
+}
+/*轮播style  end*/
