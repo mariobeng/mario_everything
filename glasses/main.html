@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>视立美眼镜</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/touchcarousel.css"/>
+		<link rel="stylesheet" type="text/css" href="css/three-d-skin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style>
+			html, body {
+			    position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 轮播 begin-->
+		<div id="slideshow" class="touchcarousel three-d">
+			<div class="touchcarousel-container">
+		    	<a href="javascript:;" class="touchcarousel-item"><img src="img/lunbo01.jpg" /></a>
+		        <a href="javascript:;" class="touchcarousel-item"><img src="img/lunbo02.jpg" /></a>
+		        <a href="javascript:;" class="touchcarousel-item"><img src="img/lunbo03.jpg" /></a>
+		  	</div>
+		</div>
+		<!-- 轮播 end-->
+		<div class="menu">
+			<ul>
+				<li>
+					<a class="true" href="zhenwei.html">
+						<img class="img-responsive" src="img/slm_01.png"/>
+					</a>
+					<p>真伪鉴别</p>
+				</li>
+				<li>
+					<a class="suyuan" href="jieshao.html">
+						<img class="img-responsive" src="img/slm_02.png"/>
+					</a>
+					<p>产品介绍</p>
+				</li>
+				<li>
+					<a class="wenhua" href="fengcai.html">
+						<img class="img-responsive" src="img/slm_03.png"/>
+					</a>
+					<p>会员风采</p>
+				</li>
+				<li>
+					<a class="weixin" href="#">
+						<img class="img-responsive" src="img/slm_04.png"/>
+					</a>
+					<p>关注微信</p>
+				</li>
+				<li>
+					<a class="" href="huyan.html">
+						<img class="img-responsive" src="img/slm_05.png"/>
+					</a>
+					<p>护眼妙招</p>
+				</li>
+				<li>
+					<a class="weidian" href="shilimei.html">
+						<img class="img-responsive" src="img/slm_06.png"/>
+					</a>
+					<p>视立美</p>
+				</li>
+			</ul>
+		</div>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		    //判断是否为微信浏览器
+			function isWeiXin(){
+    			var ua = window.navigator.userAgent.toLowerCase();
+	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+	      			return true;
+    			}
+  			}
+			$("a.weixin").click(function(){
+				if(!isWeiXin()){
+					location.href = "weixin.html";
+				}else{
+					location.href = "saoma.html";
+				}
+			})
+
+			/*轮播图*/
+			var $slideshow;
+			$(function(){
+				$slideshow = $("#slideshow");
+				$slideshow.find("img").attr("width",$(document.body).width());
+				$slideshow.touchCarousel({
+					pagingNav: true,
+					scrollbar: false,
+					directionNavAutoHide: false,
+					itemsPerMove: 1,
+					loopItems: true,
+					directionNav: false,
+					autoplay: true,
+					autoplayDelay: 2000,
+					autoplayStopAtAction:false,
+					useWebkit3d: true,
+					itemFallbackWidth:$(document.body).width(),
+					transitionSpeed: 400
+				});
+			});
+    	</script>
+	</body>
+</html>
