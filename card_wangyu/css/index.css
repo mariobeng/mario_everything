@@ -154,8 +154,8 @@ a.savetel{
 }
 
 div.xinmate{
-	-webkit-animation: xinmate .7s 0s forwards;
-    animation: xinmate .7s 0s forwards;
+	-webkit-animation: xinmate .5s 0s forwards;
+    animation: xinmate .5s 0s forwards;
 }
 @-webkit-keyframes xinmate {
 	0% {
@@ -174,8 +174,8 @@ div.xinmate{
 	}
 }
 div.xin_no{
-	-webkit-animation: xin_no .7s 0s forwards;
-    animation: xin_no .7s 0s forwards;
+	-webkit-animation: xin_no .5s 0s forwards;
+    animation: xin_no .5s 0s forwards;
 }
 @-webkit-keyframes xin_no {
 	0% {
