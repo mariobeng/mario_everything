@@ -36,7 +36,7 @@ div.info{
 }
 div.name{
 	height: 4.0674%;
-	top: 21%;
+	top: 25%;
 	right: -10%;
 	-webkit-animation: name 1s 0s forwards;
     animation: name 1s 0s forwards;
@@ -63,7 +63,7 @@ div.name{
 }
 div.job{
 	height: 5.3571%;
-	top: 25.1%;
+	top: 29.1%;
 	-webkit-animation: job .8s .5s forwards;
     animation: job .8s .5s forwards;
 }
@@ -154,8 +154,8 @@ a.savetel{
 }
 
 div.xinmate{
-	-webkit-animation: xinmate .7s 0s forwards;
-    animation: xinmate .7s 0s forwards;
+	-webkit-animation: xinmate .5s 0s forwards;
+    animation: xinmate .5s 0s forwards;
 }
 @-webkit-keyframes xinmate {
 	0% {
@@ -174,8 +174,8 @@ div.xinmate{
 	}
 }
 div.xin_no{
-	-webkit-animation: xin_no .7s 0s forwards;
-    animation: xin_no .7s 0s forwards;
+	-webkit-animation: xin_no .5s 0s forwards;
+    animation: xin_no .5s 0s forwards;
 }
 @-webkit-keyframes xin_no {
 	0% {

@@ -36,7 +36,7 @@ div.info{
 }
 div.name{
 	height: 4.0674%;
-	top: 25%;
+	top: 21%;
 	right: -10%;
 	-webkit-animation: name 1s 0s forwards;
     animation: name 1s 0s forwards;
@@ -63,7 +63,7 @@ div.name{
 }
 div.job{
 	height: 5.3571%;
-	top: 29.1%;
+	top: 25.1%;
 	-webkit-animation: job .8s .5s forwards;
     animation: job .8s .5s forwards;
 }
