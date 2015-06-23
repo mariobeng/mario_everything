@@ -16,7 +16,7 @@
 		</style>
 	</head>
 	<body>
-		<div class="main">
+		<div class="main b_mate">
 			<img class="wel_t t_l" src="img/gfpz.png" alt="">
 			<img class="wel_t t_r" src="img/bncc.png" alt="">
 			<h1 class="wel_bor b_l"></h1>
@@ -71,7 +71,7 @@
 	      			return true;
     			}
   			}
-  			$("div.main").delay(9100).hide(0);
+  			$("div.main").delay(7600).hide(0);
 			$(function(){
 				$("a.weixin").click(function(){
   					if(!isWeiXin()){
@@ -93,6 +93,10 @@
 					$("#nav_btn").show();
 					$("div.menu").delay(1000).hide(0);
 				});
+
+				if(window.location.hash == "#index"){
+					$("div.main").remove();
+				}
 			})
 		</script>
 	</body>

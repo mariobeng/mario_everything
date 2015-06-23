@@ -22,8 +22,8 @@ div.main{
 	background-size: cover;
 	position: absolute;
 	z-index: 10;
-	-webkit-animation: main 1s 8s forwards;
-    animation: main 1s 8s forwards;
+	-webkit-animation: main 1s 6.5s forwards;
+    animation: main 1s 6.5s forwards;
 }
 @-webkit-keyframes main {
 	0% {
@@ -52,8 +52,8 @@ img.t_l{
 	right: 23.4375%;
 	top: 18.4523%;
 	opacity: 0;
-	-webkit-animation: t_l 1s 4.5s forwards;
-    animation: t_l 1s 4.5s forwards;
+	-webkit-animation: t_l 1s 3s forwards;
+    animation: t_l 1s 3s forwards;
 }
 @-webkit-keyframes t_l {
 	0% {
@@ -79,8 +79,8 @@ img.t_r{
 	right: 16.25%;
 	top: 12.3015%;
 	opacity: 0;
-	-webkit-animation: t_r 1s 4.5s forwards;
-    animation: t_r 1s 4.5s forwards;
+	-webkit-animation: t_r 1s 3s forwards;
+    animation: t_r 1s 3s forwards;
 }
 @-webkit-keyframes t_r {
 	0% {
@@ -112,8 +112,8 @@ h1.b_l{
 	top: 20.5357%;
 	right:30.7812%;
 	opacity: 0;
-	-webkit-animation: b_l 1s 4s forwards;
-    animation: b_l 1s 4s forwards;
+	-webkit-animation: b_l 1s 2.5s forwards;
+    animation: b_l 1s 2.5s forwards;
 }
 @-webkit-keyframes b_l {
 	0% {
@@ -139,8 +139,8 @@ h1.b_r{
 	top: 9.7222%;
 	right:14.0625%;
 	opacity: 0;
-	-webkit-animation: b_r 1s 4s forwards;
-	animation: b_r 1s 4s forwards;
+	-webkit-animation: b_r 1s 2.5s forwards;
+	animation: b_r 1s 2.5s forwards;
 }
 @-webkit-keyframes b_r {
 	0% {
