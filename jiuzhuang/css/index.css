@@ -14,12 +14,44 @@ img.img-responsive {
     height: auto;
     max-width: 100%;
 }
+/*轮播图*/
+#slideshow .touchcarousel-item {
+  float: left;
+}
+#slideshow .tc-paging-container {
+  margin-top: -20px;
+  position: inherit;
+}
+
+div.tiao{
+	width: 100%;
+	height: 22px;
+	background: url(../img/tiao.png) no-repeat left top;
+}
 /*启动动画--begin*/
 div.main{
 	width: 100%;
 	height: 100%;
 	background: url(../img/bg.jpg) no-repeat center center;
 	background-size: cover;
+	-webkit-animation: mate_m 1s 6.7s forwards;
+    animation: mate_m 1s 6.7s forwards;
+}
+@-webkit-keyframes mate_m {
+	0% {
+  		opacity: 1;
+	}
+	100% {
+  		opacity: 0;
+	}
+}
+@keyframes mate_m {
+	0% {
+  		opacity: 1;
+	}
+	100% {
+  		opacity: 0;
+	}
 }
 div.zhe{
 	width: 100%;
@@ -29,8 +61,8 @@ div.zhe{
 	left: 0;
 	top: 0;
 	opacity: .9;
-	-webkit-animation: zhe 7s 0s forwards;
-    animation: zhe 7s 0s forwards;
+	-webkit-animation: zhe 5s 0s forwards;
+    animation: zhe 5s 0s forwards;
 }
 @-webkit-keyframes zhe {
 	0% {
@@ -209,15 +241,6 @@ img.zimu_d{
 	}
 }
 
-
-
-
-
-
-
-
-
-
 /*局部动画--begin*/
 img.wel_t{
 	position: absolute;
@@ -360,29 +383,13 @@ img#nav_btn{
 	left: 12px;
 	bottom: 12px;
 }
-a.kongbai{
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 48%;
-}
 div.menu {
   width: 100%;
-  height: 55%;
-  position: absolute;
-  left: 0;
-  bottom: -55%;
-  display: none;
-  background: url(../img/menu_bg.png) repeat left top;
+  height: auto;
   overflow: hidden;
-}
-div.menu_bg{
-	width: 100%;
-	height: 100%;
-	background-color: #000;
-	opacity: .7;
+  padding-bottom: 20px;
+  /* background: url(../img/menu_bg.png) repeat-y left top;
+  background-size: 100% 100%; */
 }
 div.navshow{
 	-webkit-animation: navshow 1s 0s forwards;
@@ -427,16 +434,14 @@ div.navhide{
 div.menu ul{
 	width: 100%;
 	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
 }
 div.menu ul li{
 	float: left;
-	width: 21.875%;
+	width: 27%;
 	height: 35.5871%;
-	margin: 9% 5.73% 0;
+	margin: 9% 3.168% 0;
 	position: relative;
+	/* padding-bottom: 3em; */
 }
 div.menu ul li a{
 	display: block;
@@ -457,48 +462,7 @@ div.menu ul li p {
   height: 1.5em;
   line-height: 1.5em;
 }
-div.menu ul li p.p_fw {
-  background: url(../img/txt_01.png) no-repeat center;
-  background-size: 85% 85%;
-}
-div.menu ul li p.p_gy {
-  background: url(../img/txt_02.png) no-repeat center;
-  background-size: 85% 85%;
-}
-div.menu ul li p.p_wh {
-  background: url(../img/txt_03.png) no-repeat center;
-  background-size: 85% 85%;
-}
-div.menu ul li p.p_wx {
-  background: url(../img/txt_04.png) no-repeat center;
-  background-size: 85% 85%;
-}
-div.menu ul li p.p_buy {
-  background: url(../img/txt_05.png) no-repeat center;
-  background-size: 85% 85%;
-}
-div.menu ul li p.p_go {
-  background: url(../img/txt_06.png) no-repeat center;
-  background-size: 85% 85%;
-}
 
-a.getout{
-	display: block;
-	width: 11.7187%;
-	height: 4%;
-	position: absolute;
-	left: 44.1406%;
-	top: 3%;
-	z-index: 2;
-	background: url(../img/down.png) no-repeat center;
-	background-size: cover;
-}
-div.main_bg{
-	width: 100%;
-	height: 100%;
-	background: url(../img/index.jpg) no-repeat center;
-	background-size: cover;
-}
 a.back {
   display: block;
   height: 30px;
@@ -615,3 +579,6 @@ div.txt_lr > p {
   float: right;
 }
 /*真伪鉴别文字换行--end*/
+h4.h4_center{
+	text-align: center;
+}

@@ -1,0 +1,192 @@
+html{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+body {
+	width: 100%;
+	height: auto;
+	font-family: Arial, "microsoft yahei", Helvetica, sans-serif;
+}
+img.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+div.main{
+	width: 100%;
+	height: 100%;
+	background: url(../img/welcome.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+a.comin{
+	display: block;
+	border: 1px solid #636362;
+	border-radius: 20px;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	margin: 0 auto;
+	position: absolute;
+	left: 25%;
+	bottom: 8%;
+}
+div.menu {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 10%;
+}
+div.menu ul {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+div.menu ul li {
+  float: left;
+  width: 21.875%;
+  height: 35.5871%;
+  margin: 13% 5.73% 0;
+}
+div.menu ul li a {
+  display: block;
+  width: 100%;
+  height: 65%;
+  z-index: 2;
+}
+div.menu ul li p {
+  color: #000;
+  margin-top: 30%;
+  text-align: center;
+  font-size: 1.2em;
+  border-top: 1px solid #656565;
+  border-bottom: 1px solid #656565;
+  padding: 5% 0;
+}
+a.back {
+  display: block;
+  height: 30px;
+  left: 15px;
+  position: fixed;
+  top: 15px;
+  width: 30px;
+}
+a.back img {
+  height: 30px;
+  width: 30px;
+}
+div.article {
+  width: 92%;
+  padding: 4%;
+}
+div.article h4 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+div.article p {
+  font-size: 16px;
+  line-height: 30px;
+}
+p.duanluo {
+  text-indent: 2em;
+}
+div.article strong {
+  font-weight: bold;
+}
+div.article h3 {
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: bold;
+	border-bottom: 1px solid #E2E2E2;
+	text-align: center;
+	margin-top: 20px;
+}
+img.art_img {
+  margin: 18px 0;
+}
+div.apple_sy{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 10px;
+}
+div.sy_l{
+	float: left;
+	width: 25%;
+}
+div.sy_l p{
+	font-size: 1.2em;
+}
+div.sy_r{
+	float: right;
+	width: 72%;
+	position: relative;
+	padding-left: 3%;
+}
+div.sy_bor{
+	border-left: 2px dotted #59BB03;
+	padding-left: 4%;
+}
+div.sy_bor p{
+	line-height: 24px;
+	font-size: 14px;
+	padding-left: 3%;
+}
+div.sy_bor p span{
+	font-weight: bold;
+}
+img.time{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+div.begin{
+	padding: 10px 0;
+	border-bottom: 1px solid #E7E7E7;
+}
+div.begin p{
+	font-family: sans-serif, Helvetica, "microsoft yahei", Arial;
+}
+div.txt_lr {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+div.txt_lr > strong {
+  display: block;
+  float: left;
+  font-size: 16px;
+  max-width: 28%;
+}
+div.txt_lr > p {
+  width: 72%;
+  display: block;
+  float: right;
+}
+div.beef {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+div.b_img {
+  float: left;
+  width: 50%;
+}
+div.br_img{
+	float: right;
+}
+h4.b_txt {
+  float: right;
+  width: 50%;
+}
+h4.bl_txt {
+  float: left;
+}
+h4.b_txt p {
+  font-weight: normal;
+}

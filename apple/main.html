@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>白水苹果</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//判断是否为微信浏览器
+			function isWeiXin(){
+    			var ua = window.navigator.userAgent.toLowerCase();
+	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+	      			return true;
+    			}
+  			}
+
+			$(function(){
+				$("a.weixin").click(function(){
+  					if(!isWeiXin()){
+  						location.href = "weixin.html";
+  					}else{
+  						location.href = "saoma.html";
+  					}
+  				})
+			})
+		</script>
+	</head>
+	<body>
+		<img class="img-responsive" src="img/top.jpg"/>
+		<div class="menu">
+			<ul>
+				<li>
+					<a class="true" href="true.html">
+						<img class="img-responsive" src="img/apple_01.png">
+					</a>
+					<p>查验真伪</p>
+				</li>
+				<li>
+					<a class="suyuan" href="suyuan.html">
+						<img class="img-responsive" src="img/apple_02.png">
+					</a>
+					<p>产品溯源</p>
+				</li>
+				<li>
+					<a class="wenhua" href="cuxiao.html">
+						<img class="img-responsive" src="img/apple_03.png">
+					</a>
+					<p>苹果美食</p>
+				</li>
+				<li>
+					<a class="cuxiao" href="http://shop116731216.taobao.com">
+						<img class="img-responsive" src="img/apple_04.png">
+					</a>
+					<p>再次购买</p>
+				</li>
+				<li>
+					<a class="weixin" href="#">
+						<img class="img-responsive" src="img/apple_05.png">
+					</a>
+					<p>微信关注</p>
+				</li>
+				<li>
+					<a class="weidian" href="guo.html">
+						<img class="img-responsive" src="img/apple_06.png">
+					</a>
+					<p>臻果源</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
