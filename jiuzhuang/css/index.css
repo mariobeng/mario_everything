@@ -36,6 +36,10 @@ div.main{
 	background-size: cover;
 	-webkit-animation: mate_m 1s 6.7s forwards;
     animation: mate_m 1s 6.7s forwards;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
 }
 @-webkit-keyframes mate_m {
 	0% {
