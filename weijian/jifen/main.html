@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>积分商城</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/touchcarousel.css"/>
+		<link rel="stylesheet" type="text/css" href="css/three-d-skin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<!-- 轮播 begin-->
+		<div id="slideshow" class="touchcarousel three-d">
+			<div class="touchcarousel-container">
+		    	<a href="javascript:;" class="touchcarousel-item"><img src="img/lunbo01.jpg" /></a>
+		        <a href="javascript:;" class="touchcarousel-item"><img src="img/lunbo02.jpg" /></a>
+		        <a href="javascript:;" class="touchcarousel-item"><img src="img/lunbo03.jpg" /></a>
+		  	</div>
+		</div>
+		<!-- 轮播 end-->
+		<div class="list">
+			<ul>
+				<li>
+					<a href="#">
+						<div class="l_img">
+							<img src="img/lunbo01.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="r_txt">
+							<h4>有了房子就会有幸福了吗？</h4>
+							<p>四川90后情侣因买不起房，拿不出高额聘礼而跳河殉情。</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="l_img">
+							<img src="img/lunbo01.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="r_txt">
+							<h4>有了房子就会有幸福了吗？</h4>
+							<p>四川90后情侣因买不起房，拿不出高额聘礼而跳河殉情。</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="l_img">
+							<img src="img/lunbo01.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="r_txt">
+							<h4>有了房子就会有幸福了吗？</h4>
+							<p>四川90后情侣因买不起房，拿不出高额聘礼而跳河殉情。</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			<ul>
+				<li>
+					<a href="">
+						<img class="img-responsive " src="img/menu_active_a.png" alt="">
+						<!-- <img class="img-responsive active" src="img/menu_a.png" alt=""> -->
+						<p>我的积分</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img class="img-responsive" src="img/menu_b.png" alt="">
+
+						<p>商城</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img class="img-responsive" src="img/menu_c.png" alt="">
+
+						<p>微站</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img class="img-responsive" src="img/menu_d.png" alt="">
+
+						<p>游戏</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			/*轮播图*/
+			var $slideshow;
+			$(function(){
+				$slideshow = $("#slideshow");
+				$slideshow.find("img").attr("width",$(document.body).width());
+				$slideshow.touchCarousel({
+					pagingNav: true,
+					scrollbar: false,
+					directionNavAutoHide: false,
+					itemsPerMove: 1,
+					loopItems: true,
+					directionNav: false,
+					autoplay: true,
+					autoplayDelay: 2000,
+					autoplayStopAtAction:false,
+					useWebkit3d: true,
+					itemFallbackWidth:$(document.body).width(),
+					transitionSpeed: 400
+				});
+			});
+    	</script>
+	</body>
+</html>

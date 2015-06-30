@@ -586,3 +586,6 @@ div.txt_lr > p {
 h4.h4_center{
 	text-align: center;
 }
+video {
+	width: 100%;
+}

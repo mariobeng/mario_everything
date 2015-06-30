@@ -1,0 +1,277 @@
+html{
+	width: 100%;
+	height: 100%;
+	background-color: #F4F4F4;
+}
+body {
+	width: 100%;
+	height: auto;
+	font-family: Arial, "microsoft yahei", Helvetica, sans-serif;
+}
+
+img.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+div.main {
+  width: 100%;
+  height: 100%;
+  background: url(../img/welcome.jpg) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+}
+div.main_mate{
+	-webkit-animation: main_mate 1s 0s forwards;
+    animation: main_mate 1s 0s forwards;
+}
+@-webkit-keyframes main_mate {
+	0% {
+  		opacity: 1;
+	}
+	100% {
+  		opacity: 0;
+	}
+}
+@keyframes main_mate {
+	0% {
+  		opacity: 1;
+	}
+	100% {
+  		opacity: 0;
+	}
+}
+img#nav_btn{
+	position: absolute;
+	display: block;
+	width: 45px;
+	height: 45px;
+	right: 12px;
+	bottom: 12px;
+}
+a.kongbai{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 48%;
+}
+div.menu {
+  width: 100%;
+  height: 55%;
+  position: absolute;
+  left: 0;
+  bottom: -55%;
+  display: none;
+}
+div.menu_bg{
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .7;
+}
+div.navshow{
+	-webkit-animation: navshow 1s 0s forwards;
+    animation: navshow 1s 0s forwards;
+}
+@-webkit-keyframes navshow {
+	0% {
+  		bottom: -55%;
+	}
+	100% {
+  		bottom: 0;
+	}
+}
+@keyframes navshow {
+	0% {
+  		bottom: -55%;
+	}
+	100% {
+  		bottom: 0;
+	}
+}
+div.navhide{
+	-webkit-animation: navhide 1s 0s forwards;
+    animation: navhide 1s 0s forwards;
+}
+@-webkit-keyframes navhide {
+	0% {
+  		bottom: 0;
+	}
+	100% {
+  		bottom: -55%;
+	}
+}
+@keyframes navhide {
+	0% {
+  		bottom: 0;
+	}
+	100% {
+  		bottom: -55%;
+	}
+}
+div.menu ul{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+div.menu ul li{
+	float: left;
+	width: 21.875%;
+	height: 35.5871%;
+	margin: 9% 5.73% 0;
+	position: relative;
+}
+div.menu ul li a{
+	display: block;
+	width: 100%;
+	height: 65%;
+	z-index: 2;
+}
+div.menu ul li p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  display: block;
+  position: absolute;
+  width: 145%;
+  left: -20%;
+  bottom: -10%;
+}
+a.getout{
+	display: block;
+	width: 5.9375%;
+	height: 2.4911%;
+	position: absolute;
+	left: 47.2%;
+	top: 3%;
+	z-index: 2;
+	background: url(../img/down.png) no-repeat center;
+	background-size: cover;
+}
+div.main_bg{
+	width: 100%;
+	height: 100%;
+	background: url(../img/index.jpg) no-repeat center;
+	background-size: cover;
+}
+a.back {
+  display: block;
+  height: 30px;
+  left: 15px;
+  position: fixed;
+  top: 15px;
+  width: 30px;
+}
+a.back img {
+  height: 30px;
+  width: 30px;
+}
+div.article {
+  width: 92%;
+  padding: 4%;
+}
+div.article h3 {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  border-bottom: 1px solid #E2E2E2;
+  text-align: center;
+  margin-top: 20px;
+}
+img.art_img {
+  margin: 18px 0;
+}
+div.article h4 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+div.article h4.mag {
+  margin: 10px 0;
+}
+div.article p {
+  font-size: 16px;
+  line-height: 30px;
+}
+p.duanluo {
+  text-indent: 2em;
+}
+div.article strong{
+	font-weight: bold;
+}
+div.beef{
+	width: 100%;
+	height: auto;
+	margin-top: 15px;
+}
+div.b_img{
+	float: left;
+	width: 40%;
+}
+h4.b_txt{
+	float: right;
+	width: 60%;
+}
+h4.b_txt p{
+	font-weight: normal;
+}
+img.erweima {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: none;
+}
+/*关注微信--begin*/
+p.sao_txt{
+	font-size: 22px;
+	text-align: center;
+	padding: 30px 0;
+}
+p.sao_txt strong{
+	font-weight: bold;
+}
+p.zhichi{
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+}
+a.ewm_return{
+	display: block;
+	border-radius: 20px;
+	width: 90%;
+	border: 1px solid #BCBCBC;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	font-size: 22px;
+	color: #BCBCBC;
+	margin: 30px auto 0;
+}
+/*关注微信--end*/
+/*真伪鉴别文字换行--begin*/
+div.txt_lr {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+div.txt_lr > strong {
+  display: block;
+  float: left;
+  font-size: 16px;
+  max-width: 28%;
+}
+div.txt_lr > p {
+  width: 72%;
+  display: block;
+  float: right;
+}
+/*真伪鉴别文字换行--end*/
