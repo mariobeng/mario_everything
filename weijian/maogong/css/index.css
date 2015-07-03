@@ -170,7 +170,7 @@ div.menu ul {
 div.menu ul li{
 	float: left;
 	width: 29.2187%;
-	margin: 8% 0 2.0859% 3.0859%;
+	margin: 8% 0 0 3.0859%;
 }
 div.menu ul li a{
 	width: 100%;
