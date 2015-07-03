@@ -170,7 +170,7 @@ div.menu ul {
 div.menu ul li{
 	float: left;
 	width: 29.2187%;
-	margin: 9% 0 3.0859% 3.0859%;
+	margin: 10% 0 3.0859% 3.0859%;
 }
 div.menu ul li a{
 	width: 100%;
@@ -329,7 +329,7 @@ a.kongbai {
   left: 0;
   top: 0;
   width: 100%;
-  height: 50%;
+  height: 45%;
 }
 img#nav_btn {
   position: absolute;
@@ -341,10 +341,10 @@ img#nav_btn {
 }
 div.menu {
   width: 100%;
-  height: 50%;
+  height: 55%;
   position: absolute;
   left: 0;
-  bottom: -50%;
+  bottom: -55%;
   display: none;
   overflow: hidden;
   background: url(../img/menu_bg.png) repeat left top;
@@ -352,7 +352,7 @@ div.menu {
 a.getout{
 	display: block;
 	width: 11.7187%;
-	height: 4%;
+	height: 5%;
 	position: absolute;
 	left: 44.1406%;
 	top: 3%;
@@ -366,7 +366,7 @@ div.navshow{
 }
 @-webkit-keyframes navshow {
 	0% {
-  		bottom: -50%;
+  		bottom: -55%;
 	}
 	100% {
   		bottom: 0;
@@ -374,7 +374,7 @@ div.navshow{
 }
 @keyframes navshow {
 	0% {
-  		bottom: -50%;
+  		bottom: -55%;
 	}
 	100% {
   		bottom: 0;
@@ -389,7 +389,7 @@ div.navhide{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -50%;
+  		bottom: -55%;
 	}
 }
 @keyframes navhide {
@@ -397,6 +397,6 @@ div.navhide{
   		bottom: 0;
 	}
 	100% {
-  		bottom: -50%;
+  		bottom: -55%;
 	}
 }
