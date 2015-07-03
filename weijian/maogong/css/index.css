@@ -170,7 +170,7 @@ div.menu ul {
 div.menu ul li{
 	float: left;
 	width: 29.2187%;
-	margin: 10% 0 3.0859% 3.0859%;
+	margin: 8% 0 3.0859% 3.0859%;
 }
 div.menu ul li a{
 	width: 100%;
@@ -351,10 +351,10 @@ div.menu {
 }
 a.getout{
 	display: block;
-	width: 11.7187%;
-	height: 5%;
+	width: 5.9375%;
+	height: 2.5270%;
 	position: absolute;
-	left: 44.1406%;
+	left: 47.0312%;
 	top: 3%;
 	z-index: 2;
 	background: url(../img/down.png) no-repeat center;
