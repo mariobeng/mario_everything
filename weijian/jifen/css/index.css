@@ -10,7 +10,8 @@ body {
 }
 body.foot_menu{
 	position: relative;
-	padding-bottom: 80px;
+	padding-bottom: 100px;
+	overflow: hidden;
 }
 img.img-responsive {
     display: block;
@@ -90,19 +91,33 @@ div.footer ul li a p{
 	font-size: 0.8em;
 }
 /*header--begin*/
-h4.head {
+h4.head{
 	text-align: center;
 	font-size: 1.3em;
-	padding: 0.5em 5%;
+	padding: 0 5%;
 	font-weight: bold;
 	background-color: #F7F7F8;
 	border-bottom: 1px solid #EEEEEE;
 	width: 90%;
+	height: 2.5em;
+	line-height: 2.5em;
+}
+h4.head p{
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 a.back{
 	float: left;
 	width: 11px;
-	height: 20px;
+	height: 2.5em;
+	display: block;
+	line-height: 2.5em;
+	background: url(../img/back.png) no-repeat left center;
+	background-size: 100%;
 }
 /*header--end*/
 div.order_li{
@@ -127,6 +142,9 @@ span.statu{
 span.yifu{
 	color: #A50809;
 }
+span.weifu{
+	color: #C0C0C0;
+}
 span.yidui{
 	color: #EDB353;
 }
@@ -145,7 +163,7 @@ div.midd{
 	float: left;
 	width: 50%;
 	margin-left: 2%;
-	font-size: 0.8em;
+	font-size: 1em;
 }
 div.info_t{
 	height: 2.9em;
@@ -175,14 +193,14 @@ div.total{
 div.total span{
 	margin-left: 3%;
 }
-div.myStatu, div.jf_li{
+div.myStatu, div.jf_li, div.my_adres{
 	border-top: 1px solid #E1E1E1;
 	margin-top: 1em;
 }
-div.myStatu ul li{
+div.myStatu ul li, div.my_adres ul li{
 	border-bottom: 1px solid #E1E1E1;
-	line-height: 2.5em;
-	height: 2.5em;
+	line-height: 3em;
+	height: 3em;
 	padding: 0 5%;
 }
 div.myStatu ul li p{
@@ -197,8 +215,8 @@ div.jf_li ul li a{
 	display: block;
 	width: 90%;
 	border-bottom: 1px solid #E1E1E1;
-	line-height: 2.5em;
-	height: 2.5em;
+	line-height: 3em;
+	height: 3em;
 	padding: 0 5%;
 	color: #141414;
 	font-size: 1.1em;
@@ -206,15 +224,150 @@ div.jf_li ul li a{
 div.jf_li ul li a span{
 	float: right;
 }
-a.getout{
+a.getout, a.save_ad{
 	display: block;
 	width: 95%;
 	padding-left: 5%;
-	line-height: 2.5em;
-	height: 2.5em;
+	line-height: 3em;
+	height: 3em;
 	background-color: #F7F7F8;
 	border-top: 1px solid #DFDFDF;
 	border-bottom: 1px solid #DFDFDF;
 	margin-top: 1.5em;
 	color: #141414;
+}
+
+div.my_adres ul li input{
+  font-size: 1.1em;
+  color: #6E6E6E;
+  width: 100%;
+  border: none;
+  height: 2.3em;
+}
+div.my_adres ul li.adres{
+	height: 3.3em;
+	padding-top: 0.5em;
+	overflow: hidden;
+}
+div.my_adres ul li textarea{
+	font-size: 1.1em;
+	color: #6E6E6E;
+	width: 100%;
+	border: none;
+	resize: none;
+	overflow: hidden;
+}
+p.p_cu{
+	font-weight: bold;
+}
+div.total button{
+	border: none;
+	background-color: #F5F5F5;
+	color: #999;
+	font-size: 1.7em;
+	font-weight: bold;
+	height: 1.4em;
+	line-height: 1.4em;
+	margin-top: 0.3em;
+	width: 1.3em;
+}
+div.total input{
+	width: 2em;
+	text-align: center;
+	border: none;
+}
+div.jiesuan{
+	width: 90%;
+	padding: 0 5%;
+	text-align: right;
+	padding-top: 0.8em;
+}
+div.jiesuan a{
+	padding: 0.2em 0.7em;
+	border-radius: 0.3em;
+	font-size: 1.1em;
+	margin-left: 3%;
+}
+a.dele{
+	color: #6E6E6E;
+	border: 1px solid #C6C6C6;
+	background-color: #fff;
+}
+a.buy{
+	color: #fff;
+	border: 1px solid #EAC5C6;
+	background-color: #A50809;
+}
+div.article{
+	width: 90%;
+	padding: 0 5%;
+}
+div.art_top{
+	width: 100%;
+	border-bottom: 1px solid #E1E1E1;
+	padding-bottom: 0.8em;
+	margin-bottom: 1em;
+}
+div.art_top h3{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.7em;
+	margin: 0.8em 0;
+}
+p.time{
+	text-align: center;
+	color: #6E6E6E;
+}
+p.stage{
+	color: #141414;
+	line-height: 1.8em;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+div.city{
+	width: 100%;
+	overflow: hidden;
+}
+div.city ul{
+	width: 100%;
+	overflow: hidden;
+}
+div.city ul li{
+	float: left;
+	border: 1px solid #D7D7D7;
+	width: 46.5%;
+	margin: 2% 0 0 2%;
+}
+div.city ul li img{
+	width: 96%;
+	display: block;
+	margin: 2% auto 0;
+	height: 96px;
+}
+div.city ul li p{
+	padding: 0 5%;
+	margin: 0.5em auto 0;
+	color: #141414;
+	height: 38px;
+	overflow: hidden;
+}
+div.city ul li h4{
+	padding: 0 5%;
+	text-align: right;
+	margin-top: 0.5em;
+	color: #EAA112;
+}
+div.city ul li h4 > span{
+	font-size: 0.8em;
+}
+a.goon{
+	font-size: 1.15em;
+	width: 90%;
+	margin: 0.5em auto;
+	font-weight: bold;
+	color: #fff;
+	background-color: #A50809;
+	border-radius: 0.4em;
+	padding: 0.3em 0;
 }

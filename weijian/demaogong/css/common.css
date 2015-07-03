@@ -2,7 +2,7 @@ html{color:#333;background:#FFF;}
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
 fieldset, img{border:0;}
-em{font-style:normal;}
+em, strong{font-style:normal;font-weight:normal;}
 ul li{list-style:none;}
 ul.li_fl li{float: left;}
 h1, h2, h3, h4, h5, h6{font-weight:normal;}
@@ -20,7 +20,6 @@ h3{font-size: 24px;}
 h4{font-size: 18px;}
 h5{font-size: 14px;}
 h6{font-size: 12px;}
-button{padding: 0;margin: 0;}
 
 
 

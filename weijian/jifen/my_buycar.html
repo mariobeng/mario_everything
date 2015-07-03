@@ -3,19 +3,19 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
-        <title>我的订单</title>
+        <title>我的购物车</title>
         <link rel="stylesheet" type="text/css" href="css/common.css"/>
         <link rel="stylesheet" type="text/css" href="css/index.css"/>
     </head>
     <body>
         <h4 class="head">
-            <a href="#" class="back"></a><p>我的订单</p>
+            <a href="#" class="back"></a><p>我的购物车</p>
         </h4>
         <div class="clear"></div>
         <div class="order_li">
             <div class="o_num">
                 <span class="num_l">1256259630</span>
-                <span class="statu yifu">已付款</span>
+                <span class="statu weifu">未付款</span>
             </div>
             <div class="info">
                 <img src="img/info.jpg" alt="" class="img-responsive">
@@ -24,20 +24,26 @@
                     <p class="date">2015-06-23 10:11:55</p>
                 </div>
                 <div class="price">
-                    <p class="moeny">¥50.00</p>
+                    <p class="moeny p_cu">¥50.00</p>
                     <p class="shu">x1</p>
                 </div>
             </div>
             <div class="clear"></div>
             <div class="total">
-                <span>共<strong> 1 </strong>件商品</span>
-                <span>实付：<strong>¥50.00</strong></span>
+                <button class="min">-</button>
+                <input class="text_box" type="text" value="1">
+                <button class="add">+</button>
+                <span>实付：<strong>¥<strong class="p_tal">50.00</strong></strong></span>
             </div>
+        </div>
+        <div class="jiesuan">
+            <a href="" class="a_linebl dele">删除</a>
+            <a href="" class="a_linebl buy">购买</a>
         </div>
         <div class="order_li">
             <div class="o_num">
                 <span class="num_l">1256259630</span>
-                <span class="statu yidui">已兑换</span>
+                <span class="statu weifu">未付款</span>
             </div>
             <div class="info">
                 <img src="img/info.jpg" alt="" class="img-responsive">
@@ -46,16 +52,46 @@
                     <p class="date">2015-06-23 10:11:55</p>
                 </div>
                 <div class="price">
-                    <p class="moeny">¥50.00</p>
+                    <p class="moeny p_cu">¥50.00</p>
                     <p class="shu">x1</p>
                 </div>
             </div>
             <div class="clear"></div>
             <div class="total">
-                <span>共<strong> 1 </strong>件商品</span>
-                <span>实付：<strong>¥50.00</strong></span>
+                <button class="min">-</button>
+                <input class="text_box" type="text" value="1">
+                <button class="add">+</button>
+                <span>实付：<strong>¥<strong class="p_tal">50.00</strong></strong></span>
             </div>
         </div>
+        <div class="jiesuan">
+            <a href="" class="a_linebl dele">删除</a>
+            <a href="" class="a_linebl buy">购买</a>
+        </div>
         <script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(function(){
+
+                $("div.p_tal").each(function(){
+
+                    var t = $(this).find("input.text_box");
+                    $(this).find("button.add").click(function(){
+                        alert(1);
+                        t.val(parseInt(t.val())+1)
+                        setTotal();
+                    })
+                    $(this).find("button.min").click(function(){
+                        t.val(parseInt(t.val())-1)
+                        setTotal();
+                    })
+
+                    function setTotal(){
+                        $(this).find("strong.p_tal").html((parseInt(t.val())*50).toFixed(2));
+                    }
+                    setTotal();
+                })
+            })
+
+        </script>
     </body>
 </html>

@@ -1,7 +1,8 @@
+
 html{
 	width: 100%;
 	height: 100%;
-	background-color: #F4F4F4;
+	background-color: #fff;
 }
 body {
 	width: 100%;
@@ -47,7 +48,7 @@ img#nav_btn{
 	display: block;
 	width: 45px;
 	height: 45px;
-	right: 12px;
+	left: 12px;
 	bottom: 12px;
 }
 a.kongbai{
@@ -187,7 +188,7 @@ img.art_img {
   margin: 18px 0;
 }
 div.article h4 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: bold;
 }
@@ -275,3 +276,45 @@ div.txt_lr > p {
   float: right;
 }
 /*真伪鉴别文字换行--end*/
+/*suyuan.html--begin*/
+div.apple_sy {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 10px;
+}
+div.sy_l {
+  float: left;
+  width: 25%;
+}
+div.sy_l p {
+  font-size: 1.2em;
+}
+div.sy_r {
+  float: right;
+  width: 72%;
+  position: relative;
+  padding-left: 3%;
+}
+div.sy_bor {
+  border-left: 2px dotted #767FA8;
+  padding-left: 4%;
+}
+img.time {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+div.sy_bor p span {
+  font-weight: bold;
+}
+div.sy_bor p {
+  line-height: 24px;
+  font-size: 14px;
+  padding-left: 3%;
+}
+/*suyuan.html--end*/
+
+
+

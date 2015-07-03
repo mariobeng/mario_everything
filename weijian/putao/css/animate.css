@@ -1,0 +1,47 @@
+@charset "utf-8";
+html{width:100%; height:100%;}
+body{margin:0; padding:0; width:100%; height:100%; background:url(../img/indexbg.jpg) center center no-repeat; background-size:cover; font-family:"微软雅黑", "黑体", Arial;}
+#water{background:url(../img/water.png) center center no-repeat;background-size:cover; width:16px; height:21px; position:absolute; left:calc(50% - 8px); left:-webkit-calc(50% - 8px); left:-moz-calc(50% - 8px); top:64%;}
+#water.animation{ -moz-animation: water 5s 1 forwards;-webkit-animation: water 3s 1 forwards; }
+@-webkit-keyframes water
+{
+	0%{top:64%;}
+	80%{ top:81%;}
+	100%{opacity:0;}
+}
+@-moz-keyframes water
+{
+	0%{top:64%;}
+	80%{ top:81%;}
+	100%{opacity:0;}
+}
+#ripple{ position:absolute; top:80%; text-align:center; line-height:100%;}
+#ripple a{ z-index: 99; position:absolute; height:39px; width:115px; left:calc(50% - 57.5px);left:-webkit-calc(50% - 57.5px);left:-moz-calc(50% - 57.5px); top:10px; display:block; text-align:center; color:#fff; font-size:16px; border:1px solid #fff; line-height:39px; border-radius:20px; opacity: 0;}
+#ripple img{ width:calc(100% - 60px);width:-webkit-calc(100% - 60px);width:-moz-calc(100% - 60px); opacity: 0;}
+
+#ripple.animation img{ -moz-animation: rippleImg 6s 1s 1 forwards;-webkit-animation: rippleImg 6s 1s 1 forwards;}
+#ripple.animation a{ -moz-animation: rippleA 2s 3.5s 1 forwards;-webkit-animation: rippleA 2s 3.5s 1 forwards;}
+@-webkit-keyframes rippleImg
+{
+	0%{opacity:0; width:0;}
+	50%{opacity:100;}
+	100%{opacity:0;width:100%;}
+}
+@-moz-keyframes rippleImg
+{
+	0%{opacity:0;width:0;}
+	50%{opacity:100;}
+	100%{opacity:0;width:100%;}
+}
+@-webkit-keyframes rippleA
+{
+	0%{opacity:0;}
+	100%{opacity:100;}
+}
+@-moz-keyframes rippleA
+{
+	0%{opacity:0;}
+	100%{opacity:100;}
+}
+.bottom{ font-size:12px; position:absolute; width:100%; bottom:15px; color:#fff; text-align:center;}
+
