@@ -336,7 +336,7 @@ img#nav_btn {
   display: block;
   width: 45px;
   height: 45px;
-  left: 12px;
+  right: 12px;
   bottom: 12px;
 }
 div.menu {
