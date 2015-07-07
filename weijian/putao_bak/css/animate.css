@@ -24,7 +24,7 @@ body{
 	left: 47.5%;
 }
 #water.animation{
-	-moz-animation: water 5s 1 forwards;
+	-moz-animation: water 3s 1 forwards;
 	-webkit-animation: water 3s 1 forwards;
 }
 @-webkit-keyframes water
