@@ -12,14 +12,9 @@ body{
 #water{
 	background:url(../img/water.png) center center no-repeat;
 	background-size:cover;
-	/* width:16px;
-	height:21px;  */
 	width: 5%;
 	height: 4.0674%;
 	position:absolute;
-	/* left:calc(50% - 8px);
-	left:-webkit-calc(50% - 8px);
-	left:-moz-calc(50% - 8px); top:64%; */
 	top:64%;
 	left: 47.5%;
 }
@@ -41,8 +36,6 @@ body{
 }
 a#gomain{
 	width: 36.5625%;
-	/* height: 7.2183%;
-	line-height: 100%; */
 	padding: 3% 0;
 	position: absolute;
 	top: 80%;
@@ -85,68 +78,22 @@ a#gomain.animation{
 	-moz-animation: rippleImg 6s 1s 1 forwards;
 	-webkit-animation: rippleImg 6s 1s 1 forwards;
 }
-@-webkit-keyframes rippleImg
-{
+@-webkit-keyframes rippleImg{
 	0%{opacity:0; width:0;}
 	50%{opacity:1;}
 	100%{opacity:0;width:100%;}
 }
-@-moz-keyframes rippleImg
-{
+@-moz-keyframes rippleImg{
 	0%{opacity:0;width:0;}
 	50%{opacity:1;}
 	100%{opacity:0;width:100%;}
 }
-/* #ripple{
+.bottom{
+	font-size:12px;
 	position:absolute;
-	top:80%;
-	text-align:center;
-	line-height:100%;
-	width: 100%;
-}
-#ripple a{
-	z-index: 99;
-	position:absolute;
-	height:39px;
-	width:115px;
-	left:calc(50% - 57.5px);
-	left:-webkit-calc(50% - 57.5px);
-	left:-moz-calc(50% - 57.5px);
-	top:10px;
-	display:block;
-	text-align:center;
+	width:100%;
+	bottom:15px;
 	color:#fff;
-	font-size:16px;
-	border:1px solid #fff;
-	line-height:39px;
-	border-radius:20px;
-	opacity: 0;
+	text-align:center;
 }
-#ripple img{ width:calc(100% - 60px);width:-webkit-calc(100% - 60px);width:-moz-calc(100% - 60px); opacity: 0;}
-
-#ripple.animation img{ -moz-animation: rippleImg 6s 1s 1 forwards;-webkit-animation: rippleImg 6s 1s 1 forwards;}
-#ripple.animation a{ -moz-animation: rippleA 2s 3.5s 1 forwards;-webkit-animation: rippleA 2s 3.5s 1 forwards;}
-@-webkit-keyframes rippleImg
-{
-	0%{opacity:0; width:0;}
-	50%{opacity:100;}
-	100%{opacity:0;width:100%;}
-}
-@-moz-keyframes rippleImg
-{
-	0%{opacity:0;width:0;}
-	50%{opacity:100;}
-	100%{opacity:0;width:100%;}
-}
-@-webkit-keyframes rippleA
-{
-	0%{opacity:0;}
-	100%{opacity:100;}
-}
-@-moz-keyframes rippleA
-{
-	0%{opacity:0;}
-	100%{opacity:100;}
-} */
-.bottom{ font-size:12px; position:absolute; width:100%; bottom:15px; color:#fff; text-align:center;}
 
