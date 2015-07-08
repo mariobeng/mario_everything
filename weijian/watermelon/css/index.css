@@ -1,7 +1,7 @@
 html{
 	width: 100%;
 	height: 100%;
-	background-color: #F4F4F4;
+	background-color: #fff;
 }
 body {
 	width: 100%;
@@ -19,8 +19,7 @@ div.main {
   height: 100%;
   background: url(../img/welcome.jpg) no-repeat center center;
   background-size: cover;
-  position: absolute;
-  z-index: 10;
+  position: relative;
 }
 div.main_mate{
 	-webkit-animation: main_mate 1s 0s forwards;
@@ -44,11 +43,31 @@ div.main_mate{
 }
 img#nav_btn{
 	position: absolute;
-	display: block;
 	width: 45px;
 	height: 45px;
 	right: 12px;
 	bottom: 12px;
+}
+img.btnMate{
+    opacity: 0;
+    -webkit-animation: btnMate 1s 3s forwards;
+    animation: btnMate 1s 3s forwards;
+}
+@-webkit-keyframes btnMate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes btnMate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 a.kongbai{
 	display: block;
@@ -158,7 +177,109 @@ div.main_bg{
 	height: 100%;
 	background: url(../img/index.jpg) no-repeat center;
 	background-size: cover;
+    position: relative;
 }
+div.mymate img{
+    position: absolute;
+}
+div.mymate > img.ind_a{
+    width: 59.2187%;
+    height: 9.0277%;
+    left: 12.0312%;
+    top: 39.2857%;
+}
+div.ind > img.ind_am{
+    left: 6.0312%;
+    opacity: 0;
+    -webkit-animation: ind_am 1s 0s forwards;
+    animation: ind_am 1s 0s forwards;
+}
+@-webkit-keyframes ind_am {
+    0% {
+        left: 6.0312%;
+        opacity: 0;
+    }
+    100% {
+        left: 12.0312%;
+        opacity: 1;
+    }
+}
+@keyframes ind_am {
+    0% {
+        left: 6.0312%;
+        opacity: 0;
+    }
+    100% {
+        left: 12.0312%;
+        opacity: 1;
+    }
+}
+div.mymate > img.ind_b{
+    width: 68.125%;
+    height: 5.6547%;
+    left: 12.0312%;
+    top: 48.3134%;
+}
+div.ind > img.ind_bm{
+    left: 6.0312%;
+    opacity: 0;
+    -webkit-animation: ind_bm 1s 1s forwards;
+    animation: ind_bm 1s 1s forwards;
+}
+@-webkit-keyframes ind_bm {
+    0% {
+        left: 6.0312%;
+        opacity: 0;
+    }
+    100% {
+        left: 12.0312%;
+        opacity: 1;
+    }
+}
+@keyframes ind_bm {
+    0% {
+        left: 6.0312%;
+        opacity: 0;
+    }
+    100% {
+        left: 12.0312%;
+        opacity: 1;
+    }
+}
+div.mymate > img.ind_c{
+    width: 27.5%;
+    height: 1.6865%;
+    left: 12.6562%;
+    top: 55%;
+
+}
+div.ind > img.ind_cm{
+    top: 57%;
+    opacity: 0;
+    -webkit-animation: ind_cm 1s 2s forwards;
+    animation: ind_cm 1s 2s forwards;
+}
+@-webkit-keyframes ind_cm {
+    0% {
+        top: 57%;
+        opacity: 0;
+    }
+    100% {
+        top: 55%;
+        opacity: 1;
+    }
+}
+@keyframes ind_cm {
+    0% {
+        top: 57%;
+        opacity: 0;
+    }
+    100% {
+        top: 55%;
+        opacity: 1;
+    }
+}
+
 a.back {
   display: block;
   height: 30px;
@@ -187,7 +308,7 @@ img.art_img {
   margin: 18px 0;
 }
 div.article h4 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: bold;
 }
@@ -275,3 +396,211 @@ div.txt_lr > p {
   float: right;
 }
 /*真伪鉴别文字换行--end*/
+/*溯源--begin*/
+div.apple_sy {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 10px;
+}
+div.sy_l {
+  float: left;
+  width: 25%;
+}
+div.sy_l p {
+  font-size: 1.2em;
+}
+div.sy_r {
+  float: right;
+  width: 72%;
+  position: relative;
+  padding-left: 3%;
+}
+div.sy_bor {
+  border-left: 2px dotted #489F3E;
+  padding-left: 4%;
+}
+div.sy_bor p {
+  line-height: 24px;
+  font-size: 14px;
+  padding-left: 3%;
+}
+div.sy_bor p span {
+  font-weight: bold;
+}
+img.time {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+div.sy_l p.sy_x{
+    font-size: 14px;
+    text-align: center;
+    color: #595959;
+}
+/*溯源--end*/
+div.main > img{
+    position: absolute;
+}
+img.wel_a{
+    width: 59.2187%;
+    height: 9.0277%;
+    left: 12.9375%;
+    top: 20.0396%;
+    opacity: 0;
+}
+img.wel_am{
+    -webkit-animation: wel_am 1s 0s forwards;
+    animation: wel_am 1s 0s forwards;
+}
+@-webkit-keyframes wel_am {
+    0% {
+        left: 12.9375%;
+        opacity: 0;
+    }
+    100% {
+        left: 20.9375%;
+        opacity: 1;
+    }
+}
+@keyframes wel_am {
+    0% {
+        left: 12.9375%;
+        opacity: 0;
+    }
+    100% {
+        left: 20.9375%;
+        opacity: 1;
+    }
+}
+img.wel_b{
+    width: 68.125%;
+    height: 5.6547%;
+    left: 24.4062%;
+    top: 28.7698%;
+    opacity: 0;
+}
+img.wel_bm{
+    -webkit-animation: wel_bm 1s 0s forwards;
+    animation: wel_bm 1s 0s forwards;
+}
+@-webkit-keyframes wel_bm {
+    0% {
+        left: 24.4062%;
+        opacity: 0;
+    }
+    100% {
+        left: 16.4062%;
+        opacity: 1;
+    }
+}
+@keyframes wel_bm {
+    0% {
+        left: 24.4062%;
+        opacity: 0;
+    }
+    100% {
+        left: 16.4062%;
+        opacity: 1;
+    }
+}
+img.wel_c{
+    width: 30.1562%;
+    height: 1.6865%;
+    left: 35.625%;
+    top: 17.5436%;
+    opacity: 0;
+}
+img.wel_cm{
+    -webkit-animation: wel_cm .5s 1s forwards;
+    animation: wel_cm .5s 1s forwards;
+}
+@-webkit-keyframes wel_cm {
+    0% {
+        top: 17.5436%;
+        opacity: 0;
+    }
+    100% {
+        top: 19.5436%;
+        opacity: 1;
+    }
+}
+@keyframes wel_cm {
+    0% {
+        top: 17.5436%;
+        opacity: 0;
+    }
+    100% {
+        top: 19.5436%;
+        opacity: 1;
+    }
+}
+img.wel_d{
+    width: 20.1562%;
+    height: 10.3174%;
+    left: -22%;
+    top: 40%;
+    opacity: 0;
+}
+img.wel_dm{
+    -webkit-animation: wel_dm 1s 1.5s forwards;
+    animation: wel_dm 1s 1.5s forwards;
+}
+@-webkit-keyframes wel_dm {
+    0% {
+        left: -22%;
+        top: 40%;
+        opacity: 0;
+    }
+    100% {
+        left: 22.1875%;
+        top: 22.0238%;
+        opacity: 1;
+    }
+}
+@keyframes wel_dm {
+    0% {
+        left: -22%;
+        top: 40%;
+        opacity: 0;
+    }
+    100% {
+        left: 22.1875%;
+        top: 22.0238%;
+        opacity: 1;
+    }
+}
+a.gomain{
+    display: block;
+    position: absolute;
+    width: 35.7812%;
+    height: 7.738%;
+    left: 32.3437%;
+    bottom: 8.4087%;
+    opacity: 0;
+}
+a.gomain_m{
+    -webkit-animation: gomain_m 1s 2.5s forwards;
+    animation: gomain_m 1s 2.5s forwards;
+}
+@-webkit-keyframes gomain_m {
+    0% {
+        bottom: 8.4087%;
+        opacity: 0;
+    }
+    100% {
+        bottom: 11.4087%;
+        opacity: 1;
+    }
+}
+@keyframes gomain_m {
+    0% {
+        bottom: 8.4087%;
+        opacity: 0;
+    }
+    100% {
+        bottom: 11.4087%;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>宁夏硒砂瓜</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			body{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main_bg">
+			<div class="mymate">
+				<img src="img/wel01.png" alt="" class="ind_a ind_am">
+				<img src="img/ind02.png" alt="" class="ind_b ind_bm">
+				<img src="img/ind.png" alt="" class="ind_c ind_cm">
+			</div>
+			<a class="kongbai" href="#"></a>
+			<img id="nav_btn" src="img/btn.png"/>
+			<div class="menu">
+				<div class="menu_bg"></div>
+				<a class="getout" href="#"></a>
+				<ul>
+					<li>
+						<a class="true" href="zhenwei.html">
+							<img class="img-responsive" src="img/beef_01.png"/>
+						</a>
+						<p>真伪鉴别</p>
+					</li>
+					<li>
+						<a class="suyuan" href="suyuan.html">
+							<img class="img-responsive" src="img/beef_02.png"/>
+						</a>
+						<p>产品溯源</p>
+					</li>
+					<li>
+						<a class="wenhua" href="chanpin.html">
+							<img class="img-responsive" src="img/beef_03.png"/>
+						</a>
+						<p>产品中心</p>
+					</li>
+					<li>
+						<a class="cuxiao" href="xigua.html">
+							<img class="img-responsive" src="img/beef_04.png"/>
+						</a>
+						<p>硒砂瓜</p>
+					</li>
+					<li>
+						<a class="weixin" href="contact.html">
+							<img class="img-responsive" src="img/beef_05.png"/>
+						</a>
+						<p>联系我们</p>
+					</li>
+					<li>
+						<a class="weidian" href="jituan.html">
+							<img class="img-responsive" src="img/beef_06.png"/>
+						</a>
+						<p>香岩集团</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+
+			$(function(){
+				$("div.mymate").addClass("ind");
+				$("#nav_btn").addClass("btnMate");
+	   			if(window.location.hash == "#index"){
+					$("div.mymate").removeClass("ind");
+					$("#nav_btn").removeClass("btnMate");
+				}
+
+				$("#nav_btn").click(function(){
+					$("#nav_btn").removeClass("btnMate");
+					$(this).hide();
+					$("div.menu").show();
+					$("div.menu").removeClass("navhide");
+					$("div.menu").addClass("navshow");
+				});
+				$("a.getout, a.kongbai").click(function(){
+					$("#nav_btn").removeClass("btnMate");
+					$("div.menu").removeClass("navshow");
+					$("div.menu").addClass("navhide");
+					$("#nav_btn").show();
+					$("div.menu").delay(1000).hide(0);
+				});
+			})
+		</script>
+	</body>
+</html>

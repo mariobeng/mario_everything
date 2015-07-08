@@ -16,89 +16,23 @@
 		</style>
 	</head>
 	<body>
-		<div class="main"></div>
-		<div class="main_bg">
-			<a class="kongbai" href="#"></a>
-			<img id="nav_btn" src="img/btn.png"/>
-			<div class="menu">
-				<div class="menu_bg"></div>
-				<a class="getout" href="#"></a>
-				<ul>
-					<li>
-						<a class="true" href="zhenwei.html">
-							<img class="img-responsive" src="img/beef_01.png"/>
-						</a>
-						<p>真伪鉴别</p>
-					</li>
-					<li>
-						<a class="suyuan" href="suyuan.html">
-							<img class="img-responsive" src="img/beef_02.png"/>
-						</a>
-						<p>产品溯源</p>
-					</li>
-					<li>
-						<a class="wenhua" href="jiazhi.html">
-							<img class="img-responsive" src="img/beef_03.png"/>
-						</a>
-						<p>产品中心</p>
-					</li>
-					<li>
-						<a class="cuxiao" href="http://shaziwang.taobao.com">
-							<img class="img-responsive" src="img/beef_04.png"/>
-						</a>
-						<p>再次购买</p>
-					</li>
-					<li>
-						<a class="weixin" href="#">
-							<img class="img-responsive" src="img/beef_05.png"/>
-						</a>
-						<p>微信关注</p>
-					</li>
-					<li>
-						<a class="weidian" href="wenhua.html">
-							<img class="img-responsive" src="img/beef_06.png"/>
-						</a>
-						<p>香岩集团</p>
-					</li>
-				</ul>
-			</div>
+		<div class="main">
+			<img class="wel_a" src="img/wel01.png" alt="">
+			<img class="wel_b" src="img/wel02.png" alt="">
+			<img class="wel_c" src="img/wel03.png" alt="">
+			<img class="wel_d" src="img/wel04.png" alt="">
+			<a href="main.html" class="gomain">
+				<img src="img/comin.png" alt="" class="img-responsive">
+			</a>
 		</div>
 		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			//判断是否为微信浏览器
-			function isWeiXin(){
-    			var ua = window.navigator.userAgent.toLowerCase();
-	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-	      			return true;
-    			}
-  			}
-
-  			setTimeout(function (){
-    			$("div.main").addClass('main_mate');
-   			}, 4000);
-   			$("div.main").delay(5001).hide(0);
-
 			$(function(){
-				$("a.weixin").click(function(){
-  					if(!isWeiXin()){
-  						location.href = "weixin.html";
-  					}else{
-  						location.href = "saoma.html";
-  					}
-  				})
-
-				$("#nav_btn").click(function(){
-					$(this).hide();
-					$("div.menu").show();
-					$("div.menu").removeClass("navhide");
-					$("div.menu").addClass("navshow");
-				});
-				$("a.getout, a.kongbai").click(function(){
-					$("div.menu").removeClass("navshow");
-					$("div.menu").addClass("navhide");
-					$("#nav_btn").show();
-					$("div.menu").delay(1000).hide(0);
-				});
+				$("img.wel_a").addClass("wel_am");
+				$("img.wel_b").addClass("wel_bm");
+				$("img.wel_c").addClass("wel_cm");
+				$("img.wel_d").addClass("wel_dm");
+				$("a.gomain").addClass("gomain_m");
 			})
 		</script>
 	</body>
