@@ -48,27 +48,6 @@ img#nav_btn{
 	left: 12px;
 	bottom: 12px;
 }
-img.btnMate{
-    opacity: 0;
-    -webkit-animation: btnMate 1s 3s forwards;
-    animation: btnMate 1s 3s forwards;
-}
-@-webkit-keyframes btnMate {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes btnMate {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 a.kongbai{
 	display: block;
 	position: absolute;

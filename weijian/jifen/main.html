@@ -10,6 +10,29 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	</head>
 	<body>
+		<!-- 滚动导航 begin-->
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	            	<a href="#" >新闻</a>
+	            	<a href="#" >要闻</a>
+	            	<a href="#" >国内</a>
+	            	<a href="#" >国际</a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<a href="#" >军事</a>
+	            	<a href="#" >社会</a>
+	            	<a href="#" >娱乐</a>
+	            	<a href="#" >女人</a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<a href="#" >体育</a>
+	            	<a href="#" >科技</a>
+	            	<a href="#" >互联网</a>
+	            </div>
+	        </div>
+    	</div>
+		<!-- 滚动导航 end-->
 		<!-- 轮播 begin-->
 		<div id="slideshow" class="touchcarousel three-d">
 			<div class="touchcarousel-container">
@@ -91,6 +114,9 @@
 		</div>
 		<div class="clear"></div>
 		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<!--滚动导航 b -->
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--滚动导航 e -->
 		<script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			/*轮播图*/
@@ -113,6 +139,12 @@
 					transitionSpeed: 400
 				});
 			});
+			/*--滚动导航*/
+			var swiper = new Swiper('.swiper-container', {
+		        /*pagination: '.swiper-pagination',*/
+		        paginationClickable: true
+		    });
+		    /*滚动导航--*/
     	</script>
 	</body>
 </html>

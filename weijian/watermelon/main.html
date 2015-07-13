@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
-		<title>宁夏硒砂瓜</title>
+		<title>宁夏香山硒砂瓜</title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<style type="text/css">
@@ -72,21 +72,21 @@
 
 			$(function(){
 				$("div.mymate").addClass("ind");
-				$("#nav_btn").addClass("btnMate");
+
 	   			if(window.location.hash == "#index"){
 					$("div.mymate").removeClass("ind");
-					$("#nav_btn").removeClass("btnMate");
+					$("#nav_btn").hide();
+					$("div.menu").show();
+					$("div.menu").css("bottom","0");
 				}
 
 				$("#nav_btn").click(function(){
-					$("#nav_btn").removeClass("btnMate");
 					$(this).hide();
 					$("div.menu").show();
 					$("div.menu").removeClass("navhide");
 					$("div.menu").addClass("navshow");
 				});
 				$("a.getout, a.kongbai").click(function(){
-					$("#nav_btn").removeClass("btnMate");
 					$("div.menu").removeClass("navshow");
 					$("div.menu").addClass("navhide");
 					$("#nav_btn").show();
