@@ -85,12 +85,14 @@
 					$("div.menu").show();
 					$("div.menu").removeClass("navhide");
 					$("div.menu").addClass("navshow");
+					$("a.kongbai").delay(1000).show(0);
 				});
 				$("a.getout, a.kongbai").click(function(){
 					$("div.menu").removeClass("navshow");
 					$("div.menu").addClass("navhide");
 					$("#nav_btn").show();
 					$("div.menu").delay(1000).hide(0);
+					$("a.kongbai").hide();
 				});
 			})
 		</script>

@@ -49,7 +49,7 @@ img#nav_btn{
 	bottom: 12px;
 }
 a.kongbai{
-	display: block;
+	display: none;
 	position: absolute;
 	left: 0;
 	top: 0;
