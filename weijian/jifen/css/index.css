@@ -18,18 +18,7 @@ img.img-responsive {
     height: auto;
     max-width: 100%;
 }
-/*轮播style  begin*/
-#slideshow {
-  background-color: #999;
-}
-#slideshow .tc-paging-container {
-  margin-top: -20px;
-  position: inherit;
-}
-#slideshow .touchcarousel-item {
-  float: left;
-}
-/*轮播style  end*/
+
 div.list ul li{
 	width: 96.5%;
 	padding: 10px 1% 8px 2.5%;
@@ -223,6 +212,12 @@ div.jf_li ul li a{
 }
 div.jf_li ul li a span{
 	float: right;
+    display: block;
+}
+div.jf_li img{
+    width: 8px;
+    height: 15px;
+    vertical-align: middle;
 }
 a.getout, a.save_ad{
 	display: block;
@@ -432,3 +427,54 @@ a.goon{
   white-space:nowrap;
 }
 /*滚动导航--end*/
+
+/*7月14日需要修改的*/
+.btn{
+    background-color: #A50809;
+    line-height: 2.5em;
+}
+
+div.myStatu ul li, div.my_adres ul li {
+  line-height: 3em;
+  height: 3em;
+}
+
+/*轮播说明文字*/
+a.touchcarousel-item{
+    display: block;
+    position: relative;
+}
+a.touchcarousel-item h4{
+    position: absolute;
+    left: 0;
+    width: 72%;
+    bottom: 3px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #000;
+    color: #fff;
+    padding: 0 25% 0 3%;
+    opacity: .7;
+    font-size: 16px;
+}
+a.touchcarousel-item h4 p{
+    width: 100%;
+    display: inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+/*轮播style  begin*/
+#slideshow {
+  background-color: #fff;
+}
+.touchcarousel.three-d .tc-paging-container {
+  right: 2%;
+  margin-top: 0;
+  bottom: 12px;
+  width: 15%;
+}
+#slideshow .touchcarousel-item {
+  float: left;
+}
+/*轮播style  end*/

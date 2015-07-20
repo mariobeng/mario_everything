@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+        <title>积分商城</title>
+        <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    </head>
+    <body>
+        <div class="footer">
+            <ul>
+                <li>
+                    <h3 style="border-right: 1px solid #D2D2D2;">
+                        <span class="shequ_t">好猫社区</span>
+                    </h3>
+                    <h4 class="submenu sub-a">
+                        <a href="/member/">我是猫友</a>
+                        <a href="/">猫友活动</a>
+                        <a href="http://xiaoqu.qq.com/mobile/barindex.html?_bid=128&_wv=1027&bid=231242">猫友社区</a>
+                        <a href="/lottery">趣味游戏</a>
+                    </h4>
+                </li>
+                <li>
+                    <h3 style="border-right: 1px solid #D2D2D2;">
+                        <span class="buy_t">会员商城</span>
+                    </h3>
+                    <h4 class="submenu sub-b">
+                        <a href="/shop.php?classid=1">积分换礼</a>
+                        <a href="/lottery">积攒积分</a>
+                        <a href="/union.php">商城联盟</a>
+                    </h4>
+                </li>
+                <li>
+                    <h3>
+                        <span class="mao_t">好猫文化</span>
+                    </h3>
+                    <h4 class="submenu sub-c">
+                        <a href="http://vp.vboo.com.cn/web/nav?nid=1061">印象好猫</a>
+                        <a href="http://vp.vboo.com.cn/Web/Nav?nid=1064">品味好猫</a>
+                        <a href="http://plugindev.weke.com/project/haomao/list.html?id=5">故事好猫</a>
+                        <a href="/new">新品推荐</a>
+                    </h4>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            $("div.footer ul li").each(function(index){
+
+                if($("h4.submenu").is(":hidden")){
+                    $(this).find("h3").click(function(){
+                        $(this).next("h4.submenu").show();
+                    });
+                }else if($("h4.submenu").is(":visible")){
+                    $(this).find("h3").click(function(){
+                        $(this).next("h4.submenu").hide();
+                    });
+                }
+
+            });
+            $("h4.submenu a").click(function(){
+                $(this).parent("h4.submenu").hide();
+            });
+        </script>
+    </body>
+</html>
