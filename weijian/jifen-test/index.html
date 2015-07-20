@@ -48,20 +48,20 @@
         <div class="clear"></div>
         <script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
         <script>
-
-            /*$("div.footer ul li").each(function(index){
-                $(this).find("h3").click(function(){
-                    $(this).next("h4.submenu").toggle();
-                });
-            });*/
-
-            $("div.footer ul li").each(function(index){
-                $(this).find("h3").click(function(){
-                    $("h4.submenu").removeClass("yesmenu");
-                    $(this).next("h4.submenu").addClass("yesmenu");
-                });
+            $(".footer ul li h3").click(function(){
+                var $thissubmenu = $(this).next("h4.submenu");
+                $(".footer ul li h4.submenu").each(function(i,o){
+                    if(o == $thissubmenu[0])
+                    {
+                        if($thissubmenu.find(":hidden").length>1)
+                            $thissubmenu.show();
+                        else
+                            $thissubmenu.hide();
+                    }else{
+                        $(o).hide();
+                    }
+                })
             });
-
 
             $("h4.submenu a").click(function(){
                 $(this).parent("h4.submenu").hide();
@@ -75,12 +75,8 @@
             }
 
             $(document).bind('click',function(){
-                $('h4.submenu').removeClass('yesmenu');
+                $('h4.submenu').hide();
             });
-
-            /*$(document).bind('click',function(){
-                $('h4.submenu').css('display','none');
-            });*/
 
             $('h3.m-menu').bind('click',function(e){
                 stopPropagation(e);

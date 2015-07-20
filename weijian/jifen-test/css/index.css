@@ -631,9 +631,6 @@ h4.submenu{
     border-left: 1px solid #D2D2D2;
     display: none;
 }
-h4.yesmenu{
-    display: block;
-}
 h4.submenu:after{
     content: "";
     width: 1%;
@@ -664,5 +661,4 @@ h4.submenu a{
     border-bottom: 1px solid #D2D2D2;
     border-right: 1px solid #D2D2D2;
 }
-
 /*底部菜单--end*/
