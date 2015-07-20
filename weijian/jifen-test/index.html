@@ -12,7 +12,7 @@
         <div class="footer">
             <ul>
                 <li>
-                    <h3 style="border-right: 1px solid #D2D2D2;">
+                    <h3 class="m-menu" style="border-right: 1px solid #D2D2D2;">
                         <span class="shequ_t">好猫社区</span>
                     </h3>
                     <h4 class="submenu sub-a">
@@ -23,7 +23,7 @@
                     </h4>
                 </li>
                 <li>
-                    <h3 style="border-right: 1px solid #D2D2D2;">
+                    <h3 class="m-menu" style="border-right: 1px solid #D2D2D2;">
                         <span class="buy_t">会员商城</span>
                     </h3>
                     <h4 class="submenu sub-b">
@@ -33,7 +33,7 @@
                     </h4>
                 </li>
                 <li>
-                    <h3>
+                    <h3 class="m-menu">
                         <span class="mao_t">好猫文化</span>
                     </h3>
                     <h4 class="submenu sub-c">
@@ -48,22 +48,45 @@
         <div class="clear"></div>
         <script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
         <script>
+
+            /*$("div.footer ul li").each(function(index){
+                $(this).find("h3").click(function(){
+                    $(this).next("h4.submenu").toggle();
+                });
+            });*/
+
             $("div.footer ul li").each(function(index){
-
-                if($("h4.submenu").is(":hidden")){
-                    $(this).find("h3").click(function(){
-                        $(this).next("h4.submenu").show();
-                    });
-                }else if($("h4.submenu").is(":visible")){
-                    $(this).find("h3").click(function(){
-                        $(this).next("h4.submenu").hide();
-                    });
-                }
-
+                $(this).find("h3").click(function(){
+                    $("h4.submenu").removeClass("yesmenu");
+                    $(this).next("h4.submenu").addClass("yesmenu");
+                });
             });
+
+
             $("h4.submenu a").click(function(){
                 $(this).parent("h4.submenu").hide();
             });
+
+            function stopPropagation(e) {
+                if (e.stopPropagation)
+                    e.stopPropagation();
+                else
+                    e.cancelBubble = true;
+            }
+
+            $(document).bind('click',function(){
+                $('h4.submenu').removeClass('yesmenu');
+            });
+
+            /*$(document).bind('click',function(){
+                $('h4.submenu').css('display','none');
+            });*/
+
+            $('h3.m-menu').bind('click',function(e){
+                stopPropagation(e);
+            });
+
+
         </script>
     </body>
 </html>

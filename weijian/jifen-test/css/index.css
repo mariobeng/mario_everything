@@ -575,9 +575,6 @@ a.touchcarousel-item h4 p{
     text-overflow:ellipsis;
 }
 
-
-
-
 /*底部菜单--begin*/
 div.footer{
     width: 100%;
@@ -592,15 +589,15 @@ div.footer ul li{
     float: left;
     width: 33%;
     text-align: center;
-    height: 32px;
-    line-height: 32px;
+    height: 40px;
+    line-height: 40px;
     position: relative;
 }
 div.footer ul li h3{
     width: 100%;
     text-align: center;
-    height: 32px;
-    line-height: 32px;
+    height: 40px;
+    line-height: 40px;
 }
 div.footer ul li img {
   display: block;
@@ -634,6 +631,9 @@ h4.submenu{
     border-left: 1px solid #D2D2D2;
     display: none;
 }
+h4.yesmenu{
+    display: block;
+}
 h4.submenu:after{
     content: "";
     width: 1%;
@@ -645,27 +645,24 @@ h4.submenu:after{
     border-top: 8px solid #D2D2D2;
 }
 h4.sub-a{
-    top: -143px;
+    top: -175px;
 }
 h4.sub-b{
-    top: -110px;
+    top: -134px;
 }
 h4.sub-c{
-    top: -143px;
+    top: -175px;
 }
 h4.submenu a{
     display: block;
     width: 100%;
-    height: 32px;
-    line-height: 32px;
+    height: 40px;
+    line-height: 40px;
     font-size: 16px;
     color: #666;
     text-align: center;
     border-bottom: 1px solid #D2D2D2;
     border-right: 1px solid #D2D2D2;
 }
-
-
-
 
 /*底部菜单--end*/
