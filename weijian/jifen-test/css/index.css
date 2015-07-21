@@ -576,6 +576,9 @@ a.touchcarousel-item h4 p{
 }
 
 /*底部菜单--begin*/
+*{
+    cursor: pointer;
+}
 div.footer{
     width: 100%;
     border-top: 1px solid #D2D2D2;
@@ -598,6 +601,7 @@ div.footer ul li h3{
     text-align: center;
     height: 45px;
     line-height: 45px;
+    cursor: pointer;
 }
 div.footer ul li img {
   display: block;
@@ -630,6 +634,7 @@ h4.submenu{
     border-top: 1px solid #D2D2D2;
     border-left: 1px solid #D2D2D2;
     display: none;
+    cursor: pointer;
 }
 h4.submenu:after{
     content: "";
