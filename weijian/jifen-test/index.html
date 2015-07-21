@@ -74,14 +74,6 @@
                     e.cancelBubble = true;
             }
 
-            /*$(document).bind('click',function(){
-                $('h4.submenu').hide();
-            });
-
-            $('h3.m-menu').bind('click',function(e){
-                stopPropagation(e);
-            });*/
-
             $(document).bind('touchstart',function(){
                 $('h4.submenu').hide();
             });
@@ -89,7 +81,6 @@
             $('h3.m-menu,.submenu').bind('touchstart',function(e){
                 stopPropagation(e);
             });
-
 
         </script>
     </body>
