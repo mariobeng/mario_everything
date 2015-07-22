@@ -584,6 +584,8 @@ div.footer{
     z-index: 10;
     left: 0;
     bottom: 0;
+
+    height: 45px;
 }
 div.footer ul li{
     float: left;
@@ -593,11 +595,12 @@ div.footer ul li{
     line-height: 45px;
     position: relative;
 }
-div.footer ul li h3{
+div.footer ul li h3.m-menu{
     width: 100%;
     text-align: center;
     height: 45px;
     line-height: 45px;
+    cursor: pointer;
 }
 div.footer ul li img {
   display: block;
@@ -630,9 +633,7 @@ h4.submenu{
     border-top: 1px solid #D2D2D2;
     border-left: 1px solid #D2D2D2;
     display: none;
-}
-h4.yesmenu{
-    display: block;
+    cursor: pointer;
 }
 h4.submenu:after{
     content: "";
@@ -664,5 +665,4 @@ h4.submenu a{
     border-bottom: 1px solid #D2D2D2;
     border-right: 1px solid #D2D2D2;
 }
-
 /*底部菜单--end*/
