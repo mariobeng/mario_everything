@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>富县苹果</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/touchcarousel.css"/>
+		<link rel="stylesheet" type="text/css" href="css/three-d-skin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 轮播 begin-->
+		<div id="slideshow" class="touchcarousel three-d">
+			<div class="touchcarousel-container">
+		    	<a href="javascript:;" class="touchcarousel-item">
+		    		<img src="img/fx_banner01.jpg" />
+		    	</a>
+		        <a href="javascript:;" class="touchcarousel-item">
+		        	<img src="img/fx_banner02.jpg" />
+		        </a>
+		        <a href="javascript:;" class="touchcarousel-item">
+		        	<img src="img/fx_banner03.jpg" />
+		        </a>
+		  	</div>
+		</div>
+		<!-- 轮播 end-->
+		<div class="list">
+			<ul>
+				<li><a href="guo.html">
+					<div class="l_img">
+						<img src="img/li01.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="r_txt">
+						<h4>富县苹果</h4>
+						<p>陕西富县，素有“中国苹果之乡”的美誉，其“富县”苹果也被评为陕西省知名品牌。</p>
+					</div>
+					<span class="r_btn"><img src="img/icon-right.png" alt=""></span>
+				</a></li>
+				<li><a href="meishi.html">
+					<div class="l_img">
+						<img src="img/li02.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="r_txt">
+						<h4>苹果美食</h4>
+						<p>一天一个苹果，医生远离我。白水苹果的糖分含量和有机物指数均高于普通苹果</p>
+					</div>
+					<span class="r_btn"><img src="img/icon-right.png" alt=""></span>
+				</a></li>
+				<li><a href="wang.html">
+					<div class="l_img">
+						<img src="img/li03.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="r_txt">
+						<h4>忠旺果业</h4>
+						<p>富县忠旺果业合作社成立于2009年5月，目前有正式社员58人，松散型社员106人</p>
+					</div>
+					<span class="r_btn"><img src="img/icon-right.png" alt=""></span>
+				</a></li>
+				<li><a href="contact.html">
+					<div class="l_img">
+						<img src="img/li04.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="r_txt">
+						<h4>联系我们</h4>
+						<p>陕西省富县忠旺果业合作社<br />地址：陕西省富县交道镇逊村</p>
+					</div>
+					<span class="r_btn"><img src="img/icon-right.png" alt=""></span>
+				</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			<ul>
+				<li>
+					<a href="guo.html">
+						<img class="img-responsive " src="img/icon_fx01.png" alt="">
+						<p>富县苹果</p>
+					</a>
+				</li>
+				<li>
+					<a href="meishi.html">
+						<img class="img-responsive" src="img/icon_fx02.png" alt="">
+
+						<p>苹果美食</p>
+					</a>
+				</li>
+				<li>
+					<a href="wang.html">
+						<img class="img-responsive" src="img/icon_fx03.png" alt="">
+
+						<p>忠旺果业</p>
+					</a>
+				</li>
+				<li>
+					<a href="contact.html">
+						<img class="img-responsive" src="img/icon_fx04.png" alt="">
+
+						<p>联系我们</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			/*轮播图*/
+			var $slideshow;
+			$(function(){
+				$slideshow = $("#slideshow");
+				$slideshow.find("img").attr("width",$(document.body).width());
+				$slideshow.touchCarousel({
+					pagingNav: true,
+					scrollbar: false,
+					directionNavAutoHide: false,
+					itemsPerMove: 1,
+					loopItems: true,
+					directionNav: false,
+					autoplay: true,
+					autoplayDelay: 2000,
+					autoplayStopAtAction:false,
+					useWebkit3d: true,
+					itemFallbackWidth:$(document.body).width(),
+					transitionSpeed: 400
+				});
+			});
+    	</script>
+	</body>
+</html>
