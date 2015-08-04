@@ -50,12 +50,12 @@ img.yc_big{
     animation: yc_big 1s ease 0s forwards;
 }
 @-webkit-keyframes yc_big{
-  0%{transform: translateY(-30px);opacity: 0;}
-  100%{transform: translateY(0);opacity: 1;}
+  0%{transform: translateY(-30px);-webkit-transform: translateY(-30px);opacity: 0;}
+  100%{transform: translateY(0);-webkit-transform: translateY(0);opacity: 1;}
 }
 @keyframes yc_big{
-  0%{transform: translateY(-30px);opacity: 0;}
-  100%{transform: translateY(0);opacity: 1;}
+  0%{transform: translateY(-30px);-webkit-transform: translateY(-30px);opacity: 0;}
+  100%{transform: translateY(0);-webkit-transform: translateY(0);opacity: 1;}
 }
 img.yc_zhang{
     width: 3.2812%;
@@ -82,12 +82,12 @@ img.yc_bird{
     animation: yc_bird 1s ease 2.5s forwards;
 }
 @-webkit-keyframes yc_bird{
-  0%{transform: translateX(60px) translateY(60px);opacity: 0;}
-  100%{transform: translateX(0) translateY(0);opacity: 1;}
+  0%{transform: translateX(60px) translateY(60px);-webkit-transform: translateX(60px) translateY(60px);opacity: 0;}
+  100%{transform: translateX(0) translateY(0);-webkit-transform: translateX(0) translateY(0);opacity: 1;}
 }
 @keyframes yc_bird{
-  0%{transform: translateX(60px) translateY(60px);opacity: 0;}
-  100%{transform: translateX(0) translateY(0);opacity: 1;}
+  0%{transform: translateX(60px) translateY(60px);-webkit-transform: translateX(60px) translateY(60px);opacity: 0;}
+  100%{transform: translateX(0) translateY(0);-webkit-transform: translateX(0) translateY(0);opacity: 1;}
 }
 a.comein{
 	width: 20.625%;
@@ -109,12 +109,12 @@ img.go_01{
     animation: go_01 .5s ease 4s forwards;
 }
 @-webkit-keyframes go_01{
-  0%{transform: translateX(30px);opacity: 0;}
-  100%{transform: translateX(0);opacity: 1;}
+  0%{transform: translateX(30px);-webkit-transform: translateX(30px);opacity: 0;}
+  100%{transform: translateX(0);-webkit-transform: translateX(0);opacity: 1;}
 }
 @keyframes go_01{
-  0%{transform: translateX(30px);opacity: 0;}
-  100%{transform: translateX(0);opacity: 1;}
+  0%{transform: translateX(30px);-webkit-transform: translateX(30px);opacity: 0;}
+  100%{transform: translateX(0);-webkit-transform: translateX(0);opacity: 1;}
 }
 img.go_02{
     width: 26.5151%;
@@ -123,12 +123,12 @@ img.go_02{
     animation: go_02 .5s ease 4.2s forwards;
 }
 @-webkit-keyframes go_02{
-  0%{transform: translateX(30px);opacity: 0;}
-  100%{transform: translateX(0);opacity: 1;}
+  0%{transform: translateX(30px);-webkit-transform: translateX(30px);opacity: 0;}
+  100%{transform: translateX(0);-webkit-transform: translateX(0);opacity: 1;}
 }
 @keyframes go_02{
-  0%{transform: translateX(30px);opacity: 0;}
-  100%{transform: translateX(0);opacity: 1;}
+  0%{transform: translateX(30px);-webkit-transform: translateX(30px);opacity: 0;}
+  100%{transform: translateX(0);-webkit-transform: translateX(0);opacity: 1;}
 }
 img.go_03{
     width: 25.7575%;
@@ -137,12 +137,12 @@ img.go_03{
     animation: go_03 .5s ease 4.4s forwards;
 }
 @-webkit-keyframes go_03{
-  0%{transform: translateX(30px);opacity: 0;}
-  100%{transform: translateX(0);opacity: 1;}
+  0%{transform: translateX(30px);-webkit-transform: translateX(30px);opacity: 0;}
+  100%{transform: translateX(0);-webkit-transform: translateX(0);opacity: 1;}
 }
 @keyframes go_03{
-  0%{transform: translateX(30px);opacity: 0;}
-  100%{transform: translateX(0);opacity: 1;}
+  0%{transform: translateX(30px);-webkit-transform: translateX(30px);opacity: 0;}
+  100%{transform: translateX(0);-webkit-transform: translateX(0);opacity: 1;}
 }
 img.go_04{
     width: 26.5151%;
@@ -151,18 +151,13 @@ img.go_04{
     animation: go_04 .5s ease 4.6s forwards;
 }
 @-webkit-keyframes go_04{
-  0%{transform: translateX(30px);opacity: 0;}
-  100%{transform: translateX(0);opacity: 1;}
+  0%{transform: translateX(30px);-webkit-transform: translateX(30px);opacity: 0;}
+  100%{transform: translateX(0);-webkit-transform: translateX(0);opacity: 1;}
 }
 @keyframes go_04{
-  0%{transform: translateX(30px);opacity: 0;}
-  100%{transform: translateX(0);opacity: 1;}
+  0%{transform: translateX(30px);-webkit-transform: translateX(30px);opacity: 0;}
+  100%{transform: translateX(0);-webkit-transform: translateX(0);opacity: 1;}
 }
-
-
-
-
-
 
 a.gomain{
 	display: block;
