@@ -28,7 +28,7 @@ img.logo{
     width: 34.8437%;
     height: 12.0039%;
     left: 34.5312%;
-    top: 8.2341%;
+    top: 6%;
     opacity: 0;
     -webkit-animation: logo 1s ease 0s forwards;
     animation: logo 1s ease 0s forwards;
@@ -46,7 +46,7 @@ div.milk_t{
     width: 34.375%;
     height: 8.2341%;
     left: 33.5937%;
-    top: 25.5952%;
+    top: 23%;
 }
 div.milk_t img{
     opacity: 0;
@@ -176,7 +176,7 @@ a.comein{
     width: 35.7812%;
     height: 7.738%;
     left: 32.1094%;
-    bottom: 7.4%;
+    bottom: 4%;
 }
 img.imbg{
     -webkit-animation: comein 3s ease-in-out 0s infinite;
@@ -325,17 +325,20 @@ img.naiping{
     left: 6%;
     bottom: 5%;
 }
+img#naiping{
+    opacity: 1;
+}
 div.m_second img.naiping{
     -webkit-animation: naiping 1s ease 0s forwards;
     animation: naiping 1s ease 0s forwards;
 }
 @-webkit-keyframes naiping{
-  0%{transform: translateX(-100px);-webkit-transform: translateX(-100px);opacity: 0;}
-  100%{transform: translateX(0px);-webkit-transform: translateX(0px);opacity: 1;}
+  0%{transform: translateX(-200px);-webkit-transform: translateX(-200px);}
+  100%{transform: translateX(0px);-webkit-transform: translateX(0px);}
 }
 @keyframes naiping{
-  0%{transform: translateX(-100px);-webkit-transform: translateX(-100px);opacity: 0;}
-  100%{transform: translateX(0px);-webkit-transform: translateX(0px);opacity: 1;}
+  0%{transform: translateX(-200px);-webkit-transform: translateX(-200px);}
+  100%{transform: translateX(0px);-webkit-transform: translateX(0px);}
 }
 img.two_logo{
     position: absolute;
