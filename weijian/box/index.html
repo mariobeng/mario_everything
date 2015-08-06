@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>圣亿达包装</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/touchcarousel.css"/>
+		<link rel="stylesheet" type="text/css" href="css/three-d-skin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<!-- 轮播 begin-->
+		<div id="slideshow" class="touchcarousel three-d">
+			<div class="touchcarousel-container">
+		    	<a href="javascript:;" class="touchcarousel-item"><img src="img/box01.jpg" /></a>
+		        <a href="javascript:;" class="touchcarousel-item"><img src="img/box02.jpg" /></a>
+		        <a href="javascript:;" class="touchcarousel-item"><img src="img/box03.jpg" /></a>
+		  	</div>
+		</div>
+		<!-- 轮播 end-->
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="company.html">
+						<img src="img/menu01.png"/>
+						<h3>公司简介</h3>
+					</a>
+				</li>
+				<li>
+					<a href="jishu.html">
+						<img src="img/menu02.png"/>
+						<h3>技术优势</h3>
+					</a>
+				</li>
+				<li>
+					<a href="lingdao.html">
+						<img src="img/menu03.png"/>
+						<h3>领导关怀</h3>
+					</a>
+				</li>
+				<li>
+					<a href="info.html">
+						<img src="img/menu04.png"/>
+						<h3>产品信息</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="weixin">
+						<img src="img/menu05.png"/>
+						<h3>微信关注</h3>
+					</a>
+				</li>
+				<li>
+					<a href="content.html">
+						<img src="img/menu06.png"/>
+						<h3>联系我们</h3>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/judge_weixin.js" charset="utf-8"></script>
+		<script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/*轮播图*/
+			var $slideshow;
+			$(function(){
+				$slideshow = $("#slideshow");
+				$slideshow.find("img").attr("width",$(document.body).width());
+				$slideshow.touchCarousel({
+					pagingNav: true,
+					scrollbar: false,
+					directionNavAutoHide: false,
+					itemsPerMove: 1,
+					loopItems: true,
+					directionNav: false,
+					autoplay: true,
+					autoplayDelay: 2000,
+					autoplayStopAtAction:false,
+					useWebkit3d: true,
+					itemFallbackWidth:$(document.body).width(),
+					transitionSpeed: 400
+				});
+			});
+		</script>
+	</body>
+</html>
