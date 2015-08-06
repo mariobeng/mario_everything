@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>名片-产品</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//判断是否为微信浏览器
+			function isWeiXin(){
+    			var ua = window.navigator.userAgent.toLowerCase();
+	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+	      			return true;
+    			}
+  			}
+
+			$(function(){
+				//弹框
+	  			$("#nav_btn").click(function(){
+	  				$("#nav_btn").hide();
+	  				$(".xinxi").show().removeClass('xin_no').addClass("xinmate");
+	  			})
+	  			//添加微信
+	  			$("a.add").click(function(){
+	  				if (!isWeiXin()) {
+	  					alert("请使用微信扫码进入!");
+	  					return false;
+	  				}else{
+	  					$("img.erweima").show();
+	  				};
+	  			})
+	  			$("img.erweima").click(function(){
+	  				$("img.erweima").hide();
+	  			})
+	  			//添加到通讯录
+	  			$("a.savetel").click(function(){
+	  				if (!isWeiXin()) {
+	  					alert("请使用微信扫码进入!");
+	  					return false;
+	  				}else{
+	  					$("img.mecard").show();
+	  				};
+	  			})
+	  			$("img.mecard").click(function(){
+	  				$("img.mecard").hide();
+	  			})
+	  			//弹框消失
+	  			$("a.hideinfo").click(function(){
+	  				$("#nav_btn").show();
+	  				$(".xinxi").fadeOut(1000).removeClass("xinmate").addClass("xin_no");
+	  			})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="info name">
+				<!-- <img src="img/info_name.png" alt="" class="img-responsive"> -->
+				<h3>XXX</h3>
+			</div>
+			<div class="info job">
+				<!-- <img src="img/info_job.png" alt="" class="img-responsive"> -->
+				<p>主营产品</p>
+			</div>
+			<img id="nav_btn" src="img/btn.png">
+			<a class="hideinfo" href="#"></a>
+			<div class="xinxi">
+				<div class="xin_up">
+					<img src="img/up.png" alt="" class="up_img">
+					<p>商户名称：XXXXXXX</p>
+					<p>产品范围：XXXXXXX</p>
+					<p>特色产品：XXXXXX</p>
+					<p>联系人：XXX</p>
+					<p>电话：XXXXXXXXXXX</p>
+					<p>邮箱：XXXX@XX.com</p>
+					<p>地址：XXXXXXXXXXXXXX</p>
+					<p>网店（微店）：XXXXXXX</p>
+					<p>银行账号：XXXXX XXXXXXXXX XXXXX</p>
+					<p class="weixin">微信：XXXXX<a class="add" href="#">+</a></p>
+					<div class="clear"></div>
+					<p>支付方式：</p>
+					<div class="datu">
+						<a href="http://c10000.2wm.cn/site/" class="weizhan">
+							<img src="img/pay_wx.png" alt="">
+							<p>微信支付</p>
+						</a>
+						<a href="http://www.letv.com/ptv/vplay/22567932.html" class="video">
+							<img src="img/pay_zfb.png" alt="">
+							<p>支付宝</p>
+						</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<a class="savetel" href="#">保存到通讯录</a>
+			</div>
+			<img class="erweima" src="img/erweima.png">
+			<img class="mecard" src="img/mecard.png">
+		</div>
+	</body>
+</html>
