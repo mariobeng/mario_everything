@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>凤菊商贸</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/touchcarousel.css"/>
+		<link rel="stylesheet" type="text/css" href="css/three-d-skin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 轮播 begin-->
+		<div id="slideshow" class="touchcarousel three-d">
+			<div class="touchcarousel-container">
+		    	<a href="javascript:;" class="touchcarousel-item">
+		    		<img src="img/fx_banner01.jpg" />
+		    	</a>
+		        <a href="javascript:;" class="touchcarousel-item">
+		        	<img src="img/fx_banner02.jpg" />
+		        </a>
+		  	</div>
+		</div>
+		<!-- 轮播 end-->
+		<div class="list">
+			<ul>
+				<li>
+					<a href="guocu.html">
+						<img class="img-responsive" src="img/gc.jpg" alt="">
+						<p>安氏春天果醋饮料</p>
+					</a>
+				</li>
+				<li>
+					<a href="lyks.html">
+						<img class="img-responsive" src="img/luyisi.jpg" alt="">
+						<p>法国路易卡斯堡葡萄酒系列</p>
+					</a>
+				</li>
+				<li>
+					<a href="jiwei.html">
+						<img class="img-responsive" src="img/jiwei.jpg" alt="">
+						<p>冰之妹白兰地预调鸡尾酒</p>
+					</a>
+				</li>
+				<li>
+					<a href="jiaocang.html">
+						<img class="img-responsive" src="img/jiaocang.jpg" alt="">
+						<p>长城（窖藏）干红葡萄酒系列</p>
+					</a>
+				</li>
+				<li>
+					<a href="putaojiu.html">
+						<img class="img-responsive" src="img/ganhong.jpg" alt="">
+						<p>进口干红、伏特加、威士忌、白兰地等</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			<ul>
+				<li>
+					<a href="index.html">
+						<img class="img-responsive" src="img/fj_active01.png" alt="">
+						<p class="active">产品介绍</p>
+					</a>
+				</li>
+				<li>
+					<a href="prize.html">
+						<img class="img-responsive" src="img/icon_fj02.png" alt="">
+						<p>扫码抽奖</p>
+					</a>
+				</li>
+				<li>
+					<a href="company.html">
+						<img class="img-responsive" src="img/icon_fj03.png" alt="">
+
+						<p>公司介绍</p>
+					</a>
+				</li>
+				<li>
+					<a href="contact.html">
+						<img class="img-responsive" src="img/icon_fj04.png" alt="">
+
+						<p>联系我们</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			/*轮播图*/
+			var $slideshow;
+			$(function(){
+				$slideshow = $("#slideshow");
+				$slideshow.find("img").attr("width",$(document.body).width());
+				$slideshow.touchCarousel({
+					pagingNav: true,
+					scrollbar: false,
+					directionNavAutoHide: false,
+					itemsPerMove: 1,
+					loopItems: true,
+					directionNav: false,
+					autoplay: true,
+					autoplayDelay: 2000,
+					autoplayStopAtAction:false,
+					useWebkit3d: true,
+					itemFallbackWidth:$(document.body).width(),
+					transitionSpeed: 400
+				});
+			});
+    	</script>
+	</body>
+</html>
