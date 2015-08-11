@@ -7,6 +7,8 @@ body {
 	width: 100%;
 	height: auto;
 	font-family: Arial, "microsoft yahei", Helvetica, sans-serif;
+  position: relative;
+  padding-bottom: 40px;
 }
 
 img.img-responsive {
