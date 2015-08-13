@@ -147,20 +147,26 @@ img.zimu_a{
 @-webkit-keyframes zimu_a {
 	0% {
   		opacity: 0;
-  		left: 4.0625%;
+  		-webkit-transform: translateX(-5%);
+        transform: translateX(-5%);
 	}
 	100% {
   		opacity: 1;
-  		left: 9.0625%;
+  		-webkit-transform: translateX(0);
+        transform: translateX(0);
 	}
 }
 @keyframes zimu_a {
 	0% {
-  		opacity: .9;
-	}
-	100% {
-  		opacity: 0;
-	}
+        opacity: 0;
+        -webkit-transform: translateX(-5%);
+        transform: translateX(-5%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 img.zimu_b{
 	width: 38.125%;
@@ -173,20 +179,26 @@ img.zimu_b{
 @-webkit-keyframes zimu_b {
 	0% {
   		opacity: 0;
-  		left: 4.0625%;
+  		-webkit-transform: translateX(-5%);
+        transform: translateX(-5%);
 	}
 	100% {
   		opacity: 1;
-  		left: 9.0625%;
+  		-webkit-transform: translateX(0);
+        transform: translateX(0);
 	}
 }
 @keyframes zimu_b {
 	0% {
-  		opacity: .9;
-	}
-	100% {
-  		opacity: 0;
-	}
+        opacity: 0;
+        -webkit-transform: translateX(-5%);
+        transform: translateX(-5%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 img.zimu_c{
 	width: 37.0312%;
@@ -199,22 +211,26 @@ img.zimu_c{
 @-webkit-keyframes zimu_c {
 	0% {
   		opacity: 0;
-  		bottom: 22.8015%;
+  		-webkit-transform: translateY(10px);
+        transform: translateY(10px);
 	}
 	100% {
   		opacity: 1;
-  		bottom: 24.8015%;
+  		-webkit-transform: translateY(0);
+        transform: translateY(0);
 	}
 }
 @keyframes zimu_c {
 	0% {
-  		opacity: 0;
-  		bottom: 22.8015%;
-	}
-	100% {
-  		opacity: 1;
-  		bottom: 24.8015%;
-	}
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 img.zimu_d{
 	width: 46.7187%;
@@ -227,22 +243,26 @@ img.zimu_d{
 @-webkit-keyframes zimu_d {
 	0% {
   		opacity: 0;
-  		bottom: 18.5357%;
+  		-webkit-transform: translateY(10px);
+        transform: translateY(10px);
 	}
 	100% {
   		opacity: 1;
-  		bottom: 20.5357%;
+  		-webkit-transform: translateY(0);
+        transform: translateY(0);
 	}
 }
 @keyframes zimu_d {
 	0% {
-  		opacity: 0;
-  		bottom: 18.5357%;
-	}
-	100% {
-  		opacity: 1;
-  		bottom: 20.5357%;
-	}
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 /*局部动画--begin*/
