@@ -8,7 +8,6 @@ body {
 	height: auto;
 	font-family: Arial, "microsoft yahei", Helvetica, sans-serif;
   position: relative;
-  padding-bottom: 40px;
 }
 
 img.img-responsive {
@@ -276,6 +275,7 @@ a.back img {
 div.article {
   width: 92%;
   padding: 4%;
+  position: relative;
 }
 div.article h3 {
   font-size: 20px;
@@ -584,4 +584,22 @@ a.gomain_m{
         bottom: 11.4087%;
         opacity: 1;
     }
+}
+
+p.copyright{
+  margin: 20px auto 0;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  height: 50px;
+  text-align: center;
+  width: 92%;
+  padding: 0 4%;
+}
+a.go_wz{
+  display: inline-block;
+  border: 1px solid #343434;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 0.01em 0.5em;
+  border-radius: 0.5em;
 }
