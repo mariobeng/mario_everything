@@ -277,8 +277,8 @@ p.copyright{
 }
 a.go_wz{
   display: inline-block;
-  border: 1px solid #343434;
-  margin-top: 10px;
+  border: 1px solid #999;
+  margin: 20px 0 0 10px;
   font-size: 14px;
   padding: 0.01em 0.5em;
   border-radius: 0.5em;
