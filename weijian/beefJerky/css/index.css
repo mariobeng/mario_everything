@@ -21,11 +21,12 @@ div.main{
 	background-size: cover;
 }
 a.comein{
-	width: 34.6875%;
-	height: 7.6388%;
-	position: absolute;
-	left: 32.6562%;
-	top: 7.4404%;
+	display: block;
+    position: absolute;
+    width: 35.7812%;
+    height: 7.738%;
+    left: 32.1094%;
+    bottom: 5%;
 }
 a.gomain{
 	display: block;
