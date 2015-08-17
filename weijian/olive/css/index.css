@@ -266,11 +266,12 @@ div.txt_lr > p {
   float: right;
 }
 /*真伪鉴别文字换行--end*/
-p.copyright{
+div.article p.copyright{
   margin: 20px auto 0;
   border-top: 1px solid #ccc;
   font-size: 14px;
   height: 50px;
+  line-height: 50px;
   text-align: center;
   width: 92%;
   padding: 0 4%;

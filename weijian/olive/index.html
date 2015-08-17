@@ -33,6 +33,12 @@
   					}
   				})
 
+				if(window.location.hash == "#index"){
+					$("#nav_btn").hide();
+					$("div.menu").show();
+					$("div.menu").css("bottom","0");
+				}
+
 				$("#nav_btn").click(function(){
 					$(this).hide();
 					$("div.menu").show();
@@ -57,16 +63,16 @@
 				<a class="getout" href="#"></a>
 				<ul>
 					<li>
+						<a class="suyuan" href="guandan.html">
+							<img class="img-responsive" src="img/beef_02.png"/>
+						</a>
+						<p>辨别真伪</p>
+					</li>
+					<li>
 						<a class="true" href="suyuan.html">
 							<img class="img-responsive" src="img/beef_01.png"/>
 						</a>
 						<p>产品溯源</p>
-					</li>
-					<li>
-						<a class="suyuan" href="guandan.html">
-							<img class="img-responsive" src="img/beef_02.png"/>
-						</a>
-						<p>晒关单</p>
 					</li>
 					<li>
 						<a class="weixin" href="#">
