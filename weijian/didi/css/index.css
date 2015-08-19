@@ -10,18 +10,20 @@ div.main{
     background: url(../img/main_bg.jpg) repeat left top;
 }
 div.posi{
-    position: absolute;
     width: 100%;
-    overflow: hidden;
-    left: 0;
-    top: 48%;
-    min-height: 100px;
+    height: 100%;
+}
+div.posi a{
+    position: absolute;
 }
 p.box{
+    position: absolute;
     padding-left: 1.5%;
     text-align: center;
     font-size: 12px;
     width: 98.5%;
+    left: 0;
+    top: 48%;
 }
 p.box span{
     color: #DD7E29;
@@ -31,26 +33,33 @@ a.box_a{
     height: 40px;
     line-height: 40px;
     font-size: 20px;
-    margin: 4.5% auto 0;
     color: #FFF0D3;
     font-weight: bold;
     border-radius: 20px;
     border: 1px solid #AC0F11;
     background-color: #DA3838;
+    left: 30%;
+    top: 53.5%;
 }
 a.role{
     width: 30%;
     height: 30px;
     line-height: 30px;
     font-size: 16px;
-    margin: 10% auto 4%;
     color: #FFF0D3;
     border-radius: 15px;
     background-color: #A51617;
+    left: 35%;
+    top: 68%;
+}
+div.b_tip{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 75%;
 }
 p.tip{
     color: #FFF0D3;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     line-height: 23px;
 }
