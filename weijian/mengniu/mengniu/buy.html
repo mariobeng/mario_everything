@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>蒙牛精选牧场 - 购买产品</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragram" content="no-cache">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="head_box">
+        <img src="images/logo.png" class="logo" />
+    </div>
+    <div id="content" style="overflow: hidden">
+        <div id='eshop'>
+            <a id="yhd" href="http://m.feiniu.com/item/201403CM110000491" target="_blank">
+                <img src="images/drf.jpg">
+            </a>
+            <a id="mengniu" href="http://mall.mengniu.com.cn/%E5%85%A8%E9%83%A8%E5%95%86%E5%93%81/%E5%B8%B8%E6%B8%A9%E5%A5%B6%E7%B3%BB%E5%88%97/%E7%B2%BE%E9%80%89%E7%BA%AF%E7%89%9B%E5%A5%B6/%E8%92%99%E7%89%9B%E7%B2%BE%E9%80%89%E7%BA%AF%E7%89%9B%E5%A5%B6%E8%8B%97%E6%9D%A1%E8%A3%851%C3%9712%E7%9B%92/p/6923644279035" target="_blank">
+                <img src="images/mn.jpg">
+            </a>
+        </div>
+        <div id='supermarket'>
+            <div class='title'>线下附近超市</div>
+            <div id='supermarket-map'></div>
+        </div>
+    </div>
+    <div id="bot">
+    </div>
+</body>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3hyMONC6mnSH67TdDMrbyLri"></script>
+<script name="baidu-tc-cerfication" type="text/javascript" charset="utf-8" src="http://apps.bdimg.com/cloudaapi/lightapp.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/WeixinApi.js"></script>
+<script type="text/javascript" src="js/debug.js"></script>
+<script type="text/javascript" src="js/main.js?v=7"></script>
+<script type="text/javascript" src="js/map.js?v=4"></script>
+<script type="text/javascript">
+window.onload = function(){
+    Base.initHeights();
+
+    var windowHeight = $(window).height();
+    var offset = $('#supermarket-map').offset();
+    var top = offset.top;
+    var bottomHeight = $('.bot-bg').height();
+    var mapHeight = windowHeight - top - bottomHeight * 0.6;
+    $('#supermarket-map').css('height', mapHeight);
+
+    var onPc = function() {
+        debugLog('onPc', true);
+        MapManager.searchSuperMarket(116.404, 39.915, 'supermarket-map');
+    }
+
+    var onSuccess = function (lng, lat) {
+        debugLog('onSuccess', true);
+        MapManager.searchSuperMarket(lng, lat, 'supermarket-map');
+    }
+
+	var onFail = function (err) {
+        debugLog('onPc', true);
+        onPc();
+    };
+
+    MapManager.getCurrentPosition(onPc, onSuccess, onFail);
+
+
+
+	$('#yhd').on('click',function(){
+		_mz_evt('1000895', '100023810');
+	});
+
+	//这个是我买网的检测代码
+	$('#mengniu').on('click',function(){
+		_mz_evt('1000895', '100023811');
+	})
+}
+</script>
+<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://rs1.2wm.cn/javascript/common.js"></script>
+<script type="text/javascript" src="http://comrs1.2wm.cn/Manage/javascript/global.js"></script>
+<script src="/template/<%=template.pathName%>/assets/js/index.js"></script>
+<script type="text/javascript" src="<%=settings.statisticsUrl%>" async="async"></script>
+</html>
+
+

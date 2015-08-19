@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.hotspot-head{
+	background: url(../images/hotspot_icon.png) no-repeat;
+	background-size: auto 100%;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-left: 2em;
+	color: #64b702;
+	margin-top: 0.5em;
+}
+.hotspot-head-left,.nearby-left {
+	width:10%; 
+	float:left; 
+}
+
+.hotspot-head-right {  
+	float:left;
+	position:relative; 
+	color:#64b702;
+}
+.hotspot-head-banner{
+	height:18px;
+}
+
+.hotspot-content
+{ 
+	overflow:hidden; 
+	width:100%; 
+	text-indent:2.2em;
+	line-height:1.6em;
+}
+
+.nearby{ 
+	width:100%;
+	max-width: 600px;
+	overflow:hidden;
+}
+
+.nearby-left {
+	/*width:7%;
+	position:absolute;
+	display:inline-block;
+	float:left;
+	z-index:3;*/
+}
+
+.nearby-right {
+	float:left;
+	color:#64b702;
+}
+.nearby-banner{
+}
+
+
+.nearby-detail{ 
+	line-height:1.6em;
+	color:#7d5841;
+	overflow:hidden; 
+}
+.nearby-detail p{   
+	width:90%;
+	padding-left:10%;
+}
+
+.nearby-detail-left {
+}
+
+.nearby-detail-right {
+}
+.nearby-detail-banner{
+	vertical-align: bottom;
+	margin: 0 4px;
+}
+
+#bubble {
+	display: none;
+	position: absolute;
+	width: 30%;
+	z-index: 10;
+	left: 39%;
+}
+#bubble img {
+	width: 100%;
+}
+#bubble .tip {
+	position: absolute;
+	width: 80%;
+	top: 15%;
+	left: 10%;
+	text-align: center;
+	color: white;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>蒙牛精选牧场 - 牧场路线</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+</style>
+</head>
+<body>
+<div class="knowledge-head">
+  <div class="knowledge-head-left"><a id="goback" href="index.html"><img class="knowledge-head-banner" src="images/knowledge_back.png"/></a> </div>
+  <div class="knowledge-head-right"><img class="knowledge-head-banner" src="images/knowledge_banner.jpg"/> </div>
+</div>
+<div id="knowledge-c"> <a name="top"></a>
+  <ul id="knowledge-squares">
+  </ul>
+</div>
+<div id="knowledge_cover"> </div>
+<div id="knowledge_detail">
+  <div class="konwledge-close"><a href="javascript:;"><img src="images/close.jpg"/></a></div>
+  <div class="knowledge-title"> 问题9、敢问"花花世界"里MO心谁属？ </div>
+  <!--<div class="knowledge-subtitle">
+    ——表现奶牛的爱情、找对象​
+    </div>-->
+  <div class="knowledge-answer"> <img class="knowledge-answer-img" src="images/squares/1.jpg"/>
+    <div class="knowledge-content"> 回答：在MO心中，好man最重要的还是血统。来自新西兰、丹麦、荷兰等地的荷斯坦1号"型男"，是偶们的最爱！MO坚信，好牛产好奶。争当产奶实力派，精优血统可是会给偶们增添不少信心哦~​ </div>
+  </div>
+</div>
+</div>
+<a href="#top"><img src="images/foot_knowledge.png" id='knowledge-top'/></a>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
+<script type="text/javascript" src="js/WeixinApi.js"></script>
+<script type="text/javascript" src="js/main.js?v=7"></script>
+<script type="text/javascript">
+var squares = [
+		['MO向往木有赘肉的人森么？', '表瞧偶们近乎半吨重，但也造好"身材"在哞星界很重要。饮食要讲究，TMR搅拌后的营养餐，精粗搭配那是杠杠滴。运动绝不能搁浅，最耐和小伙伴们在运动场上嬉戏遛弯儿。MOO～动吃动吃～切克闹，木有赘肉的人森尊美好。', '1.jpg'],
+		['大个子MO一定是个十足的吃货吧？', '作为一枚对产奶质量有追求的MO，偶对吃也是极其有要求滴！进口的紫花苜蓿，是偶们的最爱。全混合日粮精粗比例合适，营养浓度也要标准化。要知道偶们是大胃王，每天要反刍8-10个小时，"夜宵"神马的也会有营养师来配制。吃得好，才能产好奶嘛。', '2.jpg'],
+		['争当产奶冠军的哞星人还能一起愉快玩耍？', '虽然偶们彼此会有竞争，但友谊最大，最稀饭小伙伴们在一起啦。有宽敞的"餐厅"，美食当前也能不争不抢；在草坪上晒太阳，分分钟享受风和日丽；产奶冠军的头衔可以有，一起愉快玩耍更重要~听着音乐在转盘上挤奶，享受着偶们的"小时代"~', '3.jpg'],
+		['MO当真是呆到深处自然萌？', '阿MO觉得自己萌萌哒，才不呆呢，MO们可是享受生活优雅范儿。音乐神马的，舒曼、肖邦、李斯特的古典浪漫主义我最爱。平时也喜欢漫步牧场，感受微风捎来的草香。夏蝉的聒噪可不是我们的style，低沉舒缓的"哞哞~~~"声，才是我们正确的打招呼方式。', '4.jpg'],
+		['桑拿天MO会不会变身"行走的烤牛排"？', '偶们体型略壮，出汗散热是人类不能比的，so牛舍通风系统必须棒棒哒，夏天恒温系统会保证牛舍温度不会超过26°，还有运动场上可以纳凉的凉棚，烧烤模式轻松hold住。随时自取的饮水，干净无限制，偶们一天的量也就一浴缸啦，颤抖吧，人类！', '5.jpg'],
+		['800匹马也拉不回牛脾气的MO么？', '作为对生活有要求的哞星人，偶们可不是 "牛脾气"。温油顺从，偶为自己带盐！住联排别墅，睡柔软卧床；吃饲养员蜀黍精心配制的营养餐，还有零食换换口味；闲暇做SPA、漫步牧场感受大自然，与小伙伴们一起愉快玩耍，心情棒棒哒~发牛脾气？闹呢！', '6.jpg'],
+		['MO的生活是屌丝的邋遢还是女神的优雅？', 'MO感觉自己萌萌哒，追求精致生活不随流。爱在运动场自由散步，嗅草香，听风语。再用全自动挠痒净身机做个Spa，舒服极啦。还有专业大咖，定期做美甲（修蹄），无需预约啊喂！MOO~5平米的私人凉棚下，不急不躁，乘凉睡午觉。', '7.jpg'],
+		['大个子MO你是个挑剔的吃货么？', '作为动物界滴处女座，偶们对饮食相当挑剔。私家万亩草场，那叫一个"鲜"！还有阿MO最稀饭滴进口美味，没有认证是"决口不吃"。偶们都是"大胃王"，争做产奶实力派，粮草不能断。So，饲料存贮更有严格要求，绝不与地面、墙壁亲密接触。', '8.jpg'],
+		['敢问"花花世界"里MO心谁属？', '在MO心中，好man最重要的还是血统。来自新西兰、丹麦、荷兰等地的荷斯坦1号"型男"，是偶们的最爱！MO坚信，好牛产好奶。争当产奶实力派，精优血统可是会给偶们增添不少信心哦~', '9.jpg']
+    ];
+
+
+
+$(document).ready(
+
+function(){
+	var len=squares.length;
+	var content="";
+	var i;
+	for(i=0;i<len;i++)
+	{
+		content+="		<li class='knowledge-square'>"
+		+"            <div class='knowledge-banner'>"
+		+"                <img class='knowledge-banner-img' src='images/squares/"+squares[i][2]+"?0'/>"
+		+"            </div>"
+		+"            <div class='knowledge-box-title'>"+squares[i][0]
+		+"            </div>"
+		+"        </li>";
+
+
+	}
+	$("#knowledge-squares").html(content);
+
+	var homeUrl = '.' + window.location.search;
+	$("#goback").attr("href", homeUrl);
+
+});
+
+window.onload = function(){
+
+	var windowWidth = $(window).width();
+	var windowHeight = $(window).height();
+    var headHeight = $('.knowledge-head-right').height();
+    var contentHeight = windowHeight - headHeight;
+    $('.knowledge-head').css({'width': windowWidth});
+    $('#knowledge-c').css({'width': windowWidth, 'top': headHeight, 'height': contentHeight});
+	$('#knowledge-c').show();
+	$('.konwledge-close').click(function()
+	{
+		$('#knowledge_detail').hide();
+		$('#knowledge_cover').hide();
+	});
+
+	$('.knowledge-square').click(function()
+	{
+		var index = $(this).index();
+		var square = squares[index];
+
+
+		 switch(index)
+		{
+			case 1:
+				   _mz_evt('1000817', '100018659');
+				   _mz_clk('1015169','4-YMy0')
+			break;
+			case 2:
+			  	_mz_evt('1000817', '100018660');
+				_mz_clk('1015169','4-YMz0');
+			  break;
+			  case 3:
+			  	_mz_evt('1000817', '100018660');
+				_mz_clk('1015169','4-YMz0');
+			  break;
+			  case 4:
+			  	_mz_evt('1000817', '100018662');
+				_mz_clk('1015169','4-YN-0');
+			  break;
+			  case 5:
+			  	_mz_evt('1000817', '100018663');
+				_mz_clk('1015169','4-YN00');
+			  break;
+			  case 6:
+			  	_mz_evt('1000817', '100018664');
+				_mz_clk('1015169','4-YN10');
+			  break;
+			  case 7:
+			  	_mz_evt('1000817', '100018666');
+				_mz_clk('1015169','4-YN20');
+			  break;
+			  case 8:
+			  	_mz_evt('1000817', '100018667');
+				_mz_clk('1015169','4-YN30');
+			  break;
+			  case 9:
+			  	_mz_evt('1000817', '100018668');
+				_mz_clk('1015169','4-YN40');
+			  break;
+			default:
+
+		}
+
+
+
+		//调用精算代码
+		//square[3]
+
+		var title = square[0];
+		//var subTitle = square[1];
+		var content = square[1];
+		var imgUrl = 'images/squares/' + square[2];
+		$('#knowledge_detail .knowledge-title').text(title);
+		//$('#knowledge_detail .knowledge-subtitle').text(subTitle);
+		// 先渲染图避免文字重排晃一下
+		$('#knowledge_detail .knowledge-answer-img').attr('src', imgUrl);
+		$('#knowledge_detail .knowledge-content').text(content);
+
+		$('#knowledge_detail').show();
+		$('#knowledge_cover').show();
+	});
+
+
+
+
+
+
+
+
+};
+
+
+
+
+</script>
+<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://rs1.2wm.cn/javascript/common.js"></script>
+<script type="text/javascript" src="http://comrs1.2wm.cn/Manage/javascript/global.js"></script>
+<script src="/template/<%=template.pathName%>/assets/js/index.js"></script>
+<script type="text/javascript" src="<%=settings.statisticsUrl%>" async="async"></script>
+</html>

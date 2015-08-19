@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>蒙牛精选牧场 - 牧场公开课</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragram" content="no-cache">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="head_box" >
+       <img src="images/logo.png" class="logo" />
+    </div>
+    <div id="content">
+        <div class="video_bg">
+        <!-- 测试视频是不是可以播放 -->
+        <!--http://bcs.duapp.com/mengniu-video/cowshed.mp4-->
+
+            <div class="video_box">
+                <video id="video" class="video" width="640" height="360" src="http://bcs.duapp.com/mengniu-video/opencourse.mp4" ></video>
+            </div>
+            <div class="play_bg_box" id="play_bg_box">
+                <div class="play_bg"></div>
+                <a href="javascript:;" id="play_btn" class="play_btn"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="bot">
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/WeixinApi.js"></script>
+<script type="text/javascript" src="js/main.js?v=7"></script>
+<script type="text/javascript">
+    window.onload = function(){
+        Base.initHeights();
+
+
+		$('#play_btn').on('click',function(){
+			$('#play_bg_box').hide();
+			$('#video')[0].play();
+		})
+
+    }
+</script>
+<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://rs1.2wm.cn/javascript/common.js"></script>
+<script type="text/javascript" src="http://comrs1.2wm.cn/Manage/javascript/global.js"></script>
+<script src="/template/<%=template.pathName%>/assets/js/index.js"></script>
+<script type="text/javascript" src="<%=settings.statisticsUrl%>" async="async"></script>
+</html>
+
+
