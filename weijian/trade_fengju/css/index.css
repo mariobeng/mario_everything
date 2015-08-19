@@ -199,12 +199,14 @@ form.userInfo input{
   padding-left: 5%;
   outline: none;
 }
-a.tijiao{
-  width: 60%;
+#tijiao{
+  display: block;
+  width: 70%;
   margin: 0 auto;
   height: 50px;
   line-height: 50px;
   background-color: #CD2735;
+  border: none;
   border-radius: 20px;
   color: #FFFBCF;
   font-size: 20px;
@@ -246,4 +248,8 @@ p.copyright{
   text-align: center;
   padding: 20px 0;
   font-size: 16px;
+}
+
+input#u_code, input#u_planid{
+  display: none;
 }
