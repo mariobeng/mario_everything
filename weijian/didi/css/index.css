@@ -1,0 +1,56 @@
+img.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+div.main{
+    width: 89.8437%;
+    height: 80px;
+    margin-left: 5.2%;
+    background: url(../img/main_bg.jpg) repeat left top;
+}
+div.posi{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 48%;
+    min-height: 100px;
+}
+p.box{
+    padding-left: 1.5%;
+    text-align: center;
+    font-size: 12px;
+    width: 98.5%;
+}
+p.box span{
+    color: #DD7E29;
+}
+a.box_a{
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    margin: 15px auto 0;
+    color: #FFF0D3;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid #AC0F11;
+    background-color: #DA3838;
+}
+a.role{
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    margin: 35px auto 10px;
+    color: #FFF0D3;
+    border-radius: 15px;
+    background-color: #A51617;
+}
+p.tip{
+    color: #FFF0D3;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 23px;
+}
