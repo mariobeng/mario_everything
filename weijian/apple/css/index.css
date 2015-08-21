@@ -34,22 +34,107 @@ a.comin{
 	left: 25%;
 	bottom: 8%;
 }
+div.main_bg {
+  width: 100%;
+  height: 100%;
+  background: url(../img/index.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+a.kongbai {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 48%;
+}
+img#nav_btn {
+  position: absolute;
+  display: block;
+  width: 45px;
+  height: 45px;
+  right: 12px;
+  bottom: 12px;
+}
 div.menu {
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-	padding-bottom: 10%;
+  width: 100%;
+  height: 55%;
+  position: absolute;
+  left: 0;
+  bottom: -55%;
+  display: none;
+}
+div.menu_bg {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .7;
+}
+div.navshow{
+  -webkit-animation: navshow 1s 0s forwards;
+    animation: navshow 1s 0s forwards;
+}
+@-webkit-keyframes navshow {
+  0% {
+      bottom: -55%;
+  }
+  100% {
+      bottom: 0;
+  }
+}
+@keyframes navshow {
+  0% {
+      bottom: -55%;
+  }
+  100% {
+      bottom: 0;
+  }
+}
+div.navhide{
+  -webkit-animation: navhide 1s 0s forwards;
+    animation: navhide 1s 0s forwards;
+}
+@-webkit-keyframes navhide {
+  0% {
+      bottom: 0;
+  }
+  100% {
+      bottom: -55%;
+  }
+}
+@keyframes navhide {
+  0% {
+      bottom: 0;
+  }
+  100% {
+      bottom: -55%;
+  }
+}
+a.getout {
+  display: block;
+  width: 5.9375%;
+  height: 2.4911%;
+  position: absolute;
+  left: 47.2%;
+  top: 3%;
+  z-index: 2;
+  background: url(../img/down.png) no-repeat center;
+  background-size: cover;
 }
 div.menu ul {
   width: 100%;
-  height: auto;
-  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 div.menu ul li {
   float: left;
   width: 21.875%;
   height: 35.5871%;
-  margin: 13% 5.73% 0;
+  margin: 9% 5.73% 0;
+  position: relative;
 }
 div.menu ul li a {
   display: block;
@@ -58,14 +143,95 @@ div.menu ul li a {
   z-index: 2;
 }
 div.menu ul li p {
-  color: #000;
-  margin-top: 30%;
+  color: #fff;
   text-align: center;
   font-size: 1.2em;
-  border-top: 1px solid #656565;
-  border-bottom: 1px solid #656565;
-  padding: 5% 0;
+  display: block;
+  position: absolute;
+  width: 145%;
+  left: -20%;
+  bottom: -10%;
 }
+div.a_mate img{
+  position: absolute;
+  z-index: 99;
+}
+div.apple_m img{
+  opacity: 0;
+}
+img.bai{
+  width: 5.3125%;
+  height: 3.2738%;
+  left: 13.75%;
+  top: 17.6587%;
+}
+div.apple_m img.bai{
+    -webkit-animation: bai 1s 0s forwards;
+    animation: bai 1s 0s forwards;
+}
+@-webkit-keyframes bai {
+  0%{-webkit-transform: translateY(20px);transform: translateY(20px);opacity: 0;}
+  100%{-webkit-transform: translateY(0);transform: translateY(0);opacity: 1;}
+}
+@keyframes bai {
+  0%{-webkit-transform: translateY(20px);transform: translateY(20px);opacity: 0;}
+  100%{-webkit-transform: translateY(0);transform: translateY(0);opacity: 1;}
+}
+img.shui{
+  width: 5.3125%;
+  height: 3.2738%;
+  left: 13.75%;
+  top: 20.8333%;
+}
+div.apple_m img.shui{
+    -webkit-animation: shui 1s .5s forwards;
+    animation: shui 1s .5s forwards;
+}
+@-webkit-keyframes shui {
+  0%{-webkit-transform: translateY(20px);transform: translateY(20px);opacity: 0;}
+  100%{-webkit-transform: translateY(0);transform: translateY(0);opacity: 1;}
+}
+@keyframes shui {
+  0%{-webkit-transform: translateY(20px);transform: translateY(20px);opacity: 0;}
+  100%{-webkit-transform: translateY(0);transform: translateY(0);opacity: 1;}
+}
+img.pingguo{
+  width: 11.4062%;
+  height: 12.9960%;
+  left: 20%;
+  top: 21%;
+}
+div.apple_m img.pingguo{
+    -webkit-animation: pingguo 1s 1s forwards;
+    animation: pingguo 1s 1s forwards;
+}
+@-webkit-keyframes pingguo {
+  0%{-webkit-transform: translateX(20px);transform: translateX(20px);opacity: 0;}
+  100%{-webkit-transform: translateX(0);transform: translateX(0);opacity: 1;}
+}
+@keyframes pingguo {
+  0%{-webkit-transform: translateX(20px);transform: translateX(20px);opacity: 0;}
+  100%{-webkit-transform: translateX(0);transform: translateX(0);opacity: 1;}
+}
+img.bird{
+  width: 20.9375%;
+  height: 8.3333%;
+  top: 34%;
+  right: 34%;
+}
+div.apple_m img.bird{
+    -webkit-animation: bird 1s 1.5s forwards;
+    animation: bird 1s 1.5s forwards;
+}
+@-webkit-keyframes bird {
+  0%{-webkit-transform: translateX(50px) translateY(50px);transform: translateX(50px) translateY(50px);opacity: 0;}
+  100%{-webkit-transform: translateX(0) translateY(0px);transform: translateX(0) translateY(0px);opacity: 1;}
+}
+@keyframes bird {
+  0%{-webkit-transform: translateX(50px) translateY(50px);transform: translateX(50px) translateY(50px);opacity: 0;}
+  100%{-webkit-transform: translateX(0) translateY(0px);transform: translateX(0) translateY(0px);opacity: 1;}
+}
+
 a.back {
   display: block;
   height: 30px;

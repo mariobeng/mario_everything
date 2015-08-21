@@ -6,6 +6,14 @@
 		<title>白水苹果</title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			body{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+		</style>
 		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			//判断是否为微信浏览器
@@ -24,50 +32,81 @@
   						location.href = "saoma.html";
   					}
   				})
+				$("div.a_mate").addClass("apple_m");
+  				if(window.location.hash == "#index"){
+					$("div.a_mate").removeClass("apple_m");
+					$("#nav_btn").hide();
+					$("div.menu").show();
+					$("div.menu").css("bottom","0");
+				}
+
+  				$("#nav_btn").click(function(){
+					$(this).hide();
+					$("div.menu").show();
+					$("div.menu").removeClass("navhide");
+					$("div.menu").addClass("navshow");
+				});
+				$("a.getout, a.kongbai").click(function(){
+					$("div.menu").removeClass("navshow");
+					$("div.menu").addClass("navhide");
+					$("#nav_btn").show();
+					$("div.menu").delay(1000).hide(0);
+				});
 			})
 		</script>
 	</head>
 	<body>
-		<img class="img-responsive" src="img/top.jpg"/>
-		<div class="menu">
-			<ul>
-				<li>
-					<a class="true" href="true.html">
-						<img class="img-responsive" src="img/apple_01.png">
-					</a>
-					<a href="true.html"><p>查验真伪</p></a>
-				</li>
-				<li>
-					<a class="suyuan" href="suyuan.html">
-						<img class="img-responsive" src="img/apple_02.png">
-					</a>
-					<a href="suyuan.html"><p>产品溯源</p></a>
-				</li>
-				<li>
-					<a class="wenhua" href="cuxiao.html">
-						<img class="img-responsive" src="img/apple_03.png">
-					</a>
-					<a href="cuxiao.html"><p>苹果美食</p></a>
-				</li>
-				<li>
-					<a class="cuxiao" href="http://shop116731216.taobao.com">
-						<img class="img-responsive" src="img/apple_04.png">
-					</a>
-					<a href="http://shop116731216.taobao.com"><p>再次购买</p></a>
-				</li>
-				<li>
-					<a class="weixin" href="#">
-						<img class="img-responsive" src="img/apple_05.png">
-					</a>
-					<a class="weixin" href="#"><p>微信关注</p></a>
-				</li>
-				<li>
-					<a class="weidian" href="guo.html">
-						<img class="img-responsive" src="img/apple_06.png">
-					</a>
-					<a href="guo.html"><p>臻果源</p></a>
-				</li>
-			</ul>
+		<div class="main_bg">
+			<div class="a_mate">
+				<img class="bai" src="img/bai.png">
+				<img class="shui" src="img/shui.png">
+				<img class="pingguo" src="img/pingguo.png">
+				<img class="bird" src="img/bird.png">
+			</div>
+			<a class="kongbai" href="#"></a>
+			<img id="nav_btn" src="img/btn.png"/>
+			<div class="menu">
+				<div class="menu_bg"></div>
+				<a class="getout" href="#"></a>
+				<ul>
+					<li>
+						<a class="true" href="true.html">
+							<img class="img-responsive" src="img/apple_01.png"/>
+						</a>
+						<p>查验真伪</p>
+					</li>
+					<li>
+						<a class="suyuan" href="suyuan.html">
+							<img class="img-responsive" src="img/apple_02.png"/>
+						</a>
+						<p>产品溯源</p>
+					</li>
+					<li>
+						<a class="wenhua" href="cuxiao.html">
+							<img class="img-responsive" src="img/apple_03.png"/>
+						</a>
+						<p>苹果美食</p>
+					</li>
+					<li>
+						<a class="cuxiao" href="http://shop116731216.taobao.com">
+							<img class="img-responsive" src="img/apple_04.png"/>
+						</a>
+						<p>再次购买</p>
+					</li>
+					<li>
+						<a class="weixin" href="#">
+							<img class="img-responsive" src="img/apple_05.png"/>
+						</a>
+						<p>微信关注</p>
+					</li>
+					<li>
+						<a class="weidian" href="guo.html">
+							<img class="img-responsive" src="img/apple_06.png"/>
+						</a>
+						<p>臻果源</p>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>
