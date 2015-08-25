@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>老王家</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/touchcarousel.css"/>
+		<link rel="stylesheet" type="text/css" href="css/three-d-skin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://rs1.2wm.cn/javascript/common.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				/*function initJsonData() {
+			        if (JsonData.Activity.State == 1) {
+			            for (var i = 0; i < JsonData.Activity.Items.length; i++) {
+			                var item = JsonData.Activity.Items[i];
+			                switch (item.TemplateType) {
+			                    case 1001:
+			                        $("#go_prize").prop("href", "/activity/" + JsonData.ActivityId + "/" + item.TemplateType + "/?Code=" + request("Code") + "&PlanId=" + JsonData.ProductPlan.Id);
+			                        break;
+			                }
+			            }
+			        } else {
+
+			        }
+			    }
+
+			    $.getJSON("data.json", function (json) {
+			        window.JsonData = json;
+			        $.getJSON("../data.json", function (plan) {
+			            JsonData.ProductPlan = plan;
+			        })
+			        $.getJSON("/activity/" + JsonData.ActivityId + "/data.json", function (activity) {
+			            JsonData.Activity = activity;
+			            if (JsonData.ProductPlan)
+			                initJsonData();
+			        })
+			    });*/
+				/*$("#go_prize").click(function(){
+					$(this).prop("href","/activity/?Code=dsds")
+				})*/
+			})
+
+		</script>
+	</head>
+	<body>
+		<!-- 轮播 begin-->
+		<div id="slideshow" class="touchcarousel three-d">
+			<div class="touchcarousel-container">
+		    	<a href="javascript:;" class="touchcarousel-item">
+		    		<img src="img/fx_banner01.jpg" />
+		    	</a>
+		        <a href="javascript:;" class="touchcarousel-item">
+		        	<img src="img/fx_banner02.jpg" />
+		        </a>
+		        <a href="javascript:;" class="touchcarousel-item">
+		        	<img src="img/fx_banner03.jpg" />
+		        </a>
+		  	</div>
+		</div>
+		<!-- 轮播 end-->
+		<div class="list">
+			<ul>
+				<li>
+					<a href="javascript:;">
+						<img class="img-responsive" src="img/wang01.jpg" alt="">
+						<p>老王家鸡爪</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img class="img-responsive" src="img/wang02.jpg" alt="">
+						<p>老王家牛肚</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img class="img-responsive" src="img/wang03.jpg" alt="">
+						<p>老王家牛肉</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img class="img-responsive" src="img/wang04.jpg" alt="">
+						<p>老王家牛蹄筋</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img class="img-responsive" src="img/wang05.jpg" alt="">
+						<p>老王家烧鸡</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			<ul>
+				<li>
+					<a href="index.html">
+						<img class="img-responsive" src="img/fj_active01.png" alt="">
+						<p class="active">产品介绍</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" id="go_prize">
+						<img class="img-responsive" src="img/icon_fj02.png" alt="">
+						<p>扫码抽奖</p>
+					</a>
+				</li>
+				<li>
+					<a href="company.html">
+						<img class="img-responsive" src="img/icon_fj03.png" alt="">
+
+						<p>老王家</p>
+					</a>
+				</li>
+				<li>
+					<a href="contact.html">
+						<img class="img-responsive" src="img/icon_fj04.png" alt="">
+
+						<p>联系我们</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			/*轮播图*/
+			var $slideshow;
+			$(function(){
+				$slideshow = $("#slideshow");
+				$slideshow.find("img").attr("width",$(document.body).width());
+				$slideshow.touchCarousel({
+					pagingNav: true,
+					scrollbar: false,
+					directionNavAutoHide: false,
+					itemsPerMove: 1,
+					loopItems: true,
+					directionNav: false,
+					autoplay: true,
+					autoplayDelay: 2000,
+					autoplayStopAtAction:false,
+					useWebkit3d: true,
+					itemFallbackWidth:$(document.body).width(),
+					transitionSpeed: 400
+				});
+			});
+    	</script>
+	</body>
+</html>
