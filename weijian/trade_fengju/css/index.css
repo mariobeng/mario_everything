@@ -160,6 +160,18 @@ h3.no_borad{
   margin: 15px 0;
   color: #252525;
 }
+/* 没访问 */
+div.footer ul li a:link{
+  color: #000;
+}
+/* 已访问 */
+div.footer ul li a:visited{
+  color: red;
+}
+/* 点击时 */
+div.footer ul li a:active{
+  color: yellow;
+}
 
 
 /*抽奖*/
