@@ -519,7 +519,8 @@ function noslideShowVideoPage() {
   if (showedVideoPage) return;
   showedVideoPage = true;
 
-  $("#video_layer").stop(true).show().css({left: 0});
+  /*$("#video_layer").stop(true).show().css({left: 0});*/
+  $("#video_layer").hide();
   // autoSelectVideoBtn();
 }
 
@@ -552,7 +553,8 @@ function setVideo(id){
 	gPastureId = vid;
 
   showedVideoPage = false;
-  $("#video_layer").show().animate({left:0}, 'fast', '', slideShowVideoPage);
+  /*$("#video_layer").show().animate({left:0}, 'fast', '', slideShowVideoPage);*/
+  $("#video_layer").hide();
   setTimeout(noslideShowVideoPage, 500);
   debugLog('#video_layer.animate', true);
 
@@ -614,7 +616,8 @@ function init() {
       $('#mobile-player').attr('src', '');
 
       hidedVideoPage = false;
-      $("#video_layer").animate({left:$(window).width()}, 'fast', '', slideHideVideoPage);
+      /*$("#video_layer").animate({left:$(window).width()}, 'fast', '', slideHideVideoPage);*/
+      $("#video_layer").hide();
       setTimeout(noslideHideVideoPage, 500);
   });
 
