@@ -195,7 +195,7 @@ form.userInfo input{
   border: none;
   height: 40px;
   line-height: 40px;
-  border-radius: 13px;
+  border-radius: 10px;
   padding-left: 5%;
   outline: none;
 }
@@ -207,11 +207,12 @@ form.userInfo input{
   line-height: 50px;
   background-color: #CD2735;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   color: #FFFBCF;
   font-size: 20px;
   margin-top: 100px;
 }
+#tijiao:active{background-color:#CD271F;}
 div.pr_top{
   position: relative;
 }
