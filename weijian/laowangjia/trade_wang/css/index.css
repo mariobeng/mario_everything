@@ -243,13 +243,25 @@ div.tip p{
   color: #CD2632;
   line-height: 30px;
 }
-p.copyright{
-  color: #FFFBCF;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 16px;
-}
 
 input#u_code, input#u_planid{
   display: none;
+}
+
+p.copyright {
+  margin: 20px auto 0;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  height: 50px;
+  text-align: center;
+  width: 92%;
+  padding: 0 4%;
+}
+a.go_wz {
+  display: inline-block;
+  border: 1px solid #343434;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 0.01em 0.5em;
+  border-radius: 0.5em;
 }
