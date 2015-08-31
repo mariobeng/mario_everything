@@ -152,7 +152,7 @@ div.banner {
   width: 100%;
   background-color: #fff;
   position: fixed;
-  z-index: 10;
+  z-index: 30;
   left: 0;
   top: 0;
   height: 40px;
