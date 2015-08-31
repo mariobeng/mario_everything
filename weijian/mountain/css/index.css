@@ -135,11 +135,11 @@ div.list ul li {
   width: 49.8%;
 }
 div.list ul li.list_l{
-  border-bottom: 1px solid #C9C9C9;
+  border-bottom: 2px solid #C9C9C9;
   border-right: 1px solid #C9C9C9;
 }
 div.list ul li.list_r{
-  border-bottom: 1px solid #C9C9C9;
+  border-bottom: 2px solid #C9C9C9;
 }
 div.list ul li h4 {
   position: absolute;
