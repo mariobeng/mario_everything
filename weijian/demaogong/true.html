@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+        <title>真伪鉴别</title>
+        <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script type="text/javascript">
+            $(function(){
+                $.getJSON("/Service/AntiFake?Act=AntiFakeCode&Code=" + request("Code"),function(json){
+                    if (json.Data == 0){
+                        $("img.s_first").show();
+                        $("div.s_second").hide();
+                    }else{
+                        $("div.s_second").show();
+                        $("img.s_first").hide();
+                    };
+                    $("div.s_num p span").html(json.Data);
+                })
+
+            })
+        </script>
+    </head>
+    <body>
+        <img src="img/true.jpg" alt="" class="img-responsive">
+        <img src="img/s_first.jpg" alt="" class="img-responsive s_first">
+        <div class="s_second">
+            <h3>此物联码标签已非首次扫描，请甄别购买。</h3>
+            <div class="s_num">
+                <p>此标签被扫码：<span></span>次</p>
+                <a href="info.html" class="l_info">
+                    <img src="img/info.jpg" alt="" class="img-responsive">
+                </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="article" style="border-top: 1px solid #e2e2e2;">
+            <h4 style="margin-top: 15px;">基本信息</h4>
+            <div class="txt_lr">
+                <strong>产品名称：</strong><p>德懋恭水晶饼</p>
+            </div>
+            <div class="clear"></div>
+            <div class="txt_lr">
+                <strong>制造商：</strong><p>西安市德懋恭食品商店</p>
+            </div>
+            <div class="clear"></div>
+            <div class="txt_lr">
+                <strong style="width: 22%;">厂&nbsp;&nbsp;&nbsp;址：</strong><p style="width: 78%;">陕西省西安市小白杨南路18号</p>
+            </div>
+            <div class="clear"></div>
+            <p class="copyright" style="">
+                <a href="http://c10000.2wm.cn/site/index.html">技术支持：唯简物联</a>&nbsp;&nbsp;<a class="go_wz" href="http://c10000.2wm.cn/site/index.html">了解详情</a>
+            </p>
+        </div>
+        <a href="main.html" class="back">
+            <img src="img/return.png" alt="">
+        </a>
+        <script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="http://rs1.2wm.cn/javascript/common.js"></script>
+        <script type="text/javascript" src="http://comrs1.2wm.cn/Manage/javascript/global.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
