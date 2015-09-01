@@ -42,6 +42,11 @@
                     return true;
                 }
             }
+            if(window.location.hash == "#index"){
+                $("#nav_btn").hide();
+                $("div.menu").show();
+                $("div.menu").css("bottom","0");
+            }
             $("#nav_btn").click(function(){
                 $(this).hide();
                 $("div.menu").show();
