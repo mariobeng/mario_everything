@@ -461,3 +461,15 @@ h3.t_tip{
     background-size: 1.5%;
     padding-left: 13px;
 }
+
+h5.title{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #252525;
+}
+p.title_p{
+  text-align: center;
+  color: #BC0510;
+  margin-top: 10px;
+}
