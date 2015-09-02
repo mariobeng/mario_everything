@@ -1,0 +1,245 @@
+html{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+body {
+	width: 100%;
+  padding-bottom: 100px;
+	height: auto;
+	font-family: Arial, "microsoft yahei", Helvetica, sans-serif;
+  position: relative;
+}
+img.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+a.back {
+  display: block;
+  height: 30px;
+  left: 15px;
+  position: fixed;
+  top: 15px;
+  width: 30px;
+}
+a.back img {
+  height: 30px;
+  width: 30px;
+}
+div.article {
+  width: 92%;
+  padding: 4%;
+}
+div.article h4 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+div.article p {
+  font-size: 16px;
+  line-height: 30px;
+}
+p.duanluo {
+  text-indent: 2em;
+}
+div.article strong {
+  font-weight: bold;
+}
+div.article h3 {
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: bold;
+	border-bottom: 1px solid #E2E2E2;
+	text-align: center;
+	margin-top: 20px;
+}
+img.art_img {
+  margin: 18px 0;
+}
+
+div.begin{
+	padding: 10px 0;
+	border-bottom: 1px solid #E7E7E7;
+}
+div.begin p{
+	font-family: sans-serif, Helvetica, "microsoft yahei", Arial;
+}
+div.txt_lr {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+div.txt_lr > strong {
+  display: block;
+  float: left;
+  font-size: 16px;
+  max-width: 28%;
+}
+div.txt_lr > p {
+  width: 72%;
+  display: block;
+  float: right;
+}
+div.beef {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+div.b_img {
+  float: left;
+  width: 50%;
+}
+div.br_img{
+	float: right;
+}
+h4.b_txt {
+  float: right;
+  width: 50%;
+}
+h4.bl_txt {
+  float: left;
+}
+h4.b_txt p {
+  font-weight: normal;
+}
+
+/*轮播样式*/
+#slideshow .touchcarousel-item {
+  float: left;
+}
+a.touchcarousel-item {
+  display: block;
+  position: relative;
+}
+.touchcarousel.three-d .tc-paging-container {
+  bottom: 12px;
+}
+/*列表*/
+div.list ul li {
+  width: 96.5%;
+  padding: 10px 1% 8px 2.5%;
+  overflow: hidden;
+  border-bottom: 1px solid #D7D7D7;
+}
+div.l_img {
+  float: left;
+  width: 30%;
+  height: 74px;
+  overflow: hidden;
+}
+div.r_txt {
+  float: left;
+  width: 65%;
+  margin-left: 2%;
+  height: 74px;
+  overflow: hidden;
+}
+div.r_txt h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+div.r_txt p {
+  font-size: 1em;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 21px;
+}
+
+/*底部菜单*/
+div.nav{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+div.subnav{
+  position: absolute;
+  left: 11.5%;
+  top: 0;
+  z-index: 10;
+  width: 76.5625%;
+  height: 100%;
+}
+div.subnav a{
+  float: left;
+  display: block;
+  width: 25%;
+  margin-top: 12%;
+}
+div.subnav a > img{
+  width: 45%;
+  display: block;
+  margin: 0 auto;
+}
+div.subnav a p{
+  color: #C29369;
+  text-align: center;
+  margin-top: 17%;
+  font-size: 14px;
+}
+div.subnav a p.active{
+  color: #EFDA3C;
+}
+div.subnav:after{
+  content: ".";
+  clear: both;
+}
+/*技术支持*/
+p.copyright {
+  margin: 20px auto 0;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  height: 50px;
+  text-align: center;
+  width: 92%;
+  padding: 0 4%;
+}
+a.go_wz {
+  display: inline-block;
+  border: 1px solid #343434;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 0.01em 0.5em;
+  border-radius: 0.5em;
+}
+
+div.true{
+  position: relative;
+}
+div.sao_num{
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+div.sao_num p{
+  color: #FFF1AB;
+  margin-top: 2%;
+}
+div.sao_num a{
+  width: 70%;
+  display: block;
+  background-color: #FEBF01;
+  color: #1C0C02;
+  text-align: center;
+  padding: 3px 0;
+  font-size: 14px;
+  margin-top: 8%;
+}
+
+/*扫码信息*/
+h3.t_tip {
+  margin: 55px 0 0 5%;
+  font-size: 18px;
+  font-weight: bold;
+  background: url(../img/tip_bg.jpg) no-repeat left center;
+  background-size: 1.5%;
+  padding-left: 13px;
+}
