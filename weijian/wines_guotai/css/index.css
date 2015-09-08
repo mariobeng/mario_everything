@@ -76,11 +76,11 @@ div.txt_lr > strong {
   font-size: 16px;
   max-width: 28%;
 }
-div.txt_lr > p {
+/* div.txt_lr > p {
   width: 72%;
   display: block;
   float: right;
-}
+} */
 div.beef {
   width: 100%;
   height: auto;
