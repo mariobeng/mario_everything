@@ -109,7 +109,7 @@ div.txt_lr > strong {
   color: #BFF4AF;
   text-align: center;
   background-color: #073B29;
-  border-radius: 10%;
+  border-radius: 6px;
   font-weight: normal;
 }
 div.txt_lr > p {
@@ -260,13 +260,13 @@ div.sao_num p span{
 }
 div.sao_num a{
   background-color: #1E6E32;
-  border-radius: 10%;
+  border-radius: 6px;
   color: #fff;
   text-align: center;
   padding: 3px 5px;
   font-size: 14px;
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 47%;
 }
 
