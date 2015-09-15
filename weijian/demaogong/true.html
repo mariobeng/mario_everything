@@ -6,6 +6,10 @@
         <title>真伪鉴别</title>
         <link rel="stylesheet" type="text/css" href="css/common.css"/>
         <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <!-- 预加载 -->
+        <script src="js/queryloader2.min.js"></script>
+        <script src="js/reload.js"></script>
+        <!-- 预加载 -->
         <script type="text/javascript">
             $(function(){
                 $.getJSON("/Service/AntiFake?Act=AntiFakeCode&Code=" + request("Code"),function(json){
@@ -74,9 +78,6 @@
         <script src="http://rs1.2wm.cn/javascript/common.js"></script>
         <script type="text/javascript" src="http://comrs1.2wm.cn/Manage/javascript/global.js"></script>
         <script src="js/index.js"></script>
-        <!-- 预加载 -->
-        <script src="js/queryloader2.min.js"></script>
-        <script src="js/reload.js"></script>
-        <!-- 预加载 -->
+
     </body>
 </html>
