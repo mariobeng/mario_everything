@@ -4,7 +4,10 @@ window.addEventListener('DOMContentLoaded', function() {
         backgroundColor: "#202020",
         percentage: true,
         barHeight: 30,
-        completeAnimation: "fade"
+        completeAnimation: "fade",
+        onComplete: function(){
+            my_animate();
+        }
         /*minimumTime: 200,
         fadeOutTime: 1000*/
     });
