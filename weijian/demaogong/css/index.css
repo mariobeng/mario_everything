@@ -26,6 +26,7 @@ img.mate_a{
     position: absolute;
     left: 39.5312%;
     top: 23.2142%;
+    opacity: 0;
 }
 img.mate01{
     top: 28.2142%;
@@ -59,6 +60,7 @@ img.mate_b{
     position: absolute;
     left: 42.0312%;
     top: 13.2936%;
+    opacity: 0;
 }
 img.mate02{
     top: 8.2936%;
@@ -92,6 +94,7 @@ img.mate_c{
     position: absolute;
     left: 49.75%;
     top: 16.4682%;
+    opacity: 0;
 }
 img.mate03{
     left: 54.75%;
