@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>宁夏大武口凉皮</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/touchcarousel.css"/>
+        <link rel="stylesheet" type="text/css" href="css/three-d-skin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="http://comrs1.2wm.cn/Manage/javascript/global.js"></script>
+        <style type="text/css">
+			body{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+		</style>
+		<script type="text/javascript">
+			//判断是否为微信浏览器
+			function isWeiXin(){
+    			var ua = window.navigator.userAgent.toLowerCase();
+	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+	      			return true;
+    			}
+  			}
+  			$(function(){
+  				$("a.weixin").click(function(){
+  					if(!isWeiXin()){
+  						location.href = "weixin.html";
+  					}else{
+  						location.href = "saoma.html";
+  					}
+  				})
+                $("a").each(function(i,o){
+                    $(o).attr("href",$(o).attr("href")+"?Code=" + request("Code"))
+                })
+  			})
+
+		</script>
+	</head>
+	<body>
+		<div class="main_bg">
+            <img src="img/top_img.png" alt="" class="img-responsive top_img">
+            <!-- 轮播 begin-->
+            <div id="slideshow" class="touchcarousel three-d">
+                <div class="touchcarousel-container">
+                    <a href="javascript:;" class="touchcarousel-item">
+                        <img src="img/banner01.png" />
+                    </a>
+                    <a href="http://click.union.vip.com/redirect.php?url=eyJjaGFuIjoiOTEwd2xzbSIsInNjaGVtZWNvZGUiOiI3MjM1ODNlMSIsImRlc3R1cmwiOiJodHRwOlwvXC92aXZhLnZpcC5jb21cLzE0Mzk2MTg3Lmh0bWwiLCJ1Y29kZSI6ImUzZ2x5eWh5In0=" class="touchcarousel-item">
+                        <img src="img/banner02.png" />
+                    </a>
+                </div>
+            </div>
+            <!-- 轮播 end-->
+			<div class="menu">
+				<ul>
+					<li><a href="zhenwei.html"><img src="img/nav_a.png" alt=""></a></li>
+					<li><a href="gongyi.html"><img src="img/nav_b.png" alt=""></a></li>
+					<li><a href="shiyong.html"><img src="img/nav_c.png" alt=""></a></li>
+					<li><a href="http://click.union.vip.com/redirect.php?url=eyJjaGFuIjoiOTEwd2xzbSIsInNjaGVtZWNvZGUiOiI3MjM1ODNlMSIsImRlc3R1cmwiOiJodHRwOlwvXC92aXZhLnZpcC5jb21cLzE0Mzk2MTg3Lmh0bWwiLCJ1Y29kZSI6ImUzZ2x5eWh5In0="><img src="img/nav_d.png" alt=""></a></li>
+					<li><a class="weixin" href="#"><img src="img/nav_e.png" alt=""></a></li>
+					<li><a href="http://yhsales.taobao.com/"><img src="img/nav_f.png" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+        <script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            /*轮播图*/
+            var $slideshow;
+            $(function(){
+                $slideshow = $("#slideshow");
+                $slideshow.find("img").attr("width",$(document.body).width());
+                $slideshow.touchCarousel({
+                    pagingNav: true,
+                    scrollbar: false,
+                    directionNavAutoHide: false,
+                    itemsPerMove: 1,
+                    loopItems: true,
+                    directionNav: false,
+                    autoplay: true,
+                    autoplayDelay: 2000,
+                    autoplayStopAtAction:false,
+                    useWebkit3d: true,
+                    itemFallbackWidth:$(document.body).width(),
+                    transitionSpeed: 400
+                });
+            });
+        </script>
+	</body>
+</html>

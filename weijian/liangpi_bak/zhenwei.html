@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html style="background-color: #F4F4F4;">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>真伪鉴别</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://comrs1.2wm.cn/Manage/javascript/global.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$.getJSON("/Service/AntiFake?Act=AntiFakeCode&Code=" + request("Code"),function(json){
+					if (json.Data == 0){
+						$("img.s_first").show();
+						$("img.s_second").hide();
+					}else{
+						$("img.s_second").show();
+						$("img.s_first").hide();
+					};
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<img src="img/zhenwei_01.jpg" alt="" class="img-responsive">
+		<img src="img/s_first.jpg" alt="" class="img-responsive s_first">
+		<img src="img/s_second.jpg" alt="" class="img-responsive s_second">
+		<div class="article" style="border-top: 1px solid #e2e2e2;">
+			<h4 style="margin-top: 15px;">基本信息</h4>
+			<div class="txt_lr">
+				<strong>产品名称：</strong><p>东武楼凉皮</p>
+			</div>
+			<div class="clear"></div>
+			<div class="txt_lr">
+				<strong>生产厂家：</strong><p>宁夏石嘴山市平生食品有限公司</p>
+			</div>
+			<div class="clear"></div>
+			<div class="txt_lr">
+				<strong>生产地址：</strong><p>宁夏石嘴山市大武口区二厂工业园</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<a href="main.html" class="back">
+			<img src="img/return.png" alt="">
+		</a>
+	</body>
+</html>
