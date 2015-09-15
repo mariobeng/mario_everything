@@ -187,7 +187,7 @@ div.txt_lr > p {
 }
 /*轮播样式*/
 #slideshow{
-	margin-top: 28%;
+	padding-top: 28%;
 }
 #slideshow .touchcarousel-item {
   float: left;
@@ -201,8 +201,14 @@ a.touchcarousel-item {
 }
 /*顶部图片样式*/
 img.top_img{
-	position: fixed;
+	position: absolute;
 	left: 0;
 	top: 0;
 	z-index: 99;
+}
+/*页面小标签*/
+a.tip{
+	position: absolute;
+	left: 0;
+	top: 40%;
 }
