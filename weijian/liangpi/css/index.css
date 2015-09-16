@@ -214,3 +214,31 @@ a.tip{
 	display: block;
 	width: 18%;
 }
+/*启动页*/
+a.comin {
+  display: block;
+  border-radius: 20px;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 25%;
+  bottom: 7%;
+  color: #fff;
+  opacity: 0.5;
+  -webkit-animation: comin 3.5s 0s infinite linear;
+  animation: comin 3.5s 0s infinite linear;
+}
+@-webkit-keyframes comin {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
+@keyframes comin {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
