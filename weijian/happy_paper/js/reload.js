@@ -4,9 +4,9 @@ window.addEventListener('DOMContentLoaded', function() {
         backgroundColor: "#202020",
         percentage: true,
         barHeight: 30,
-        completeAnimation: "fade",
-        onComplete: function(){
+        completeAnimation: "fade"
+        /*onComplete: function(){
             my_animate();
-        }
+        }*/
     });
 });

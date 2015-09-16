@@ -130,20 +130,27 @@ div.list ul li {
   width: 46%;
   margin: 6px 0 0 2.5%;
   border-radius: 10px;
-  border: 2px solid #B2B2B2;
+  border: 1px solid #B2B2B2;
   background-color: #fff;
+  padding: 4px 0;
 }
-div.list ul li p{
-  font-size: 16px;
-  color: #252525;
-  padding: 3%;
-  height: 25px;
+div.list ul li div.li_border{
+  width: 95%;
+  margin: 0 auto;
+  padding: 2.5% 0;
+  border-radius: 5px;
+  border: 1px dashed #B2B2B2;
+}
+div.li_border img.add_b{
+  max-width: 90%;
+  margin: 0 auto;
 }
 /*底部菜单*/
 div.footer {
   width: 100%;
   border-top: 1px solid #D2D2D2;
-  background-color: #F7F7F8;
+  background: url(../img/menu_bg.png) no-repeat left;
+  background-size: 100% 100%;
   position: fixed;
   z-index: 10;
   left: 0;
@@ -151,19 +158,18 @@ div.footer {
 }
 div.footer ul li {
   float: left;
-  width: 25%;
+  width: 33.3333%;
   text-align: center;
 }
 div.footer ul li img {
   display: block;
-  margin: 8% auto;
-  width: 30%;
+  margin: 8% auto 2%;
+  width: 40%;
 }
 div.footer ul li a p {
   font-size: 0.8em;
-}
-p.active{
-  color: #D02857;
+  color: #fff;
+  padding-bottom: 2%;
 }
 h3.no_borad{
   font-size: 20px;
@@ -172,8 +178,6 @@ h3.no_borad{
   margin: 15px 0;
   color: #252525;
 }
-
-
 /*抽奖*/
 form.userInfo{
   width: 80%;
