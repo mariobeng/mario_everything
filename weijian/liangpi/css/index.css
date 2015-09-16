@@ -21,16 +21,14 @@ div.main{
 }
 div.main_bg{
 	width: 100%;
-	height: 100%;
-	background: url(../img/index.jpg) no-repeat center;
+	height: auto;
+	/* background: url(../img/index.jpg) no-repeat center; */
 	background-size: cover;
 	position: relative;
 }
 div.menu{
 	width: 100%;
-	position: absolute;
-	left: 0;
-	bottom: 0;
+	margin-top: 10%;
 }
 div.menu ul li{
 	float: left;
@@ -186,4 +184,33 @@ div.txt_lr > p {
   width: 72%;
   display: block;
   float: right;
+}
+/*轮播样式*/
+#slideshow{
+	padding-top: 28%;
+}
+#slideshow .touchcarousel-item {
+  float: left;
+}
+a.touchcarousel-item {
+  display: block;
+  position: relative;
+}
+.touchcarousel.three-d .tc-paging-container {
+  bottom: 12px;
+}
+/*顶部图片样式*/
+img.top_img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
+/*页面小标签*/
+a.tip{
+	position: fixed;
+	left: 0;
+	top: 30%;
+	display: block;
+	width: 18%;
 }
