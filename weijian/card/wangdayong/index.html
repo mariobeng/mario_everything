@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>名片-王大勇</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//判断是否为微信浏览器
+			function isWeiXin(){
+    			var ua = window.navigator.userAgent.toLowerCase();
+	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+	      			return true;
+    			}
+  			}
+
+			$(function(){
+				//弹框
+	  			$("#nav_btn").click(function(){
+	  				$("#nav_btn").hide();
+	  				$(".xinxi").show().removeClass('xin_no').addClass("xinmate");
+	  			})
+	  			//添加微信
+	  			$("a.add").click(function(){
+	  				if (!isWeiXin()) {
+	  					alert("请使用微信扫码进入!");
+	  					return false;
+	  				}else{
+	  					$("img.erweima").show();
+	  				};
+	  			})
+	  			$("img.erweima").click(function(){
+	  				$("img.erweima").hide();
+	  			})
+	  			//添加到通讯录
+	  			$("a.savetel").click(function(){
+	  				if (!isWeiXin()) {
+	  					alert("请使用微信扫码进入!");
+	  					return false;
+	  				}else{
+	  					$("img.mecard").show();
+	  				};
+	  			})
+	  			$("img.mecard").click(function(){
+	  				$("img.mecard").hide();
+	  			})
+	  			//弹框消失
+	  			$("a.hideinfo").click(function(){
+	  				$("#nav_btn").show();
+	  				$(".xinxi").fadeOut(1000).removeClass("xinmate").addClass("xin_no");
+	  			})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="info name">
+				<img src="img/info_name.png" alt="" class="img-responsive">
+			</div>
+			<div class="info job">
+				<img src="img/info_job.png" alt="" class="img-responsive">
+			</div>
+			<img id="nav_btn" src="img/btn.png">
+			<a class="hideinfo" href="#"></a>
+			<div class="xinxi">
+				<div class="xin_up">
+					<img src="img/up.png" alt="" class="up_img">
+					<p>电话：18192211979、029-89195768</p>
+					<p>邮箱：wangdy723@163.com</p>
+					<p class="weixin">微信：wangdy723<a class="add" href="#">+</a></p>
+					<div class="clear"></div>
+					<p>地址：西安市科技六路橡树街区B座1105</p>
+					<div class="datu">
+						<a href="http://c10000.2wm.cn/site/" class="weizhan">
+							<img src="img/weizhan.png" alt="">
+							<p>唯简微站</p>
+						</a>
+						<a href="http://www.letv.com/ptv/vplay/22567932.html" class="video">
+							<img src="img/video.png" alt="">
+							<p>宣传片</p>
+						</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<a class="savetel" href="#">保存到通讯录</a>
+			</div>
+			<img class="erweima" src="img/erweima.png">
+			<img class="mecard" src="img/mecard.png">
+		</div>
+	</body>
+</html>
