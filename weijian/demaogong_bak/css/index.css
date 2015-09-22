@@ -174,13 +174,13 @@ div.menu ul {
 div.menu ul li{
     float: left;
     width: 29.2187%;
-    margin: 8% 0 0 3.0859%;
+    margin: 8% 0 0 4.12%;
 }
 div.menu ul li a{
     width: 100%;
 }
 div.menu ul li a img{
-    width: 100%;
+    width: 80%;
 }
 
 a.back {
@@ -334,7 +334,7 @@ a.kongbai {
   left: 0;
   top: 0;
   width: 100%;
-  height: 45%;
+  height: 56.5%;
 }
 img#nav_btn {
   position: absolute;
@@ -346,10 +346,10 @@ img#nav_btn {
 }
 div.menu {
   width: 100%;
-  height: 55%;
+  height: 43.5%;
   position: absolute;
   left: 0;
-  bottom: -55%;
+  bottom: -43.5%;
   display: none;
   overflow: hidden;
   background: url(../img/menu_bg.png) repeat left top;
@@ -371,7 +371,7 @@ div.navshow{
 }
 @-webkit-keyframes navshow {
     0% {
-        bottom: -55%;
+        bottom: -43.5%;
     }
     100% {
         bottom: 0;
@@ -379,7 +379,7 @@ div.navshow{
 }
 @keyframes navshow {
     0% {
-        bottom: -55%;
+        bottom: -43.5%;
     }
     100% {
         bottom: 0;
@@ -394,7 +394,7 @@ div.navhide{
         bottom: 0;
     }
     100% {
-        bottom: -55%;
+        bottom: -43.5%;
     }
 }
 @keyframes navhide {
@@ -402,7 +402,7 @@ div.navhide{
         bottom: 0;
     }
     100% {
-        bottom: -55%;
+        bottom: -43.5%;
     }
 }
 /*扫描大于一次时*/
