@@ -14,17 +14,10 @@
 				position: relative;
 			}
 		</style>
-        <!-- 预加载 -->
-        <script src="js/queryloader2.min.js"></script>
-        <script src="js/reload.js"></script>
-        <!-- 预加载 -->
 	</head>
 	<body>
         <div class="main_bg">
-            <a class="kongbai" href="#"></a>
-            <img id="nav_btn" src="img/btn.png">
             <div class="menu">
-                <a class="getout" href="#"></a>
                 <ul>
                     <li><a href="true.html"><img src="img/nav_a.png" alt=""></a></li>
                     <li><a href="gongyi.html"><img src="img/nav_b.png" alt=""></a></li>
@@ -45,23 +38,6 @@
                     return true;
                 }
             }
-            if(window.location.hash == "#index"){
-                $("#nav_btn").hide();
-                $("div.menu").show();
-                $("div.menu").css("bottom","0");
-            }
-            $("#nav_btn").click(function(){
-                $(this).hide();
-                $("div.menu").show();
-                $("div.menu").removeClass("navhide");
-                $("div.menu").addClass("navshow");
-            });
-            $("a.getout, a.kongbai").click(function(){
-                $("div.menu").removeClass("navshow");
-                $("div.menu").addClass("navhide");
-                $("#nav_btn").show();
-                $("div.menu").delay(1000).hide(0);
-            });
             $(function(){
                 $("a.weixin").click(function(){
                     if(!isWeiXin()){

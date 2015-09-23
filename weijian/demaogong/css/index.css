@@ -174,13 +174,13 @@ div.menu ul {
 div.menu ul li{
     float: left;
     width: 29.2187%;
-    margin: 8% 0 0 3.0859%;
+    margin: 8% 0 0 4.12%;
 }
 div.menu ul li a{
     width: 100%;
 }
 div.menu ul li a img{
-    width: 100%;
+    width: 80%;
 }
 
 a.back {
@@ -328,82 +328,14 @@ div.txt_lr > p {
   float: right;
 }
 
-a.kongbai {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 45%;
-}
-img#nav_btn {
-  position: absolute;
-  display: block;
-  width: 45px;
-  height: 45px;
-  right: 12px;
-  bottom: 12px;
-}
 div.menu {
   width: 100%;
-  height: 55%;
+  height: 43.5%;
   position: absolute;
   left: 0;
-  bottom: -55%;
-  display: none;
+  bottom: 0%;
   overflow: hidden;
   background: url(../img/menu_bg.png) repeat left top;
-}
-a.getout{
-    display: block;
-    width: 5.9375%;
-    height: 2.5270%;
-    position: absolute;
-    left: 47.0312%;
-    top: 3%;
-    z-index: 2;
-    background: url(../img/down.png) no-repeat center;
-    background-size: cover;
-}
-div.navshow{
-    -webkit-animation: navshow 1s 0s forwards;
-    animation: navshow 1s 0s forwards;
-}
-@-webkit-keyframes navshow {
-    0% {
-        bottom: -55%;
-    }
-    100% {
-        bottom: 0;
-    }
-}
-@keyframes navshow {
-    0% {
-        bottom: -55%;
-    }
-    100% {
-        bottom: 0;
-    }
-}
-div.navhide{
-    -webkit-animation: navhide 1s 0s forwards;
-    animation: navhide 1s 0s forwards;
-}
-@-webkit-keyframes navhide {
-    0% {
-        bottom: 0;
-    }
-    100% {
-        bottom: -55%;
-    }
-}
-@keyframes navhide {
-    0% {
-        bottom: 0;
-    }
-    100% {
-        bottom: -55%;
-    }
 }
 /*扫描大于一次时*/
 img.s_first{
@@ -476,4 +408,32 @@ p.title_p{
   text-align: center;
   color: #BC0510;
   margin-top: 10px;
+}
+/*启动页*/
+a.comin {
+  display: block;
+  border-radius: 20px;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 25%;
+  bottom: 19%;
+  color: #DD975E;
+  opacity: 0.1;
+  -webkit-animation: comin 1.5s 0s infinite linear;
+  animation: comin 1.5s 0s infinite linear;
+}
+@-webkit-keyframes comin {
+    0% {opacity: 0.1;}
+    50% {opacity: 1;}
+    100% {opacity: 0.1;}
+}
+@keyframes comin {
+    0% {opacity: 0.1;}
+    50% {opacity: 1;}
+    100% {opacity: 0.1;}
 }
