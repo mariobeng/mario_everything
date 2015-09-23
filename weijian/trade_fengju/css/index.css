@@ -166,52 +166,52 @@ h3.no_borad{
 /*抽奖*/
 form.userInfo{
   width: 80%;
-  margin: 0 auto;
+  position: absolute;
+  left: 20%;
+  bottom: 8.5%;
 }
 div.username{
   width: 100%;
   height: 40px;
 }
 div.phone{
-  margin-top: 20px;
   width: 100%;
-  height: 40px;
+  height: auto;
 }
 form.userInfo label{
-  color: #FFFBCF;
+  color: #FFE260;
   font-size: 18px;
   display: inline-block;
-  width: 25%;
-  float: left;
   height: 40px;
   line-height: 40px;
+  padding-left: 5%;
 }
 form.userInfo input{
-  color: #fff;
+  color: #000;
   font-size: 16px;
-  background-color: #FF6267;
-  display: inline-block;
-  width: 70%;
-  float: left;
+  background-color: #FFE260;
+  display: block;
+  width: 62%;
   border: none;
   height: 40px;
   line-height: 40px;
   border-radius: 13px;
   padding-left: 5%;
   outline: none;
+  margin-left: 2%;
 }
 #tijiao{
   display: block;
-  width: 70%;
-  margin: 0 auto;
+  width: 77%;
   height: 50px;
   line-height: 50px;
-  background-color: #CD2735;
+  background-color: #D72616;
   border: none;
   border-radius: 20px;
   color: #FFFBCF;
   font-size: 20px;
-  margin-top: 100px;
+  margin-top: 38%;
+  font-weight: 500;
 }
 div.pr_top{
   position: relative;
