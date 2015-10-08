@@ -16,22 +16,7 @@
 		</style>
 		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			//判断是否为微信浏览器
-			function isWeiXin(){
-    			var ua = window.navigator.userAgent.toLowerCase();
-	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-	      			return true;
-    			}
-  			}
-
 			$(function(){
-				$("a.weixin").click(function(){
-  					if(!isWeiXin()){
-  						location.href = "weixin.html";
-  					}else{
-  						location.href = "saoma.html";
-  					}
-  				})
 				$("div.a_mate").addClass("apple_m");
   				if(window.location.hash == "#index"){
 					$("div.a_mate").removeClass("apple_m");
@@ -39,7 +24,6 @@
 					$("div.menu").show();
 					$("div.menu").css("bottom","0");
 				}
-
   				$("#nav_btn").click(function(){
 					$(this).hide();
 					$("div.menu").show();
@@ -94,10 +78,10 @@
 						<p>再次购买</p>
 					</li>
 					<li>
-						<a class="weixin" href="#">
+						<a class="weixin" href="http://comrs1.2wm.cn/Public/gifts/index.html?Code=">
 							<img class="img-responsive" src="img/apple_05.png"/>
 						</a>
-						<p>微信关注</p>
+						<p>精彩活动</p>
 					</li>
 					<li>
 						<a class="weidian" href="guo.html">
