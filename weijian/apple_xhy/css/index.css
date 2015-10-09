@@ -62,7 +62,7 @@ div.menu {
   height: 22.4206%;
   position: absolute;
   left: 0;
-  bottom: 0%;
+  bottom: 2%;
 }
 div.navshow{
   -webkit-animation: navshow 1s 0s forwards;
