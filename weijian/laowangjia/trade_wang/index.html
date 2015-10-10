@@ -21,37 +21,19 @@
 				background-color: #fff;
 				text-align: center;
 			}
-			div.load img{
+			div.load span{
+				display: inline-block;
+				margin-top: 75%;
+			}
+			/* div.load img{
 				display: block;
-				position: absolute;
-			}
+			} */
 		</style>
-		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
-		<script>
-			$(function(){
-				var load_w = $("div.load").width();
-				var load_h = $("div.load").height();
-
-				var img_w = $("div.load img").width();
-				var img_h = $("div.load img").height();
-
-				var img_l = (load_w - img_w)/2;
-				var img_t = (load_h - img_h)/2;
-
-				$("div.load img").css({
-					"left":img_l,
-					"top":img_t
-				});
-			})
-			window.onload = function(){
-				$("div.load").hide();
-			}
-		</script>
 	</head>
 	<body>
 		<!-- 预加载 begin -->
 			<div class="load">
-				<img src="img/load.gif" alt="">
+				<span><img src="img/load.gif" alt=""></span>
 			</div>
 		<!-- 预加载 end-->
 
@@ -141,6 +123,27 @@
 				</li>
 			</ul>
 		</div>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			/*$(function(){
+				var load_w = $("div.load").width();
+				var load_h = $("div.load").height();
+
+				var img_w = $("div.load img").width();
+				var img_h = $("div.load img").height();
+
+				var img_l = (load_w - img_w)/2;
+				var img_t = (load_h - img_h)/2;
+
+				$("div.load img").css({
+					"left":img_l,
+					"top":img_t
+				});
+			})*/
+			window.onload = function(){
+				$("div.load").fadeOut();
+			}
+		</script>
 		<script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			/*轮播图*/
