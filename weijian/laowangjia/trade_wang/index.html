@@ -8,13 +8,53 @@
 		<link rel="stylesheet" type="text/css" href="css/touchcarousel.css"/>
 		<link rel="stylesheet" type="text/css" href="css/three-d-skin.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			/*预加载样式*/
+			body{
+				position: relative;
+			}
+			div.load{
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				z-index: 99;
+				background-color: #fff;
+				text-align: center;
+			}
+			div.load img{
+				display: block;
+				position: absolute;
+			}
+		</style>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script>
+			$(function(){
+				var load_w = $("div.load").width();
+				var load_h = $("div.load").height();
+
+				var img_w = $("div.load img").width();
+				var img_h = $("div.load img").height();
+
+				var img_l = (load_w - img_w)/2;
+				var img_t = (load_h - img_h)/2;
+
+				$("div.load img").css({
+					"left":img_l,
+					"top":img_t
+				});
+			})
 			window.onload = function(){
-				alert("1");
+				$("div.load").hide();
 			}
 		</script>
 	</head>
 	<body>
+		<!-- 预加载 begin -->
+			<div class="load">
+				<img src="img/load.gif" alt="">
+			</div>
+		<!-- 预加载 end-->
+
 		<!-- 轮播 begin-->
 		<div id="slideshow" class="touchcarousel three-d">
 			<div class="touchcarousel-container">
@@ -101,7 +141,6 @@
 				</li>
 			</ul>
 		</div>
-		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			/*轮播图*/
