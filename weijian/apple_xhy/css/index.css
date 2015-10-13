@@ -15,10 +15,7 @@ img.img-responsive {
 }
 div.main{
 	width: 100%;
-	height: 100%;
-	background: url(../img/welcome.jpg) no-repeat center center;
-	background-size: cover;
-	position: relative;
+  margin-top: 15px;
 }
 a.comin{
 	display: block;
@@ -59,10 +56,8 @@ img#nav_btn {
 }
 div.menu {
   width: 100%;
-  height: 22.4206%;
-  position: absolute;
-  left: 0;
-  bottom: 2%;
+  height: auto;
+  margin-top: 20px;
 }
 div.navshow{
   -webkit-animation: navshow 1s 0s forwards;
@@ -118,9 +113,6 @@ a.getout {
 div.menu ul {
   width: 100%;
   height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 div.menu ul li {
   float: left;
@@ -403,10 +395,7 @@ a.ewm_return{
 /*关注微信--end*/
 a.xhy{
   width: 93.4375%;
-  height: 27.2817%;
-  position: absolute;
-  left: 3.75%;
-  top: 43.5515%;
+  margin: 0 auto;
 }
 div.sao_num{
   width: 92%;
@@ -435,4 +424,24 @@ h3.t_tip {
   background: url(../img/tip_bg.jpg) no-repeat left center;
   background-size: 1.5%;
   padding-left: 13px;
+}
+/*轮播样式*/
+#slideshow .touchcarousel-item {
+  float: left;
+}
+a.touchcarousel-item {
+  display: block;
+  position: relative;
+}
+.touchcarousel.three-d .tc-paging-container {
+  bottom: 12px;
+}
+#slideshow a.shuye{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
 }
