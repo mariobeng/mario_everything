@@ -251,7 +251,7 @@ a.info{
   width: 52%;
   height: auto;
   float: right;
-  margin: 5% 9% 0 0;
+  margin: 10% 9% 0 0;
 }
 /*扫码信息*/
 h3.t_tip {
@@ -333,4 +333,8 @@ div.list ul li {
   margin: 12px 0 0 3.5%;
   border: 1px solid #D2D2D2;
 }
-
+img.copyright{
+  position: absolute;
+  left: 0;
+  bottom: 8%;
+}
