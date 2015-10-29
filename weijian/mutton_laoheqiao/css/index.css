@@ -362,6 +362,7 @@ div.load span{
   text-align: center;
   margin: 75% auto 0;
   background-color: #000;
+  border-radius: 10px;
 }
 div.load span img{
   margin-top: 9px;
