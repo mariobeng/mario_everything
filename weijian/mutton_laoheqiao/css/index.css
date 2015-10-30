@@ -355,11 +355,12 @@ div.load{
 }
 div.load span{
   display: block;
-  margin-top: 75%;
+  /*margin-top: 75%;*/
   width: 75px;
   height: 75px;
-  text-align: center;
-  margin: 75% auto 0;
+  position: absolute;
+  /*text-align: center;
+  margin: 75% auto 0;*/
 }
 div.load span img{
   width: 75px;
