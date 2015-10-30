@@ -1,4 +1,4 @@
-$(function(){
+/*$(function(){
     var load_w = $("div.load").width();
     var load_h = $("div.load").height();
 
@@ -12,7 +12,7 @@ $(function(){
         "left":img_l,
         "top":img_t
     });
-})
+})*/
 window.onload = function(){
     $("div.load").fadeOut();
 }
