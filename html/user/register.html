@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <title>登录</title>
+    <link rel="stylesheet" href="../common/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="../public/style/base.css"/>
+    <link rel="stylesheet" href="../public/style/style.css"/>
+    <link rel="stylesheet" href="../public/style/form.css"/>
+    <script src="../common/jquery/jquery.min.js"></script>
+    <script src="../common/validate/jquery.validate.js"></script>
+    <script src="../public/js/validate.common.js"></script>
+    <script src="../common/bootstrap/bootstrap.min.js"></script>
+    <script src="../public/js/common.js"></script>
+    <script src="../public/js/user.js"></script>
+    <script src="../public/js/tel.js"></script>
+</head>
+<body class="bg_fff">
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="logo p_t_15">
+                    <a href="/"><img src="../public/images/logo.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="g_box bg_hui login_box">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel login_con">
+                    <div class="row p20">
+                        <div class="col-xs-8">
+                            <!--dis_none-->
+                            <div class="reg_box">
+                                <ul class="yqm list-unstyled m_bottom_20">
+                                    <li class="active">无邀请码</li>
+                                    <li>有邀请码</li>
+                                </ul>
+                                <form action="guser/getInvitation" method="post" id="jsForm">
+                                    <div class="form-group m_bottom_20">
+                                        <input type="text" name="username" class="form-control" id="username" placeholder="请输入注册手机号码">
+                                    </div>
+                                    <div class="form-group m_bottom_20">
+                                        <input type="password" class="form-control" name="password" id="password" placeholder="请输入6-8位注册密码">
+                                    </div>
+                                    <div class="form-group m_bottom_20">
+                                        <input type="password" class="form-control" name="qpassword" id="qpassword" placeholder="请再次输入6-8位注册密码">
+                                    </div>
+                                    <div class="form-group m_bottom_20">
+                                        <input type="password" class="form-control" style="width: 300px" name="yzm" id="yzm" placeholder="请输入6位验证码">
+                                    </div>
+                                    <div class="form-group m_bottom_20">
+                                        <input type="password" class="form-control" name="yqm" id="yqm" placeholder="请输入6位邀请码">
+                                    </div>
+                                    <button type="submit" class="btn btn-default btn_blur btn-block p10 font18 m_bottom_20">下一步</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <dl class="reg_login">
+                                <dt>我已经有账号了！</dt>
+                                <dd><a href="/user/login.html">登录</a></dd>
+                            </dl>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer p_t_10">
+    <div class="container">
+        <div class="copy">Copyright © 2002-2015  版权所有  高考自愿填报指南   备案号：陕IPC备 12312312-1</div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+label.error{
+    position:absolute ;
+    text-align: right;
+    right: 0;
+    margin-top: -32px;
+    margin-right: 67px;
+    font-weight: 100;
+    color: #C00;
+}
+
+.btn-danger {
+     background-color: #f67665;
+     border-color: #f67665;
+}
+.btn-danger:hover{
+    background-color:#e9604e;
+    border-color: #e9604e;
+}
+.btn-success{
+    background-color:#5cb85c;
+    border-color: #5cb85c;}
+
+.btn-success:hover{
+    background-color:#46a946;
+    border-color: #46a946;
+}
+
+.dati .btn{ padding: 8px 40px; border-radius: 1px; margin: 10px;}
+
+.dati_btn{ display: block; height: 70px; line-height: 70px; font-size: 22px; width: 210px; background: #4cae4c; border-radius: 2px;
+    color: #fff;text-decoration: none; text-align: center; margin: 0px auto; margin-top: 100px; margin-bottom: 200px}
+

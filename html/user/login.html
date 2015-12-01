@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <title>登录</title>
+    <link rel="stylesheet" href="../common/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="../public/style/base.css"/>
+    <link rel="stylesheet" href="../public/style/style.css"/>
+    <link rel="stylesheet" href="../public/style/form.css"/>
+    <script src="../common/jquery/jquery.min.js"></script>
+    <script src="../common/validate/jquery.validate.js"></script>
+    <script src="../public/js/validate.common.js"></script>
+    <script src="../common/bootstrap/bootstrap.min.js"></script>
+    <script src="../public/js/common.js"></script>
+    <script src="../public/js/tel.js"></script>
+</head>
+<body class="bg_fff">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col_xs_12">
+                    <div class="logo p_t_15">
+                        <a href="/"><img src="../public/images/logo.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_hui login_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-7">
+                    <div class="login_left_img">
+                        <img src="../public/images/login_l.png" alt=""/>
+                    </div>
+                </div>
+                <div class="col-xs-5 p20">
+                    <div class="l_box panel login_con">
+                        <h2 class="font22 m_bottom_20 text-center">用户登录</h2>
+                        <form action="login/index" method="post" id="jsForm">
+                            <div class="form-group m_bottom_20">
+                                <input type="text" name="username" class="form-control" id="username" placeholder="手机账号/账号">
+                            </div>
+                            <div class="form-group m_bottom_20">
+                                <input type="password" class="form-control" name="password" id="password" placeholder="你的密码">
+                            </div>
+                            <div class="checkbox m_bottom_20">
+                                <div class="pull-right"><a href="getpassword.html">忘记密码？</a></div>
+                                <label>
+                                    <input type="checkbox" name="auto"> 记住密码
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-default btn_blur btn-block p10 font18 m_bottom_20">登录</button>
+                        </form>
+                        <div class="rig_a">还没有帐号？ <a href="register.html">立即注册</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer p_t_10 line_top bg_fff"></div>
+</body>
+</html>

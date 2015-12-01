@@ -1,0 +1,135 @@
+body{background:#f7f7f7;font-size: 14px; font-family: "微软雅黑"; line-height: 1.5}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin: 0px;
+    margin: 0px;
+}
+.container {
+    width: 1230px;
+}
+
+a.blur{ color: #2090ff; text-decoration: none}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    /*padding-right: 10px;*/
+    /*padding-left: 10px;*/
+}
+
+.form-horizontal .control-label,
+.form-horizontal .radio-inline{ padding-top: 12px;}
+
+.breadcrumb {
+    background-color: #fff;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    -webkit-box-shadow: none;
+    box-shadow:none;
+}
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #555;
+    content: ">";
+}
+.breadcrumb a,.breadcrumb a:hover{ color: #333; font-size: 14px; text-decoration: none}
+.panel {
+    margin-bottom: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    -webkit-box-shadow: none;
+    box-shadow:none;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 10px 12px;
+    border-radius: 2px;
+
+}
+.school_nav{}
+.g_box{ border-bottom: 1px solid #e7e7e7}
+.g_box a{ text-decoration: none; color: #444}
+.g_box a:hover{color: #111;}
+.g_box .blue{color: #22afff; font-weight: 100}
+
+.line_top{ border-top: 1px solid #e5e5e5}
+
+.btn_blur{ background: #22afff;border-color: #22afff; color: #fff;border-radius: 2px}
+.btn_blur:hover,.btn_blur:focus{ background: #12a2f4;border-color: #12a2f4; color: #fff}
+.btn_green{background: #33cc99;border-color: #33cc99; color: #fff; border-radius: 2px}
+.bg_fff{
+    background: #fff;
+}
+.bg_hui{
+    background: #f7f7f7;
+}
+.pagination-lg > li:first-child > a, .pagination-lg > li:first-child > span {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.pagination-lg > li:last-child > a, .pagination-lg > li:last-child > span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.pagination-lg > li > a{font-size: 14px;     color: #333;}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #22afff;
+    border-color: #22afff;
+    font-size: 14px;
+
+}
+.pagination{ margin: 0;}
+.p_l_30{ padding-left: 30px;}
+.p10{ padding: 10px}
+.p15{ padding: 15px}
+.p20{ padding: 20px}
+.p_10_20{ padding: 10px 20px}
+.p_t_10{ padding-top: 10px;padding-bottom: 10px;}
+.p_t_15{ padding-top: 15px;padding-bottom: 15px;}
+.p_t_20{ padding-top: 20px;padding-bottom: 20px;}
+.p_t_50{ padding-top: 40px;padding-bottom: 40px;}
+.p_l_10{ padding: 0 10px}
+.p_l_20{ padding: 0 20px}
+.p_r_5{ padding-right: 5px;}
+.pr5{ padding-right: 5px;}
+.pl5{ padding-left: 5px;}
+
+.m_bottom_10{ margin-bottom: 10px}
+.m_bottom_20{ margin-bottom: 20px}
+
+.m_t_46{ margin-top: 45px}
+.m_b_10{ margin-bottom: 10px;}
+.m_b_15{ margin-bottom: 15px;}
+.h400{ height: 400px}
+
+.m_10{ margin-right: 10px;}
+
+.font14{ font-size: 14px}
+.font16{ font-size: 16px}
+.font18{ font-size: 18px}
+.font20{ font-size: 20px}
+.font22{ font-size: 22px}
+.font30{ font-size: 30px}
+.dis_none{ display: none}
+.header{height: 90px;border-bottom: 1px solid #e0e3e6;}
+.footer{ padding: 10px}
+.title{ margin-bottom: 10px;}
+
+.w140{ width: 140px}
+
+.n_title{ padding: 20px; background: #E7F6FF; border-left: 6px solid #22afff; margin-left: -6px;}
+
+.tab_class{ width: 100%; float: left; margin: 0}
+.tab_class li{ float: left; padding: 6px 15px; color: #333; background: #eee; cursor: pointer}
+.tab_class li.active{ background: #22afff; color: #fff}
+
+.modal_bg{display: none; background: #000; z-index: 999; opacity: 0.8; position: fixed; top: 0; right: 0;bottom: 0; left: 0;}
+.modal_box{display: none;  z-index: 1000; height: 450px; width: 700px; border:1px solid #ddd; margin-top: -225px; margin-left: -350px; background:#fff; position: fixed; left: 50%; top: 50%;}
+.modal_box .close_modal{ position: absolute; right:20px; top: 18px; cursor: pointer;}
+.modal_box .m_title{ height: 54px; font-size: 18px; padding-left: 20px; line-height: 54px; background: #f7f7f7; border-radius:4px 4px 0 0; border-bottom: 1px solid #ddd}
+.modal_box .modal_content{ overflow: auto}

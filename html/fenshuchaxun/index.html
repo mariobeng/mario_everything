@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+        <title></title>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function getUrlParam(name){
+                var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+                var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+                if (r!=null) return unescape(r[2]); return null; //返回参数值
+            }
+            var myid = getUrlParam('id');
+            if (myid == 1){
+                window.location.href="http://cx.ahzsks.cn/pugao/pgcj2015_in.php";//安徽
+            }else if(myid == 2){
+                window.location.href="http://query.bjeea.cn/queryService/rest/score/103";//北京
+            }else if(myid == 3){
+                window.location.href="http://gkcj.cqksy.cn/application/pzkw/studentBm/student_kshXxLogin.jsp";//重庆
+            }else if(myid == 4){
+                window.location.href="http://220.160.54.46/UEPORTLET/jsp/scores/gkcj/scores_enter.jsp";//福建
+            }else if(myid == 5){
+                window.location.href="http://query.5184.com/query/gk/gk_2015_cj.htm";//广东
+            }else if(myid == 6){
+                window.location.href="http://www.gxeea.cn/lstd/cg/gkcf/gkcf.htm";//广西
+            }else if(myid == 7){
+                window.location.href="http://gkzy.gzszk.com/";//贵州
+            }else if(myid == 8){
+                window.location.href="http://gaokao.gszs.cn/";//甘肃
+            }else if(myid == 9){
+                window.location.href="http://gaokao.hbee.edu.cn/html/gk/zxzc/2015-06/125870.html";//湖北
+            }else if(myid == 10){
+                window.location.href="http://www.hneeb.cn/website/gk_cx_gk.asp";//湖南
+            }else if(myid == 11){
+                window.location.href="http://202.100.202.56/gkcj_2015.php";//海南
+            }else if(myid == 12){
+                window.location.href="http://221.207.246.181:8001/JWWebGaokao/toStudentLoginQuery";//黑龙江
+            }else if(myid == 13){
+                window.location.href="http://xxcx.hebeea.edu.cn/hebeeaQuery/pages/uee/cjcx/cjcx.jsp";//河北
+            }else if(myid == 14){
+                window.location.href="http://pzwb.heao.gov.cn/PZService/default.aspx";//河南
+            }else if(myid == 15){
+                window.location.href="http://stat.jseea.cn/jseea_query/querycenter.html";//江苏
+            }else if(myid == 16){
+                window.location.href="http://gkcf.jxedu.gov.cn/cjcx/";//江西
+            }else if(myid == 17){
+                window.location.href="http://zsb.jledu.gov.cn/";//吉林
+            }else if(myid == 18){
+                window.location.href="http://www.lnzsks.com/about/cxzx.html";//辽宁
+            }else if(myid == 19){
+                window.location.href="http://61.133.219.10/exam/common/LoginExam.do";//宁夏
+            }else if(myid == 20){
+                window.location.href="http://www1.nm.zsks.cn/gkcx/cj.jsp";//内蒙古
+            }else if(myid == 21){
+                window.location.href="http://www.qhzk.com/QHZK_GK/grgkcj.aspx";//青海
+            }else if(myid == 22){
+                window.location.href="https://www.yiban.cn/ksy/query/index";//上海
+            }else if(myid == 23){
+                window.location.href="http://cx.sdzk.cn/gkcj/";//山东
+            }else if(myid == 24){
+                window.location.href="http://cx.sceea.cn/html/GKCJ.htm";//四川
+            }else if(myid == 25){
+                window.location.href="http://gkpt.sxkszx.cn/NoLogin.html";//山西
+            }else if(myid == 26){
+                window.location.href="http://www.sneac.com/gkcxx/cjcx/zcjcx.htm";//陕西
+            }else if(myid == 27){
+                window.location.href="http://www.zhaokao.net/";//天津
+            }else if(myid == 28){
+                window.location.href="http://www.xjedu.gov.cn/webpub/bpf/cjcx/search.jsp?sea_id=10870";//新疆
+            }else if(myid == 29){
+                window.location.href="http://220.182.46.141:8001/eem/chaxun/initChaxun.do?ksdm=2015gkcj";//西藏
+            }else if(myid == 30){
+                window.location.href="http://www.ynzs.cn/gk2015/";//云南
+            }else if(myid == 31){
+                window.location.href="http://cx.zjzs.net/exam/GKCX2015/";//浙江
+            }
+        </script>
+    </body>
+</html>

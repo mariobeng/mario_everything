@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=WBixESWBKrsRjGRa4yuTnV5r"></script>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+        
+          $("button").click(function(){
+            /** jQuery.support.cors = true; */
+                $.ajax({
+                    url:"http://123.56.114.10:8080/biz/login/index",
+                    type:"post",
+					data:JSON.stringify(GetJsonData()),
+                    dataType : "json",
+					timeout : 50000,
+                    success:function(data){
+                        alert("数据lhc：" + data.name );
+                    },
+                    error:function(XMLHttpRequest,textStatus,errorThrown){
+                        alert(XMLHttpRequest.responseText + "====" + errorThrown);
+                    }
+                });
+            });
+        });
+		var _data = {"password":"123456", "username":"13325484627"}
+		function GetJsonData() {
+			var json = {
+                "body":_data,
+                "md5":"aaa"
+			};
+			return json;
+		}
+    </script>
+</head>
+<body>
+    <button>向页面发送 HTTP POST 请求，然后获得返回的结果11</button>
+</body>
+</html>
+
+

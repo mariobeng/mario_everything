@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>用户中心</title>
+    <link rel="stylesheet" href="../common/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="../public/style/base.css"/>
+    <link rel="stylesheet" href="../public/style/style.css"/>
+    <script src="../common/jquery/jquery.min.js"></script>
+    <script src="../common/validate/jquery.validate.js"></script>
+    <script src="../public/js/validate.common.js"></script>
+    <script src="../common/bootstrap/bootstrap.min.js"></script>
+    <script src="../public/js/common.js"></script>
+    <script src="../public/js/user.js"></script>
+    <script src="../public/js/tel.js"></script>
+</head>
+<body>
+<div id="header" class="header bg_fff"></div>
+<div class="container p_t_20">
+    <div class="row">
+        <div class="col-xs-12">
+                <h2 class="font30 p_t_10">用户中心</h2>
+        </div>
+        <div class="col-xs-12">
+            <div class="panel">
+                <div id="user_left" class="user_nav pull-left">
+                    <!--导航-->
+                </div>
+                <div  id="user_right" class="user_box pull-right">
+                    <div class="user_title"><h3 class="font20">个人资料</h3></div>
+                    <form class="form-horizontal"  id="jsForm">
+                        <div class="form-group">
+                            <label class="col-xs-2 control-label">头像</label>
+                            <div class="col-xs-10">
+                                <div class="headimg">
+                                    <img src="https://ps.ssl.qhimg.com/t014f9786fa4d4abc32.jpg" alt="头像">
+                                    <p><a href="emid">修改头像</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-2 control-label">所在城市</label>
+                            <div class="col-xs-10">
+                                <select class="form-control w140 pull-left m_10">
+                                    <option>请选择</option>
+                                    <option>陕西</option>
+                                </select>
+                                <select class="form-control w140  pull-left m_10">
+                                    <option>请选择</option>
+                                    <option>西安</option>
+                                </select>
+                                <select class="form-control w140">
+                                    <option>请选择</option>
+                                    <option>雁塔区</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--<div class="form-group">-->
+                            <!--<label for="inputEmail3" class="col-xs-2 control-label">所在中学</label>-->
+                            <!--<div class="col-xs-6">-->
+                                <!--<input type="text" class="form-control" id="inputEmail3" value="" placeholder="请输入你所在的中学">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <div class="form-group">
+                            <label class="col-xs-2 control-label">你的姓名</label>
+                            <div class="col-xs-6">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="请输入你的名字">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-2 control-label">性别</label>
+                            <div class="col-xs-10">
+                                <label class="radio-inline">
+                                    <input type="radio" name="sex" value="0" checked>男
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="sex" value="1">女
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-2 control-label">类型</label>
+                            <div class="col-xs-10">
+                                <label class="radio-inline">
+                                    <input type="radio" name="kemu_type" value="0">文科
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="kemu_type"  value="1">理科
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-2 control-label">电子邮箱</label>
+                            <div class="col-xs-6">
+                                <input type="text" name="email" class="form-control" id="email" placeholder="请输入邮箱">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default btn_blur w140 p10 font18 m_bottom_20">登录</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="footer p_t_10 line_top bg_fff"></div>
+</body>
+</html>

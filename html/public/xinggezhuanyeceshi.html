@@ -1,0 +1,60 @@
+<script type="text/javascript">
+    $(document).ready(function() {
+        $fun.postAjax("questions/getNatureTestQuestions",{"type":"1"},function(data){
+            //输出测试题
+            var str = '';
+            for (var i = 0; i < data.body.length; i++) {
+                str += '<li data-id = "'+data.body[i].id+'">';
+                str += '    <div class="xg_title">'+data.body[i].questions+'</div>';
+                str += '    <div class="dati">';
+                str += '        <label for="yes_'+data.body[i].id+'">';
+                str += '            <input type="radio" name="q'+data.body[i].id+'" id="yes_'+data.body[i].id+'" value="1">';
+                str += '            <span class="btn btn-success">是</span>';
+                str += '        </label>';
+                str += '        <label for="no_'+data.body[i].id+'">';
+                str += '            <input type="radio" name="q'+data.body[i].id+'" id="no_'+data.body[i].id+'" value="0">';
+                str += '            <span class="btn btn-danger">否</span>';
+                str += '        </label>';
+                str += '    </div>';
+                str += '</li>';
+            };
+            $("#wenti_list").html(str);
+            $("#wenti_list li").first().show();
+            var count = $("#wenti_list li").length;
+            $("#dati_num").find('.count,.dq').text(count);
+
+            //开始测试
+            var htmlStr = '';
+            var Arr = [];
+            $("#wenti_list li").each(function(i){
+                var _this = $(this);
+                _this.find('input[name = "q'+data.body[i].id+'" ]').change(function(){
+                    Arr[i] = {"answer":$(this).val(),"id":_this.data("id")};
+                    $("#dati_num").find('.dq').text(count-i-1)
+                    _this.hide().next().show();
+                    if(count == i+1){
+                        var json = {"NatureTestAnswerList":Arr,"type":"1","user_id":"23"}
+                        $fun.postAjax("nature/postNatureTestAnswer",json,function(data){
+                            htmlStr += '<div>'+data.body.natureName+'</div>';
+                            htmlStr += '<div>'+data.body.natureType+'</div>';
+                            $("#resultt").html(htmlStr);
+                        });
+                    }
+                })
+            })
+        })
+        
+    });
+</script>
+<div id="resultt">
+    <div class="alert alert-warning alert-dismissible fade in">
+        <strong>提示：</strong>霍兰德是项专业的职业测试，您只需花3分钟时间，就可以帮助您选择正确的专业方向。
+    </div>
+    <form action="">
+        <ul id="wenti_list" class="list-unstyled wenti_list">
+
+        </ul>
+    </form>
+    <p id="dati_num" class="dati_num">共 <span class="count"></span> 题，剩余 <span class="dq"></span> 题</p>
+    <p class="dati_ts">说明: 全部打完后，系统自动推荐您感兴趣的专业方向。</p>
+</div>
