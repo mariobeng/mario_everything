@@ -1,0 +1,181 @@
+html{
+	width: 100%;
+	height: 100%;
+	background-color: #F2F2F2;
+}
+body {
+	width: 100%;
+  padding-bottom: 50px;
+	height: auto;
+	font-family: Arial, "microsoft yahei", Helvetica, sans-serif;
+  position: relative;
+}
+img.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+a.back {
+  display: block;
+  height: 30px;
+  left: 15px;
+  position: fixed;
+  top: 15px;
+  width: 30px;
+}
+a.back img {
+  height: 30px;
+  width: 30px;
+}
+/*底部菜单*/
+div.menu {
+  width: 100%;
+  border-bottom: 1px solid #D7D7D7;
+  background-color: #fff;
+  height: 35px;
+}
+div.menu ul li {
+  float: left;
+  width: 30%;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 1.65%;
+  background: url(../img/back_border.jpg) no-repeat right center;
+  background-size: 1% 50%;
+}
+div.menu ul li img {
+  width: 16%;
+  float: left;
+  margin: 10px 0 0 9%;
+}
+div.menu ul li a p {
+  font-size: 15px;
+}
+div.menu ul li a p.active{
+  color: #019F6D;
+  font-size: 16px;
+}
+h3.no_borad{
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  margin: 15px 0;
+  color: #252525;
+}
+/*banner*/
+div.banner{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #019F6D;
+  position: relative;
+}
+div.banner a.return{
+  position: absolute;
+  left: 5%;
+  top: 20%;
+}
+a.return img{
+  width: 65%;
+}
+div.banner h1{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+/*版权*/
+div.banquan{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #F2F2F2;
+}
+p.copyright {
+  font-size: 14px;
+  height: 50px;
+  text-align: center;
+  width: 92%;
+  padding: 0 4%;
+}
+p.copyright a{
+  color: #999;
+}
+a.go_wz {
+  display: inline-block;
+  border: 1px solid #999;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 3px 7px;
+  border-radius: 6px;
+  color: #999;
+}
+
+
+div.fw_bor{
+  padding: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+div.sao_num p, div.ma_info p{
+  color: #999;
+}
+div.sao_num h1{
+  margin: 20px 0;
+  text-align: center;
+  font-size: 25px;
+}
+h1.normal{
+  color: #019F6C;
+}
+h1.danger{
+  color: #E62116;
+}
+div.beisao div{
+  width: 50%;
+}
+div.beisao p{
+  margin-top: 5px;
+}
+div.your{
+  float: left;
+  text-align: center;
+}
+div.other{
+  float: right;
+  text-align: center;
+}
+div.ma_info{
+  margin-top: 10px;
+}
+div.ma_info h4{
+  margin-top: 5px;
+  line-height: 25px;
+}
+div.cord{
+  margin-top: 10px;
+}
+div.cord div{
+  width: 50%;
+}
+div.ip{
+  float: left;
+  text-align: left;
+}
+div.area{
+  float: right;
+  text-align: right;
+}
+div.ip h4, div.area p{
+  margin-top: 5px;
+}
+div.ip p, div.area p{
+  color: #999;
+}
+
+div.tab_two, div.tab_three{
+  display: none;
+}

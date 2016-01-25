@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(function(){
+                //定义地址尾部的参数
+                function getUrlParam(name){
+                    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+                    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+                    if (r!=null) return unescape(r[2]); return null; //返回参数值
+                }
+                //加载文章列表
+                var contenturl = "http://c10012.2wm.cn/content/contents.json";
+                $.getJSON(contenturl, function (contentObjs) {
+                    for (var i = 0; i < contentObjs.length; i++) {
+                        var obj = contentObjs[i];
+                        var urlId = getUrlParam('id');
+                        if(obj.Cateid == urlId){
+                            $("#content ul").append("<li><h4>"+ obj.Title +"</h4><img class='img-responsive' src='"+ obj.Cover +"'/><h5>"+  obj.Summary +"</h5></li>")
+                        }
+                    }
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <div class="banner">
+            <ul>
+                <li class="active">
+                    <a href="main.html">
+                        <p>山峰酒业</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <p>联系方式</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="company.html">
+                        <p>公司简介</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html">
+                        <p>新闻公告</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <h3 class="sub_t"></h3>
+        <div id="content" class="list clearfix">
+            <ul>
+                <!-- <li>
+                    <h4></h4>
+                    <img src="img/putao01.jpg" alt="" class="img-responsive">
+                </li> -->
+            </ul>
+        </div>
+    </body>
+</html>

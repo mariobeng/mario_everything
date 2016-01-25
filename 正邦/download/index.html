@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+        <title>高考志愿填报指南-APP下载</title>
+        <link rel="shortcut icon" href="images/ico.ico">
+        <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+    </head>
+    <body>
+        <div style="margin:0 auto;width:0px;height:0px;overflow:hidden;">
+            <img src="images/share.png" alt="">
+        </div>
+        <div class="body">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" class="img-responsive">
+            </div>
+            <p class="title">高考志愿填报指南</p>
+            <a class="a_bl download btn_android" href="http://dd.myapp.com/16891/C9B9DC2AF245AB7846AF6CF1B2436670.apk?fsname=com.yang.gaokao_2.0.3_23.apk">
+                <img src="images/android.png" alt="安卓" class="img-responsive">
+            </a>
+            <a class="a_bl download btn_ios" href="http://itunes.apple.com/app/id517559135">
+                <img src="images/ios.png" alt="苹果" class="img-responsive">
+            </a>
+            <div class="black"></div>
+            <div class="tip"><img class="img-responsive" src="images/tip.png" alt=""></div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        $(function(){
+            //判断是否为微信浏览器
+            function isWeiXin(){
+                var ua = window.navigator.userAgent.toLowerCase();
+                if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+                    return true;
+                }
+            }
+
+            $(".download").click(function(){
+                if(isWeiXin()){
+                    $(".black, .tip").show();
+                    return false;
+                };
+            })
+
+            var u = navigator.userAgent, app = navigator.appVersion;
+            var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+            var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+            if(isWeiXin && isAndroid){
+                $(".btn_ios").hide();
+            }else if(isWeiXin && isiOS){
+                $(".btn_android").hide();
+            };
+
+            //判断是否为移动端浏览器
+            (function(ua, ls){
+                ua = navigator.userAgent.toLowerCase();
+                ls = location.search.toLowerCase();
+                if(/mobile|tablet|ip(ad|hone|od)|android/.test(ua)){
+                    if(!/(\?|\&)m=f/.test(ls) && isiOS && !isWeiXin()){
+                        $(".btn_android").hide();
+                        /*top.location.href = "https://m.jinyinmao.com.cn";*/
+                    }else if(!/(\?|\&)m=f/.test(ls) && isAndroid && !isWeiXin()){
+                        $(".btn_ios").hide();
+                    }
+                }
+            }());
+
+        })
+    </script>
+</html>

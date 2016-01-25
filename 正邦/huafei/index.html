@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>抢话费赢手机</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript">
+var GID = "shuqian";
+var SCORE_LIMIT = 6000;
+    var APP_LIST_URL = 'http://game.id87.com/';
+</script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/createjs-2013.12.12.min.js"></script>
+<script type="text/javascript" src="js/qipa_app.js"></script>
+<script type="text/javascript" src="js/qipa_stage.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<canvas id="stage">
+您的浏览器不支持html5, 请换用支持html5的浏览器。
+</canvas>
+<script language=javascript>
+    var mebtnopenurl = 'http://game.id87.com';
+		window.shareData = {
+		      "imgUrl": "http://mmbiz.qpic.cn/mmbiz/2zpp2iaH4HWGzZiaNCfhXXj04DLtibMvuubEqEERX7LcVcib2FvsrxPErDGSWSPBZyOjic1EY5h6kibhjSxVXOn9ibV3w/640",
+            "timeLineLink": "http://game.id87.com/games/sqsdscj/",
+		        "tTitle": "抢话费赢手机",
+		        "tContent": "抢话费赢手机"
+		};
+
+		function goHome(){
+			window.location=mebtnopenurl;
+		}
+		function clickMore(){
+			if((window.location+"").indexOf("zf",1)>0){
+                window.location = "http://game.id87.com";
+			 }
+			 else{
+				goHome();
+			 }
+		}
+		function dp_share(){
+			document.title ="我10秒内数了"+myData.score+"张钞票，手都快抽筋，你也来试试看！";
+			document.getElementById("share").style.display="";
+			window.shareData.tTitle = document.title;
+		}
+		function dp_Ranking(){
+			window.location=mebtnopenurl;
+		}
+
+		function showAd(){
+		}
+		function hideAd(){
+		}
+		document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+
+		    WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+		        WeixinJSBridge.invoke('sendAppMessage', {
+		            "img_url": window.shareData.imgUrl,
+		            "link": window.shareData.timeLineLink,
+		            "desc": window.shareData.tContent,
+		            "title": window.shareData.tTitle
+		        }, onShareComplete);
+		    });
+
+		    WeixinJSBridge.on('menu:share:timeline', function(argv) {
+		        WeixinJSBridge.invoke('shareTimeline', {
+		            "img_url": window.shareData.imgUrl,
+		            "img_width": "640",
+		            "img_height": "640",
+		            "link": window.shareData.timeLineLink,
+		            "desc": window.shareData.tContent,
+		            "title": window.shareData.tTitle
+		        }, onShareComplete);
+		    });
+		}, false);
+		</script>
+		<div id=share style="display: none">
+			<img width=100% src="http://i2.tietuku.com/4f69bba2c0f5dc69.png"
+				style="position: fixed; z-index: 9999; top: 0; left: 0; display: "
+				ontouchstart="document.getElementById('share').style.display='none';" />
+		</div>
+		<a href="guize.html" class="guize">活动规则</a>
+		<div class="success" style="display: block;"></div>
+		<div class="su_bor" id="lingqu" style="display: block;">
+            <p>填写信息领取奖励，请输入有效的手机号码哦！</p>
+            <input class="telphone" type="tel" placeholder="输入手机号码">
+            <div class="yzm">
+                <input type="text" placeholder="手机验证码">
+                <input id="btnSendCode" class="get_yzm" type="button" disabled="disabled" value="获取验证码" onclick="sendMessage()">
+            </div>
+            <div class="claer"></div>
+            <a href="javascript:void(0);" class="lingqu">领取</a>
+        </div>
+        <script type="text/javascript">
+
+            var InterValObj; //timer变量，控制时间
+            var count = 60; //间隔函数，1秒执行
+            var curCount;//当前剩余秒数
+
+            function sendMessage() {
+              　curCount = count;
+            　　//设置button效果，开始计时
+                 $("#btnSendCode").attr("disabled", "true");
+                 $("#btnSendCode").css("background-color","#ddd");
+                 $("#btnSendCode").val("" + curCount + "秒后重新获取");
+                 InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+            　　  //向后台发送处理数据
+                 $.ajax({
+                 　　type: "POST", //用POST方式传输
+                 　　dataType: "text", //数据格式:JSON
+                 　　url: 'Login.ashx', //目标地址
+                　　 data: "dealType=" + dealType +"&uid=" + uid + "&code=" + code,
+                　　 error: function (XMLHttpRequest, textStatus, errorThrown) { },
+                 　　success: function (msg){ }
+                 });
+            }
+
+            //timer处理函数
+            function SetRemainTime() {
+                if (curCount == 0) {
+                    window.clearInterval(InterValObj);//停止计时器
+                    $("#btnSendCode").removeAttr("disabled");//启用按钮
+                    $("#btnSendCode").css("background-color","#FED201");
+                    $("#btnSendCode").val("重新发送验证码");
+                }
+                else {
+                    curCount--;
+                    $("#btnSendCode").val("" + curCount + "秒后重新获取");
+                }
+            }
+        </script>
+
+        <div class="su_bor lose">
+            <p>恭喜您！</p>
+            <p>成功领取<span id="user_score"></span>元翼支付电子券</p>
+            <a href="shuoming.html" class="info_sy">翼支付电子券使用说明</a>
+            <a href="javascript:void(0);" class="lingqu sure">确定</a>
+        </div>
+        <div class="su_bor shibai">
+            <p>领取失败！</p>
+            <p>请您查看网络是否正常，如正常，请点击重新领取</p>
+            <a href="shuoming.html" class="info_sy">翼支付电子券使用说明</a>
+            <a href="javascript:void(0);" class="lingqu chongxin">重新领取</a>
+        </div>
+        <div class="su_bor once">
+            <p>亲，本活动每人只能参与一次。您已参与。请选择参与我们的其他活动吧</p>
+            <a href="shuoming.html" class="info_sy">翼支付电子券使用说明</a>
+            <a href="javascript:void(0);" class="lingqu yici">确定</a>
+        </div>
+		<script type="text/javascript">
+	        var myData = { gameid: "sq" };
+	            window.shareData.timeLineLink = "http://game.id87.com/games/sqsdscj/";
+			function dp_submitScore(score){
+				myData.score = score;
+				myData.scoreName = "数了"+score+"元";
+				if(score>0){
+					if (confirm("我勒个去了，10秒你数了"+score+"张！快通知一下小伙伴吧！")){
+						dp_share();
+					}
+					$("#user_score").text(score);
+				}
+			}
+			function onShareComplete(res) {
+	            if (localStorage.myuid && myData.score != undefined) {
+	                setTimeout(function(){
+	                    if (confirm("要将成绩提交到游戏排行榜吗？")) {
+	                        window.location = "http://wx.9g.com/rank/submit2.jsp?gameid=" + myData.gameid + "&uid=" + localStorage.myuid + "&score=" + myData.score + "&scorename=" + encodeURIComponent(myData.scoreName);
+	                    }
+	                    else {
+	                        document.location.href = mebtnopenurl;
+	                    }
+	                }, 500);
+	            }
+				else {
+		        	document.location.href = mebtnopenurl;
+				}
+	        }
+            /*验证码*/
+            $("input.telphone").focus(function(){
+                $("input.get_yzm").removeAttr("disabled");
+                $("input.get_yzm").css("background-color","#FED201");
+            })
+		</script>
+</body>
+</html>

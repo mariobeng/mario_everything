@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/touchcarousel.css"/>
+		<link rel="stylesheet" type="text/css" href="css/three-d-skin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style>
+			html, body {
+			    position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 预加载 begin -->
+        <div class="load">
+            <span><img src="img/loading.gif" alt=""></span>
+        </div>
+        <!-- 预加载 end-->
+		<!-- 轮播 begin-->
+		<div id="slideshow" class="touchcarousel three-d">
+			<div class="touchcarousel-container">
+		    	<a href="javascript:;" class="touchcarousel-item"><img src="img/lunbo01.jpg" /></a>
+		        <a href="javascript:;" class="touchcarousel-item"><img src="img/lunbo01.jpg" /></a>
+		        <a href="javascript:;" class="touchcarousel-item"><img src="img/lunbo01.jpg" /></a>
+		  	</div>
+		</div>
+		<!-- 轮播 end-->
+		<div class="menu">
+			<ul>
+				<li>
+					<a class="true" href="javascript:;">
+						<img class="img-responsive" src="img/nav_01.png"/>
+					</a>
+					<p><a href="">真伪鉴别</a></p>
+				</li>
+				<li>
+					<a class="suyuan" href="info.html">
+						<img class="img-responsive" src="img/nav_02.png"/>
+					</a>
+					<p><a href="">产品溯源</a></p>
+				</li>
+				<li>
+					<a class="wenhua" href="back_service.html">
+						<img class="img-responsive" src="img/nav_03.png"/>
+					</a>
+					<p><a href="">售后服务</a></p>
+				</li>
+				<li>
+					<a class="weixin" href="javascript:;">
+						<img class="img-responsive" src="img/nav_01.png"/>
+					</a>
+					<p><a href="">使用说明</a></p>
+				</li>
+				<li>
+					<a class="" href="javascript:;">
+						<img class="img-responsive" src="img/nav_01.png"/>
+					</a>
+					<p><a href="">精彩活动</a></p>
+				</li>
+				<li>
+					<a class="weidian" href="javascript:;">
+						<img class="img-responsive" src="img/nav_01.png"/>
+					</a>
+					<p><a href="">关于我们</a></p>
+				</li>
+			</ul>
+		</div>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			/*轮播图*/
+			var $slideshow;
+			$(function(){
+				$slideshow = $("#slideshow");
+				$slideshow.find("img").attr("width",$(document.body).width());
+				$slideshow.touchCarousel({
+					pagingNav: true,
+					scrollbar: false,
+					directionNavAutoHide: false,
+					itemsPerMove: 1,
+					loopItems: true,
+					directionNav: false,
+					autoplay: true,
+					autoplayDelay: 2000,
+					autoplayStopAtAction:false,
+					useWebkit3d: true,
+					itemFallbackWidth:$(document.body).width(),
+					transitionSpeed: 400
+				});
+			});
+    	</script>
+    	<script src="js/reload.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

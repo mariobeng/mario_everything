@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+        <title>天翼</title>
+        <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/scroll.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.dh_user li:even').addClass('lieven');
+            })
+            $(function(){
+                $("div.dh_user").myScroll({
+                    speed:60, //数值越大，速度越慢
+                    rowHeight:25 //li的高度
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <img src="images/top.jpg" class="img-responsive">
+        <div class="mei_red">
+            <p>100G流量免费领，人手一份，拿好不谢</p>
+            <input class="you_tel" type="text" placeholder="输入手机号码">
+            <button class="go_ling">立即领取</button>
+            <p style="font-size: 14px;color: #fff126;">此活动仅限中国电信用户参与。</p>
+        </div>
+        <!-- <div class="dh_user">
+            <h4>已兑换用户</h4>
+            <ul>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+            </ul>
+        </div> -->
+        <p style="color: #fff;text-align: center;margin-top: 10px;">本活动最终解释权归陕西电信天翼校园所有</p>
+        <div class="black">
+            <div class="su_bor">
+                <p>恭喜你！</p>
+                <p>成功领取<span>5M流量券</span></p>
+                <div class="liuliang_img">
+                    <div class="quan_bor">
+                        <p>155<span>M</span></p>
+                    </div>
+                </div>
+                <button>立即兑换</button>
+            </div>
+        </div>
+    </body>
+</html>

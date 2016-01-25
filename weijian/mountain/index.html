@@ -7,137 +7,36 @@
         <link rel="stylesheet" type="text/css" href="css/common.css"/>
         <link rel="stylesheet" type="text/css" href="css/touchcarousel.css"/>
         <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(function(){
+                $(".jump").click(function(){
+                    $(".back").hide();
+                    setTimeout(function() {
+                        window.location.href = "main.html"
+                    }, 3000);
+                })
+            })
+        </script>
         <style type="text/css">
-            body{background-color: #f1f1f1;}
+            body{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                padding: 0;
+            }
         </style>
     </head>
     <body>
-        <!-- 轮播 begin-->
-        <div id="slideshow" class="touchcarousel three-d">
-            <div class="touchcarousel-container">
-                <a href="javascript:;" class="touchcarousel-item">
-                    <img src="img/fx_banner01.jpg" />
-                </a>
-                <a href="javascript:;" class="touchcarousel-item">
-                    <img src="img/fx_banner02.jpg" />
-                </a>
-                <a href="javascript:;" class="touchcarousel-item">
-                    <img src="img/fx_banner03.jpg" />
-                </a>
+        <div class="main"></div>
+        <div class="back">
+            <div class="black"></div>
+            <div id="info">
+                <p>您购买的酒是由山峰酒业</p>
+                <p>提供的原厂正品酒请放心饮用</p>
             </div>
+            <a href="javascript:;" class="a_bl jump">跳过</a>
         </div>
-        <!-- 轮播 end-->
-        <div class="banner">
-            <ul>
-                <li class="active">
-                    <a href="index.html">
-                        <p>山峰酒业</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        <p>联系方式</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="company.html">
-                        <p>公司简介</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="news.html">
-                        <p>新闻公告</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="list clearfix">
-            <ul>
-                <li class="list_l">
-                    <a href="xifeng.html">
-                        <h4>西凤酒系列</h4>
-                        <img src="img/list01.jpg" alt="" class="img-responsive">
-                    </a>
-                </li>
-                <li class="list_r">
-                    <a href="luzhou.html">
-                        <h4>泸州老窖系列</h4>
-                        <img src="img/list02.jpg" alt="" class="img-responsive">
-                    </a>
-                </li>
-                <li class="list_l">
-                    <a href="fenjiu.html">
-                        <h4>汾酒系列</h4>
-                        <img src="img/list03.jpg" alt="" class="img-responsive">
-                    </a>
-                </li>
-                <li class="list_r">
-                    <a href="langjiu.html">
-                        <h4>郎酒系列</h4>
-                        <img src="img/list04.jpg" alt="" class="img-responsive">
-                    </a>
-                </li>
-                <li class="list_l">
-                    <a href="taibai.html">
-                        <h4>太白酒系列</h4>
-                        <img src="img/list05.jpg" alt="" class="img-responsive">
-                    </a>
-                </li>
-                <li class="list_r">
-                    <a href="changan.html">
-                        <h4>长安酒系列</h4>
-                        <img src="img/list06.jpg" alt="" class="img-responsive">
-                    </a>
-                </li>
-                <li class="list_l">
-                    <a href="maotai.html">
-                        <h4>茅台酒系列</h4>
-                        <img src="img/list07.jpg" alt="" class="img-responsive">
-                    </a>
-                </li>
-                <li class="list_r">
-                    <a href="wuliang.html">
-                        <h4>五粮液系列</h4>
-                        <img src="img/list08.jpg" alt="" class="img-responsive">
-                    </a>
-                </li>
-                <li class="list_l">
-                    <a href="putao.html">
-                        <h4>葡萄酒系列</h4>
-                        <img src="img/list09.jpg" alt="" class="img-responsive">
-                    </a>
-                </li>
-                <li class="list_r">
-                    <a href="yanghe.html">
-                        <h4>洋河 剑南春 水井坊</h4>
-                        <img src="img/list10.jpg" alt="" class="img-responsive">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
-        <script>
-        /*轮播图*/
-        var $slideshow;
-        $(function(){
-            $slideshow = $("#slideshow");
-            $slideshow.find("img").attr("width",$(document.body).width());
-            $slideshow.touchCarousel({
-                pagingNav: true,
-                scrollbar: false,
-                directionNavAutoHide: false,
-                itemsPerMove: 1,
-                loopItems: true,
-                directionNav: false,
-                autoplay: true,
-                autoplayDelay: 2000,
-                autoplayStopAtAction:false,
-                useWebkit3d: true,
-                itemFallbackWidth:$(document.body).width(),
-                transitionSpeed: 400
-            });
-        });
-        </script>
     </body>
 </html>

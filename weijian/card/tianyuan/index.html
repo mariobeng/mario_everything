@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>田源的名片</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="info name">
+				<h4>田源</h4>
+			</div>
+			<div class="info job">
+				<p>执行董事</p>
+			</div>
+			<img id="nav_btn" src="img/btn.png">
+			<a class="hideinfo" href="#"></a>
+			<div class="xinxi">
+				<div class="xin_up">
+					<img src="img/up.png" alt="" class="up_img">
+					<p>手机：<a href="tel:15009500008">15009500008</a></p>
+					<p>电话（传真）：<a href="tel:010-82557891">010-82557891</a></p>
+					<p>邮编：100091</p>
+					<p class="weixin">微信：steven211853<!-- <a class="add" href="saoma.html"><img class="img-responsive" src="img/add.png" alt=""></a> --></p>
+					<div class="clear"></div>
+					<p>公司：北京源长投资管理有限公司</p>
+					<p>地址：北京市海淀区瀚河园路自在香山73号</p>
+					<!-- <div class="txt_info">
+						<span>地址：</span><p></p>
+					</div> -->
+				</div>
+				<div class="clear"></div>
+				<a class="savetel" href="javascript:;">保存到通讯录</a>
+			</div>
+		</div>
+		<script>
+			//判断是否为微信浏览器
+			function isWeiXin(){
+    			var ua = window.navigator.userAgent.toLowerCase();
+	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+	      			return true;
+    			}
+  			}
+			$(function(){
+				// $("a.add").click(function(){
+				// 	if(!isWeiXin()){
+				// 		alert("请使用微信扫码进入!");
+		  // 				return false;
+				// 	}else{
+				// 		location.href = "saoma.html";
+				// 	}
+				// });
+				$("a.savetel").click(function(){
+					if(!isWeiXin()){
+						alert("请使用微信扫码进入!");
+		  				return false;
+					}else{
+						location.href = "card.html";
+					}
+				});
+				//弹框
+	  			$("#nav_btn").click(function(){
+	  				$("#nav_btn").hide();
+	  				$(".xinxi").show().removeClass('xin_no').addClass("xinmate");
+	  			})
+	  			//弹框消失
+	  			$("a.hideinfo, .up_img").click(function(){
+	  				$("#nav_btn").show();
+	  				$(".xinxi").fadeOut(1000).removeClass("xinmate").addClass("xin_no");
+	  			})
+			})
+		</script>
+	</body>
+</html>

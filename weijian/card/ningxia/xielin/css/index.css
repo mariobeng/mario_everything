@@ -1,0 +1,237 @@
+
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+div.main{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.jpg) no-repeat center;
+	background-size: cover;
+}
+img#nav_btn {
+  position: absolute;
+  display: block;
+  width: 45px;
+  height: 45px;
+  right: 12px;
+  bottom: 12px;
+}
+img.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+div.info{
+	display: block;
+	position: absolute;
+	right: -20%;
+	width: 45.625%;
+	opacity: 0;
+}
+div.name{
+    width: 40.15625%;
+	top: 27%;
+	right: -10%;
+	-webkit-animation: name 1s 0s forwards;
+    animation: name 1s 0s forwards;
+}
+@-webkit-keyframes name {
+	0% {
+  		right: -10%;
+  		opacity: 0;
+	}
+	100% {
+  		right: -4%;
+  		opacity: 1;
+	}
+}
+@keyframes name {
+	0% {
+  		right: -10%;
+  		opacity: 0;
+	}
+	100% {
+  		right: -4%;
+  		opacity: 1;
+	}
+}
+div.job{
+    height: 3.1746%;
+    top: 34%;
+    -webkit-animation: job .8s .5s forwards;
+    animation: job .8s .5s forwards;
+}
+@-webkit-keyframes job {
+    0% {
+        right: -20%;
+        opacity: 0;
+    }
+    100% {
+        right: -10%;
+        opacity: 1;
+    }
+}
+@keyframes job {
+    0% {
+        right: -20%;
+        opacity: 0;
+    }
+    100% {
+        right: -10%;
+        opacity: 1;
+    }
+}
+div.xinxi{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: none;
+	background: url(../img/xinxi_bg.png) repeat left top;
+	z-index: 10;
+}
+div.xin_up{
+	padding: 2%;
+}
+img.up_img{
+	width: 7.3437%;
+	height: 3.1634%;
+	display: block;
+	margin: 0 auto;
+}
+p.weixin a{
+	float: right;
+	font-size: 2em;
+	font-weight: bold;
+}
+div.datu{
+	width: 90%;
+	margin: 2% auto 0;
+}
+div.datu a {
+  display: block;
+  width: 21%;
+  float: left;
+}
+div.datu a img{
+	display: block;
+	width:100%;
+}
+div.datu a p{
+	text-align: center;
+	font-size: 1.1em;
+}
+a.weizhan{
+	margin-left: 21%;
+}
+a.video{
+	margin-left: 10%;
+}
+a.savetel{
+	display: block;
+	background-color: #E9EAED;
+	padding: 3% 0;
+	text-align: center;
+	border-top: 1px solid #C8C8C8;
+	font-size: 1.2em;
+}
+
+div.xinmate{
+	-webkit-animation: xinmate .5s 0s forwards;
+    animation: xinmate .5s 0s forwards;
+}
+@-webkit-keyframes xinmate {
+	0% {
+  		bottom: -285px;
+	}
+	100% {
+  		bottom: 0;
+	}
+}
+@keyframes xinmate {
+	0% {
+  		bottom: -285px;
+	}
+	100% {
+  		bottom: 0;
+	}
+}
+div.xin_no{
+	-webkit-animation: xin_no .5s 0s forwards;
+    animation: xin_no .5s 0s forwards;
+}
+@-webkit-keyframes xin_no {
+	0% {
+  		bottom: 0;
+	}
+	100% {
+  		bottom: -285px;
+	}
+}
+@keyframes xin_no {
+	0% {
+  		bottom: 0;
+	}
+	100% {
+  		bottom: -285px;
+	}
+}
+
+a.hideinfo{
+	display: block;
+	width: 100%;
+	height: 65%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+img.erweima{
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+}
+img.mecard{
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+}
+
+@media screen and (max-width: 320px){
+	div.datu a p{
+		font-size: 0.9em;
+	}
+	div.xinxi p{
+		font-size: 1.1em;
+	}
+}
+.txt_info{
+    width: 92%;
+    padding-left: 3%;
+    line-height: 2em;
+}
+.txt_info span{
+    display: inline-block;
+    width: 15%;
+    overflow: hidden;
+    float: left;
+}
+div.txt_info p{
+    display: inline-block;
+    width: 85%;
+    overflow: hidden;
+    float: right;
+}

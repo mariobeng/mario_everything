@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+        <title>陕西电信网上商城</title>
+        <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=D18df1047ce8da9b748c0d0b9093e910"></script>
+    </head>
+    <body>
+        <div id="allmap"></div>
+        <!-- <a class="a_bl dingwei" href="#">按钮</a> -->
+        <div class="success"></div>
+        <div class="city">
+            <ul>
+                <li><a class="a_bl ankang" href="http://w.189.cn/wd/main.do?author=WT53026">安康</a></li>
+                <li><a class="a_bl shangluo" href="http://w.189.cn/wd/main.do?author=WT53290">商洛</a></li>
+                <li><a class="a_bl baoji" href="http://w.189.cn/wd/main.do?author=WT53028">宝鸡</a></li>
+                <li><a class="a_bl weinan" href="http://w.189.cn/wd/main.do?author=WT53027">渭南</a></li>
+                <li><a class="a_bl tongchuan" href="http://w.189.cn/wd/main.do?author=WT53288">铜川</a></li>
+                <li><a class="a_bl xianyang" href="http://w.189.cn/wd/main.do?author=WT53289">咸阳</a></li>
+                <li><a class="a_bl xian" href="http://vip.msi2014.com/">西安</a></li>
+                <li><a class="a_bl yulin" href="http://w.189.cn/wd/main.do?author=WT53291">榆林</a></li>
+                <li><a class="a_bl hanzhong" href="http://w.189.cn/wd/main.do?author=WT53286">汉中</a></li>
+                <li><a class="a_bl yanan" href="http://w.189.cn/wd/main.do?author=WT53287">延安</a></li>
+            </ul>
+        </div>
+
+    </body>
+    <script type="text/javascript">
+        $(function(){
+            $("div.success, div.city").show();
+            $("div.city ul li").addClass("city_dh");
+            // 百度地图API功能
+            /*var map = new BMap.Map("allmap");
+            var point = new BMap.Point(116.331398,39.897445);
+            map.centerAndZoom(point,12);
+
+            var geolocation = new BMap.Geolocation();
+            if(confirm("是否允许访问地理位置")){
+                function myFun(result){
+                    var cityName = result.name;
+                    map.setCenter(cityName);
+                    var cname = String(cityName);
+                    if(cname == "西安市"){
+                        location.href="http://vip.msi2014.com";
+                    }else if(cname == "安康市"){
+                        location.href="http://w.189.cn/wd/main.do?author=WT53026";
+                    }else if(cname == "商洛市"){
+                        location.href="http://w.189.cn/wd/main.do?author=WT53290";
+                    }else if(cname == "宝鸡市"){
+                        location.href="http://w.189.cn/wd/main.do?author=WT53028";
+                    }else if(cname == "渭南市"){
+                        location.href="http://w.189.cn/wd/main.do?author=WT53027";
+                    }else if(cname == "铜川市"){
+                        location.href="http://w.189.cn/wd/main.do?author=WT53288";
+                    }else if(cname == "咸阳市"){
+                        location.href="http://w.189.cn/wd/main.do?author=WT53289";
+                    }else if(cname == "榆林市"){
+                        location.href="http://w.189.cn/wd/main.do?author=WT53291";
+                    }else if(cname == "汉中市"){
+                        location.href="http://w.189.cn/wd/main.do?author=WT53286";
+                    }else if(cname == "延安市"){
+                        location.href="http://w.189.cn/wd/main.do?author=WT53287";
+                    }
+                }
+                var myCity = new BMap.LocalCity();
+                myCity.get(myFun);
+            }else{
+                $("div.success, div.city").show();
+                $("div.city ul li").addClass("city_dh");
+            }*/
+        })
+    </script>
+</html>

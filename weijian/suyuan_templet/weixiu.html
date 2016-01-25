@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>产品售后维修记录</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style>
+			html, body {
+			    position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="article">
+			<div class="info_b">
+				<h1>售后维修记录<span>AFTER SALES RECORD</span></h1>
+			</div>
+			<div class="sy_table">
+				<form action="">
+					<div class="sy_form">
+						<label>维修时间：</label><input type="date">
+					</div>
+					<div class="sy_form cord" style="margin-bottom: 60px;">
+						<h4>本机属于：</h4>
+						<div class="xuanze">
+							<form action="">
+								<label>
+									<input type="radio" name="baoxiu" value="" checked="true">保修期内
+								</label>
+								<label>
+									<input type="radio" name="baoxiu" value="">保修期外
+								</label>
+								<label>
+									<input type="radio" name="baoxiu" value="">售后维修
+								</label>
+							</form>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sy_form">
+						<h4>故障现象：</h4>
+						<div class="xuanze">
+							<textarea></textarea>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sy_form">
+						<h4>故障原因：</h4>
+						<div class="xuanze">
+							<textarea></textarea>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sy_form">
+						<h4>处理方案：</h4>
+						<div class="xuanze">
+							<textarea></textarea>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sy_form cord">
+						<h4>处理结果：</h4>
+						<div class="xuanze">
+							<p>
+								<form action="">
+									<label><input type="radio" name="jieguo" value="" checked="true">已完成</label>
+									<label><input type="radio" name="jieguo" value="">未完成</label>
+								</form>
+							</p>
+							<textarea placeholder="请输入备注内容"></textarea>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sy_form cord">
+						<h4>更换配件：</h4>
+						<div class="xuanze">
+							<p>
+								<form action="">
+									<label><input type="radio" name="genghuan" value="" checked="true">是</label>
+									<label><input type="radio" name="genghuan" value="">否</label>
+								</form>
+							</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sy_form">
+						<label>配件名称：</label><input type="text">
+					</div>
+					<div class="sy_form">
+						<label>配件数量：</label><input type="number">
+					</div>
+					<button type="submit" class="denglu">提交</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

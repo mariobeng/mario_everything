@@ -1,0 +1,38 @@
+@charset "utf-8";
+body{ margin:0; padding:0; min-width:320px; background: #FBD109;}
+#main{display:block; position:absolute; top:0; left:0; bottom:0; right:0;}
+#main{ z-index:9; background:url(../images/bg.jpg) top left no-repeat #D52E2B; background-size:cover; height:100%; min-width:320px;visibility: inherit;}
+#rotate_box{ width:56%; margin:62% 0 0 22%; position:relative;}
+#plateBtn{
+    position:absolute; background:url(../images/rotate-static.png) 0 0 no-repeat;
+    background-size:cover; top:31%; left:31%;  width:38%; height:38%; z-index:12;
+-webkit-transform: rotate(60deg);
+transform: rotate(-70deg);
+}
+.prizelist{
+    width: 75%;
+    margin: 5px auto 0;
+    background-color:#FFED9A;
+    color:#C93206;
+    font-size:14px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.prizelist h4, .prizelist p{
+    line-height: 22px;
+    margin: 0;
+}
+.rule{
+    margin: 5px auto 10px;
+}
+.havato{
+    margin-top: 30px;
+}
+.havato h4{
+    text-align: center;
+}
+#prizelist p{}
+div.user_info{width: 100%;display: none;}
+div.user_info input{width: 94%;padding: 2px 3%;height: 30px;line-height: 30px;border: none;background-color: #fff;border-radius: 5px;margin-bottom: 8px;font-size: 16px;}
+div.user_info button{width: 100%;height: 34px;line-height: 34px;font-size: 16px;border: none;background-color: #FBDB00;font-weight: bold;border-radius: 5px;color: #DF3A36;}
+div.user_info textarea{width: 94%;padding: 2px 3%;height: 60px;line-height: 25px;border: none;background-color: #fff;border-radius: 5px;margin-bottom: 8px;font-size: 16px;}

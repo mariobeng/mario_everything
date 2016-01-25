@@ -1,0 +1,116 @@
+html{
+	width: 100%;
+	height: auto;
+	background-color: #F0F0F0;
+  font-family: Arial, "microsoft yahei", Helvetica, sans-serif;
+  overflow: hidden;
+}
+body{
+  width: 100%;
+  height: auto;
+}
+.body{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (min-width: 500px) {
+  .body{
+    width: 320px;
+    height: 568px;
+  }
+}
+img.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.title{
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  background-color: #0786E8;
+}
+.search{
+  width: 95%;
+  height: 35px;
+  line-height: 35px;
+  background-color: #fff;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.search_btn{
+  width: 8%;
+  float: left;
+  margin: 5px 0 0 5px;
+}
+.search_bor{
+  float: left;
+  display: inline-block;
+  width: 87%;
+  height: 32px;
+  border: none;
+  padding: 2px 0 0 2%;
+  font-size: 16px;
+  color: #333;
+}
+.tip{
+  width: 100%;
+  margin: 10px auto 15px;
+  background-color: #fff;
+  padding-top: 5px;
+}
+.tip_bor{
+  width: 90%;
+  margin: 0 auto;
+}
+.yyt_name span{
+  float: left;
+  font-size: 16px;
+}
+.yyt_name h5{
+  float: right;
+  padding: 5px;
+  background-color: #0786E8;
+  color: #fff;
+  border-radius: 5px;
+}
+.adress{
+  margin: 10px 0;
+  height: 40px;
+}
+.add_t{
+  float: left;
+}
+.add_t p{
+  color: #bfbfbf;
+}
+.adress a{
+  float: right;
+  width: 13%;
+}
+.goon{
+  height: 33px;
+  line-height: 33px;
+  width: 100%;
+  border-top: 1px solid #DCDCDB;
+  background-color: #F6F7FB;
+}
+.goon a{
+  /*width: 50%;
+  float: left;*/
+  background-size: 5%;
+  color: #0786E8;
+  width: 100%;
+}
+/* .gohear{
+  background: url(../images/map.png) no-repeat 27% center;
+} */
+.gostore{
+  background: url(../images/store.png) no-repeat 35% center;
+}

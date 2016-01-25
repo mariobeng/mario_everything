@@ -1,0 +1,135 @@
+body{
+    position: relative;
+}
+html,body,canvas {
+margin: 0px;
+padding: 0px;
+border:none;
+text-align: center;
+background-color: black;
+}
+canvas {
+background-color: white;
+}
+a.guize{
+  display: block;
+  width: 25%;
+  height: 25px;
+  line-height: 25px;
+  color: #FFFBCF;
+  border: 1px solid #FFFBCF;
+  border-radius: 5px;
+  position: absolute;
+  top: 15px;
+  right: 3%;
+  text-decoration: none;
+}
+div.success{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    display: none;
+}
+div.su_bor{
+  width: 80%;
+  height: auto;
+  background-color: #C3302F;
+  position: absolute;
+  z-index: 15;
+  left: 5%;
+  border-radius: 10px;
+  padding: 20px 5%;
+  top: 25%;
+  display: none;
+}
+div.su_bor p{
+  font-size: 16px;
+  color: #FFF0B7;
+  font-weight: bold;
+  line-height: 25px;
+  margin: 0;
+}
+input.telphone{
+    width: 76%;
+    border: none;
+    height: 24px;
+    line-height: 24px;
+    background-color: #FDE7B8;
+    border-radius: 5px;
+    padding: 3px 2%;
+    font-size: 16px;
+    display: block;
+    margin: 10px auto 0;
+}
+a.lingqu{
+    display: block;
+    text-align: center;
+    width: 40%;
+    height: 25px;
+    line-height: 25px;
+    margin: 15px auto 0;
+    background-color: #FED94A;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #EA4E45;
+}
+div.lose{
+    display: none;
+}
+a.info_sy {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  background-color: #FED94A;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #EA4E45;
+  width: 80%;
+  margin: 15px auto 0;
+}
+p{
+  margin: 0;
+}
+div.yzm {
+  margin: 10px auto 0;
+  width: 80%;
+  height: 35px;
+}
+div.yzm input {
+  border: none;
+  height: 24px;
+  padding: 3px 2%;
+  line-height: 24px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+}
+div.yzm input[type="text"] {
+  display: inline-block;
+  width: 43%;
+  border-radius: 5px 0 0 5px;
+  float: left;
+  background-color: #FDE7B8;
+}
+div.yzm input[type="button"] {
+  display: inline-block;
+  width: 53%;
+  border-radius: 0 5px 5px 0;
+  float: right;
+  height: 30px;
+  padding: 2px 0;
+  line-height: 28px;
+  background-color: #DDDDDD;
+  font-size: 14px;
+}

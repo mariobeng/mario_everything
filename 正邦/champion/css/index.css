@@ -1,0 +1,51 @@
+html{
+	background-color: #5694E1;
+  font-family: Arial, "microsoft yahei", Helvetica, sans-serif;
+}
+body{
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+img.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+div.article{
+  width: 84%;
+  padding: 3%;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.myborder{
+  width: 90%;
+  margin: 15px auto 0;
+}
+.zhinan h4{
+  font-size: 1.2em;
+  color: #FF3737;
+  text-align: center;
+  font-weight: bold;
+}
+.zhinan p{
+  margin-top: 10px;
+  line-height: 25px;
+  font-size: 14px;
+  padding: 0 3%;
+}
+span.blue, span.red{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+span.blue{
+  color: #008AFF;
+}
+span.red{
+  color: #FF0000;
+}
+a.share_btn{
+  width: 90%;
+  margin: 20px auto 0;
+}

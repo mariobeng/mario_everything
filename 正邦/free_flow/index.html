@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+        <title>天翼</title>
+        <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/scroll.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.dh_user li:even').addClass('lieven');
+            })
+            $(function(){
+                $("div.dh_user").myScroll({
+                    speed:60, //数值越大，速度越慢
+                    rowHeight:25 //li的高度
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <img src="images/top.jpg" class="img-responsive">
+        <div class="shengyu">
+            <div class="num">
+                <img id="flow" src="images/liuliang.png" alt="" class="img-responsive">
+                <p class="mb">90MB</p>
+                <p class="mb_zi">当前流量</p>
+            </div>
+            <div class="dh_user">
+                <h4>已兑换用户</h4>
+                <ul>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                    <li><span class="liang">1396521****</span><span class="liu">100MB</span></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function(){
+                var yu_flow = $("#flow").height();
+                // $(".num").css("height",yu_flow);
+                $(".dh_user").css("height",yu_flow);
+                // $(".shengyu").css("height",yu_flow);
+            })
+        </script>
+        <div class="clear"></div>
+        <div class="article zhinan">
+            <h4>—— 兑换说明 ——</h4>
+        </div>
+        <div class="change">
+            <span>100MB</span>
+            <a href="" class="a_linebl">兑换</a>
+        </div>
+        <div class="clear"></div>
+        <div class="change">
+            <span>300MB</span>
+            <a href="" class="a_linebl">兑换</a>
+        </div>
+        <div class="clear"></div>
+        <div class="change">
+            <span>500MB</span>
+            <a href="" class="a_linebl">兑换</a>
+        </div>
+        <div class="clear"></div>
+        <div class="my_btn">
+            <button class="fl_btn" style="background-color: #FDD110;">每日分享赚流量</button>
+            <button class="fl_btn" style="background-color: #FDD110;margin-left: 2%;">我的兑换记录</button>
+        </div>
+
+        <p style="color: #fff;text-align: center;margin-top: 10px;">本活动最终解释权归陕西电信天翼校园所有</p>
+    </body>
+</html>

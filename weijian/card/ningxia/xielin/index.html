@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>名片-谢林</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//判断是否为微信浏览器
+			function isWeiXin(){
+    			var ua = window.navigator.userAgent.toLowerCase();
+	    			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+	      			return true;
+    			}
+  			}
+
+			$(function(){
+				//弹框
+	  			$("#nav_btn").click(function(){
+	  				$("#nav_btn").hide();
+	  				$(".xinxi").show().removeClass('xin_no').addClass("xinmate");
+	  			})
+	  			//添加到通讯录
+	  			$("a.savetel").click(function(){
+	  				if (!isWeiXin()) {
+	  					alert("请使用微信扫码进入!");
+	  					return false;
+	  				}else{
+	  					$("img.mecard").show();
+	  				};
+	  			})
+	  			$("img.mecard").click(function(){
+	  				$("img.mecard").hide();
+	  			})
+	  			//弹框消失
+	  			$("a.hideinfo").click(function(){
+	  				$("#nav_btn").show();
+	  				$(".xinxi").fadeOut(1000).removeClass("xinmate").addClass("xin_no");
+	  			})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="info name">
+				<img src="img/info_name.png" alt="" class="img-responsive">
+			</div>
+			<div class="info job">
+				<img src="img/info_job.png" alt="" class="img-responsive">
+			</div>
+			<img id="nav_btn" src="img/btn.png">
+			<a class="hideinfo" href="#"></a>
+			<div class="xinxi">
+				<div class="xin_up">
+					<img src="img/up.png" alt="" class="up_img">
+					<div class="txt_info">
+						<span>电话：</span><p>15209509900</p>
+					</div>
+					<div class="clear"></div>
+					<div class="txt_info">
+						<span>邮箱：</span><p>9488043@qq.com</p>
+					</div>
+					<div class="clear"></div>
+					<div class="txt_info">
+						<span>公司：</span><p>西安唯简物联信息技术有限公司宁夏分公司</p>
+					</div>
+					<div class="clear"></div>
+					<div class="txt_info">
+						<span>地址：</span><p>宁夏银川市金凤区宁安大街490号银川市IBI育成中心14号楼705室</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<a class="savetel" href="#">保存到通讯录</a>
+			</div>
+			<img class="mecard" src="img/mecard.png">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    </head>
+    <body>
+        <div class="user_head">
+            <div class="head">
+                <img class="img-responsive" src="img/head.jpg" alt="头像">
+            </div>
+            <div class="user_info">
+                <h4>林殊</h4>
+                <p>工程师</p>
+                <p>天津建筑公司</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="info_list">
+            <ul>
+                <li>
+                    <span>固定电话</span>
+                    <h5><a href="tel:029-85468852">029-85468852</a></h5>
+                </li>
+                <li>
+                    <span>移动号码</span>
+                    <h5><a href="tel:18629451121">18629451121</a></li></h5>
+                <li>
+                    <span>传真</span>
+                    <h5><p>855252252</p></h5>
+                </li>
+                <li>
+                    <span>电子邮箱</span>
+                    <h5><p>fankai@sina.com</p></h5>
+                </li>
+                <li>
+                    <span>主页地址</span>
+                    <h5><p>http://www.baidu.com</p></h5>
+                </li>
+                <li>
+                    <span>微博</span>
+                    <h5><p>http://weibo.com/beng</p></h5>
+                </li>
+                <li>
+                    <span>QQ</span>
+                    <h5><p>325641152</p></h5>
+                </li>
+                <li>
+                    <span>微信</span>
+                    <h5><p>dsdsd123</p></h5>
+                </li>
+                <li>
+                    <span>地址</span>
+                    <h5><p>西安市</p></h5>
+                </li>
+                <li>
+                    <span>个人说明</span>
+                    <h5><p>烟火里的尘埃</p></h5>
+                </li>
+            </ul>
+        </div>
+        <button class="save">保存到通讯录</button>
+        <div class="black"></div>
+        <div class="tip"><img class="img-responsive" src="img/tip.png" alt=""></div>
+        <script src="js/jquery.1.8.3.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            //判断是否为微信浏览器
+            function isWeiXin(){
+                var ua = window.navigator.userAgent.toLowerCase();
+                    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+                    return true;
+                }
+            }
+            $(function(){
+                $(".save").click(function(){
+                    if(isWeiXin()){
+                        $(".black, .tip").show();
+                    }else{
+
+                    }
+                })
+            })
+            $(".black, .tip").click(function(){
+                $(".black, .tip").hide();
+            })
+        </script>
+
+    </body>
+</html>

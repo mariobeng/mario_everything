@@ -6,12 +6,43 @@
         <title>新闻公告</title>
         <link rel="stylesheet" type="text/css" href="css/common.css"/>
         <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(function(){
+                //加载一级目录
+                var catesurl = "http://c10012.2wm.cn/content/cates.json";
+                var cateId = 0;
+                $.getJSON(catesurl, function (cateObjs) {
+                    for (var i = 0; i < cateObjs.length; i++) {
+                        var obj = cateObjs[i];
+                        if (obj.CateType == 3 & obj.CateName == "新闻公告")//1:单页文章 2：自定义链接 3：文章列表
+                            {
+                                cateId = obj.CateId;
+                            }
+                    }
+
+                //加载文章列表
+                var contenturl = "http://c10012.2wm.cn/content/contents.json";
+                $.getJSON(contenturl, function (contentObjs) {
+                    for (var i = 0; i < contentObjs.length; i++) {
+                        var obj = contentObjs[i];
+                        if(obj.Cateid==cateId)
+                        {
+                            $(".new_list ul").append("<li><p><a href='article.html?code=" + obj.Code + "'>" + obj.Title + "</a></p></li>");
+                        }
+                    }
+                });
+                });
+
+            })
+
+        </script>
     </head>
     <body>
         <div class="banner">
             <ul>
                 <li>
-                    <a href="index.html">
+                    <a href="main.html">
                         <p>山峰酒业</p>
                     </a>
                 </li>
@@ -33,11 +64,9 @@
             </ul>
         </div>
         <h5 class="tiao"></h5>
-        <!-- <div class="article">
-            <img src="img/com.jpg" alt="" class="img-responsive art_img">
-            <p class="duanluo">
-                西安山峰酒业，主要经营西凤酒系列、泸州老窖系列、太白酒系列 、茅台酒系列 、五粮液系列 、剑南春系列 、汾酒系列 、长安老窖系列 。一直以“客户至上、诚信经营的服务宗旨。遵循“务实求进，互利共赢 ”的商业道德，竭诚为您服务。
-            </p>
-        </div> -->
+        <div class="new_list">
+            <ul>
+            </ul>
+        </div>
     </body>
 </html>

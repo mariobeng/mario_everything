@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <title>溯源信息</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <style>
+        html, body {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="article">
+        <div class="info_b">
+            <h1>基本信息<span>THE BASIC INFORMATION</span></h1>
+        </div>
+        <div class="sy_info">
+            <div class="info_li">
+                <strong>产品名称：</strong>
+                <p>产品A</p>
+            </div>
+            <div class="info_li">
+                <strong>产品规格：</strong>
+                <p>AA-101</p>
+            </div>
+            <div class="info_li">
+                <strong>产品编号：</strong>
+                <p>123456</p>
+            </div>
+            <div class="info_li">
+                <strong>产品日期：</strong>
+                <p>2015-10-01</p>
+            </div>
+            <div class="info_li">
+                <strong>质保期：</strong>
+                <p>12个月</p>
+            </div>
+        </div>
+        <div class="info_b">
+            <h1>检测信息<span>TESTING INFORMATION</span></h1>
+        </div>
+        <script type="text/javascript">
+            function GetQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]); return null;
+            }
+
+            $(function () {
+                var code = GetQueryString("Code");
+                var linkUrl = "<%=companyUnity.GetAPIUrl()%>Linked/" + code;
+
+                $.getJSON(linkUrl, function (htmlobj) {
+                    if (htmlobj.TrackingInfoId == null) {
+                        return;
+                    }
+                    for (var i = 0; i < htmlobj.TrackingInfoId.length; i++) {
+                        var trackingId = htmlobj.TrackingInfoId[i];
+                        var trackingUrl = "<%=companyUnity.GetOssUrl()%>"+htmlobj.CompanyId+"/TrackingInfo/" + trackingId + ".json";
+                        try {
+                            $.getJSON(trackingUrl, function (trackingObj) {
+                                var newDate = new Date(trackingObj.EventTime);
+                                var trObj = "<div class='cexu active'><h5></h5><p>" + trackingObj.Content + "</p><p class='time'>操作时间:" + newDate.toLocaleDateString() + "</p></div>";
+                                $(".jiance").append(trObj);
+                            });
+                        }
+                        catch (e) {
+                            //溯源信息可能被删除
+                        }
+                    }
+                });
+            });
+        </script>
+        <div class="jiance">
+            <!-- <div class="cexu active">
+                <h5></h5>
+                <p>底板粘贴铝箔、组装膨胀水箱，操作人:xxxx</p>
+                <p class="time">操作时间:2015-10-30</p>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>

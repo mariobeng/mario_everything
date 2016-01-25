@@ -1,0 +1,36 @@
+html{color:#333;background:#FFF;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset, img{border:0;}
+em, strong{font-style:normal;font-weight:normal;}
+ul li{list-style:none;}
+ul.li_fl li{float: left;}
+h1, h2, h3, h4, h5, h6{font-weight:bold;}
+h1.f_nor, h2.f_nor, h3.f_nor, h4.f_nor, h5.f_nor, h6.f_nor{font-weight:normal;}
+body, input, button, textarea{font-size:14px;font-family:"microsoft yahei", Arial,Helvetica,sans-serif;}
+a{ text-decoration:none;outline:none; color: #666;}
+a:hover{ cursor:pointer;}
+th, td{vertical-align: middle;}
+.clear{clear: both;}
+.a_bl{display: block;text-align: center;}
+.a_linebl{display: inline-block;text-align: center;}
+.clearfix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+}
+h1{font-size: 36px;}
+h2{font-size: 30px;}
+h3{font-size: 24px;}
+h4{font-size: 18px;}
+h5{font-size: 14px;}
+h6{font-size: 12px;}
+
+
+
+
+
+
+
+

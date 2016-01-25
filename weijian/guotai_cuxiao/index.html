@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+<title>e代驾</title>
+<style>
+html,body,iframe{ padding:0; margin:0;border: medium none; width:100%; height:100%;}
+</style>
+</head>
+<body>
+    <iframe src="about:blank"></iframe>
+    <script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://rs1.2wm.cn/javascript/common.js"></script>
+    <script type="text/javascript" src="http://comrs1.2wm.cn/Manage/javascript/global.js"></script>
+    <!-- /template/<%=template.pathName%>/assets/ -->
+    <script src="js/index.js"></script>
+    <!-- <script type="text/javascript" src="<%=settings.statisticsUrl%>" async="async"></script> -->
+    <script type="text/javascript">
+        $(function(){
+            $.getJSON("/Service/AntiFake?Act=AntiFakeCode&Code=" + request("Code"),function(json){
+                if (json.Data == 0){
+                    $("iframe").attr("src","http://h5.edaijia.cn/activities/cp360?from=01050067#page-unbind");
+                }else{
+                    alert("此码已获得代驾券，不能重复领取:)");
+                };
+            })
+        })
+    </script>
+</body>
+</html>

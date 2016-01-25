@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+        <title>山峰酒业</title>
+        <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/touchcarousel.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(function(){
+                //加载一级目录
+                var catesurl = "http://c10012.2wm.cn/content/cates.json";
+                $.getJSON(catesurl, function (cateObjs) {
+                    for (var i = 0; i < cateObjs.length; i++) {
+                        var obj = cateObjs[i];
+                        if (obj.CateType == 3 & obj.CateName !== "新闻公告")// 1:单页文章 2：自定义链接 3：文章列表
+                            {
+                                $("#cates ul").append("<li><a href='content.html?id="+ obj.CateId +"'><h4>"+ obj.CateName +"</h4><img id='imgCate"+ obj.CateId +"' class='img-responsive' src='' /></a></li>");
+                            }
+                    }
+
+                //加载文章列表
+                var contenturl = "http://c10012.2wm.cn/content/contents.json";
+                $.getJSON(contenturl, function (contentObjs) {
+                    for (var i = 0; i < contentObjs.length; i++) {
+                        var obj = contentObjs[i];
+                        if($("#imgCate"+obj.Cateid).attr("src")=="")
+                        {
+                            $("#imgCate"+obj.Cateid).attr("src",obj.Cover);
+                        }
+                        //$("#contents").append("<li><a href='content.html?code=" + obj.Code + "'>" + obj.Title + " 摘要:" + obj.Summary +"</a></li>");
+                    }
+                });
+                });
+
+            })
+
+        </script>
+        <style type="text/css">
+            body{background-color: #f1f1f1;}
+        </style>
+    </head>
+    <body>
+
+        <!-- 轮播 begin-->
+        <div id="slideshow" class="touchcarousel three-d">
+            <div class="touchcarousel-container">
+                <a href="javascript:;" class="touchcarousel-item">
+                    <img src="img/fx_banner01.jpg" />
+                </a>
+                <a href="javascript:;" class="touchcarousel-item">
+                    <img src="img/fx_banner02.jpg" />
+                </a>
+                <a href="javascript:;" class="touchcarousel-item">
+                    <img src="img/fx_banner03.jpg" />
+                </a>
+            </div>
+        </div>
+        <!-- 轮播 end-->
+        <div class="banner">
+            <ul>
+                <li class="active">
+                    <a href="main.html">
+                        <p>山峰酒业</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <p>联系方式</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="company.html">
+                        <p>公司简介</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html">
+                        <p>新闻公告</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="cates" class="list clearfix">
+            <ul></ul>
+        </div>
+        <script src="js/jquery.touchcarousel.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+        /*轮播图*/
+        var $slideshow;
+        $(function(){
+            $slideshow = $("#slideshow");
+            $slideshow.find("img").attr("width",$(document.body).width());
+            $slideshow.touchCarousel({
+                pagingNav: true,
+                scrollbar: false,
+                directionNavAutoHide: false,
+                itemsPerMove: 1,
+                loopItems: true,
+                directionNav: false,
+                autoplay: true,
+                autoplayDelay: 2000,
+                autoplayStopAtAction:false,
+                useWebkit3d: true,
+                itemFallbackWidth:$(document.body).width(),
+                transitionSpeed: 400
+            });
+        });
+        </script>
+    </body>
+</html>

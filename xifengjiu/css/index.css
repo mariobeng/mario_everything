@@ -1,0 +1,66 @@
+html{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+body {
+	width: 100%;
+	height: auto;
+	font-family: Arial, "microsoft yahei", Helvetica, sans-serif;
+}
+img.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+div.article{
+    width: 85%;
+    margin: 10px auto 20px;
+}
+div.article p{
+    font-size: 16px;
+    color: #101010;
+    line-height: 30px;
+}
+div.article p span{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.back{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: url(../img/back_a.jpg) repeat-y left top;
+}
+.tuwen_r{
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background: url(../img/back_a.jpg) repeat-y left top;
+    padding-bottom: 40px;
+}
+.fr{
+    float: right;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+.fr h4{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.fr p{
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 8px;
+}
+.fr_two{
+    left: 0;
+    top: 15%;
+}
+.fr_three{
+    right: 0;
+    top: 20%;
+}

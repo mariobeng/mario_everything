@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+		<title>许愿树</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			body{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+		</style>
+		<script src="http://rs1.2wm.cn/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				var my_video = $("#my_video");
+				var my_audio = $("#my_audio");
+				$(".guo01 a,.guo02 a,.guo03 a").click(function(){
+					$(".back, .guo_text").show();
+					var c_name = $(this).find("p").html();
+					$(".from").html(c_name);
+				})
+				$(".guo05 a").click(function(){
+					$(".back, .guo_sound").show();
+					var c_name = $(this).find("p").html();
+					$(".from").html(c_name);
+				})
+				$(".guo04 a").click(function(){
+					$(".back, .guo_video").show();
+				})
+				$("a.sound").click(function() {
+					my_audio[0].play();
+				});
+				$(".close").click(function(event) {
+					my_video[0].pause();
+					my_audio[0].pause();
+					$(".back, .guo_text, .guo_sound, .guo_video").hide();
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div class="back"></div>
+		<div class="main">
+			<a class="comin" href="javascript:;">
+				<img src="img/luru.png" alt="" class="img-responsive">
+			</a>
+			<div class="guo guo01">
+				<a href="javascript:;">
+					<img src="img/text.png" alt="" class="img-responsive">
+					<p>小强</p>
+				</a>
+			</div>
+			<div class="guo guo02">
+				<a href="javascript:;">
+					<img src="img/text.png" alt="" class="img-responsive">
+					<p>天天</p>
+				</a>
+			</div>
+			<div class="guo guo03">
+				<a href="javascript:;">
+					<img src="img/text.png" alt="" class="img-responsive">
+					<p>辛梓潼</p>
+				</a>
+			</div>
+			<div class="guo guo04">
+				<a href="javascript:;">
+					<img src="img/video.png" alt="" class="img-responsive">
+					<p>乐小蛙</p>
+				</a>
+			</div>
+			<div class="guo guo05">
+				<a href="javascript:;">
+					<img src="img/sound.png" alt="" class="img-responsive">
+					<p>小小星</p>
+				</a>
+			</div>
+		</div>
+		<div class="guo_info guo_text">
+			<img src="img/guo.png" alt="" class="img-responsive">
+			<p class="name">小明：</p>
+			<p class="article">青春的树越长越葱茏，生命的花越开越艳丽，在你生日的这一天，请接受我对你的深深祝福。</p>
+			<p class="shuming">by: <span class="from"></span></p>
+			<a href="javascript:;" class="a_bl close">
+				<img src="img/close.png" alt="" class="img-responsive">
+			</a>
+		</div>
+		<div class="guo_info guo_sound">
+			<img src="img/sound_bg.png" alt="" class="img-responsive">
+			<p class="name">小明：</p>
+			<p class="shuming">by: <span class="from"></span></p>
+			<a href="javascript:;" class="a_bl close">
+				<img src="img/close.png" alt="" class="img-responsive">
+			</a>
+			<a href="javascript:;" class="a_bl sound"><img src="img/bigsound.png" alt="" class="img-responsive"></a>
+			<audio id="my_audio" src="jiangshi.mp3"></audio>
+		</div>
+		<div class="guo_info guo_video">
+			<video id="my_video" src="niaokan.mp4" controls="controls"></video>
+			<a href="javascript:;" class="a_bl close">
+				<img src="img/close.png" alt="" class="img-responsive">
+			</a>
+		</div>
+
+	</body>
+</html>

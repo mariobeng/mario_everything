@@ -1,0 +1,213 @@
+html{
+	width: 100%;
+	height: 100%;
+	background-color: #f7f7f7;
+}
+body {
+	width: 100%;
+	height: auto;
+	font-family: Arial, "microsoft yahei", Helvetica, sans-serif;
+}
+img.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+.title{
+  height: 40px;
+  line-height: 40px;
+  background-color: #2396EC;
+  position: relative;
+}
+a.back{
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 9px 0 0 12px;
+}
+.title h2{
+  position: absolute;
+  top: 0;
+  left: 25%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+.tab{
+  position: absolute;
+  top: 5px;
+  left: 25%;
+  color: #fff;
+  width: 50%;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+.tab ul li{
+  float: left;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+}
+.tab ul li a{
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+}
+.tab ul li a.current{
+  background-color: #fff;
+  color: #2396EC;
+}
+.place{
+  float: right;
+  font-size: 16px;
+  color: #fff;
+  margin-right: 12px;
+  background: url(../img/map.jpg) no-repeat left center;
+  background-size: 25%;
+  padding-left: 15px;
+}
+/*顶部菜单*/
+div.footer {
+  width: 100%;
+  border-top: 1px solid #D2D2D2;
+  background-color: #F7F7F8;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #E0E0E0;
+}
+div.footer ul li {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+}
+div.footer ul li a p {
+  font-size: 1em;
+}
+div.footer ul li.active{
+  border-bottom: 2px solid #1891ED;
+}
+div.footer ul li.active p{
+  color: #1891ED;
+}
+/*列表*/
+div.list ul li {
+  width: 96.5%;
+  padding: 10px 1% 8px 2.5%;
+  overflow: hidden;
+  border-bottom: 1px solid #D7D7D7;
+}
+div.l_img {
+  float: left;
+  width: 30%;
+  height: 74px;
+  overflow: hidden;
+}
+div.r_txt {
+  float: left;
+  width: 65%;
+  margin-left: 3%;
+  height: 74px;
+  overflow: hidden;
+}
+div.r_txt h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+div.r_txt p {
+  font-size: 1em;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 21px;
+}
+.data_li{
+  width: 100%;
+  border-top: 1px solid #E0E0E0;
+  padding-top: 10px;
+}
+.li_top{
+  width: 90%;
+  margin: 0 auto;
+}
+.top_le{
+  float: left;
+}
+.top_le img{
+  display: block;
+  float: left;
+  height: 64px;
+}
+.li_top a{
+  float: right;
+  border: 1px solid #5BCEF4;
+  padding: 0 5px;
+  color: #5BCEF4;
+}
+div.zhifen {
+  width: 100%;
+  border-top: 1px solid #D2D2D2;
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+}
+div.zhifen ul li {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+}
+div.zhifen ul li a p {
+  font-size: 1em;
+}
+.li_title{
+  float: left;
+  margin: 8px 0 0 10px;
+}
+.li_title h5{
+  font-weight: bold;
+  font-size: 16px;
+}
+.li_title p{
+  line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.data_li table{
+  width: 90%;
+  margin: 0 auto;
+}
+.data_li table tr{
+  border-bottom: 1px solid #F4F4F4;
+}
+.data_li table tr th{
+  line-height: 30px;
+  color: #C5C5C5;
+}
+.data_li table tr td{
+  text-align: center;
+  line-height: 30px;
+}
